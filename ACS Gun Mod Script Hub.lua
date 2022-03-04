@@ -281,8 +281,8 @@ b:Button("Placeholder", function()
         loadstring(game:HttpGet(""))()
 end)
 
-local w = library:CreateWindow("Util")
-local b = w:CreateFolder("Misc Uitl")
+local w = library:CreateWindow("GUI Utilities")
+local b = w:CreateFolder("Utilities")
  
 b:Button("AimHot", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Herrtt/AimHot-v8/master/Main.lua", true))()
