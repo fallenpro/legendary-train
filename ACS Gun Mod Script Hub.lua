@@ -117,8 +117,18 @@ b:Button("VG Hub", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
 end)
 
+local b = w:CreateFolder("Memes",{
+    TextSize = 25;
+    TextColor = Color3.fromRGB(255,255,255);
+    BgColor = Color3.fromRGB(0,0,0)
+    })
+
+b:Button("Ukraine", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Ukraine.lua"))()
+end)
+
 game:GetService("StarterGui"):SetCore("SendNotification", {
-Title = "Russian Warship,";
-Text = "Go Fuck Yourself!";
+Title = "Script Hub";
+Text = "Executed, look in the top left.";
 Duration = 7;
 })
