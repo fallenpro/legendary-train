@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/fallenpro/tyjthfyhugb/main/ACS%20Gun%20System%20OP%20Mod%20main%20branch.lua"))()
+loadstring(game:HttpGet("https://pastebin.com/raw/VydBBXNT"))()
