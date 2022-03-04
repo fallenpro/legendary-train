@@ -1,12 +1,6 @@
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))()
 local w = library:CreateWindow("Tanki's Script Hub")
 local b = w:CreateFolder("ACS Gun Mods")
-b:Label("Gun Mods (ACS)",{
-    TextSize = 25;
-    TextColor= Color3.fromRGB(255,255,255);
-    BgColor = Color3.fromRGB(0,0,0);
-    
-})
 
 b:Button("Cold's Gun Mods", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/ACS%20Cold's%20Modifications.lua"))()
@@ -28,12 +22,6 @@ b:Button("Bye, gun safety!", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/ACS%20Tsar%20Bomba%20Bullets.lua"))()
 end)
 local b = w:CreateFolder("Universal/Utility Scripts")
-b:Label("Universal/Util Scripts",{
-    TextSize = 25;
-    TextColor= Color3.fromRGB(255,255,255);
-    BgColor = Color3.fromRGB(0,0,0);
-    
-})
 
 b:Button("AimHot", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Herrtt/AimHot-v8/master/Main.lua", true))()
@@ -64,12 +52,6 @@ b:Button("CMD-X", function()
 end)
 
 local b = w:CreateFolder("Jailbird")
-b:Label("Jailbird Scripts",{
-    TextSize = 25;
-    TextColor= Color3.fromRGB(255,255,255);
-    BgColor = Color3.fromRGB(0,0,0);
-    
-})
 
 b:Button("Asgar's GUI", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/1iseo/rbx/main/jailbird/jailbird.lua"))()
