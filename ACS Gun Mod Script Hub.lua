@@ -170,6 +170,26 @@ b:Button("LOS", function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Coldlolololir/bfdzhuiasbghjdlbgjhlas/main/LOS.lua"))()
 end)
 
+local b = w:CreateFolder("Placeholder",{
+    TextSize = 25;
+    TextColor = Color3.fromRGB(255,255,255);
+    BgColor = Color3.fromRGB(0,0,0);
+})
+
+b:Button("Placeholder", function()
+        loadstring(game:HttpGet(""))()
+end)
+
+local b = w:CreateFolder("Placeholder",{
+    TextSize = 25;
+    TextColor = Color3.fromRGB(255,255,255);
+    BgColor = Color3.fromRGB(0,0,0);
+})
+
+b:Button("Placeholder", function()
+        loadstring(game:HttpGet(""))()
+end)
+
 local w = library:CreateWindow("Page 2")
 
 local b = w:CreateFolder("Anomic",{
@@ -326,6 +346,10 @@ end)
 
 b:Button("Custom Dex V3", function()
         loadstring(game:HttpGet("https://pastebin.com/raw/YREfugjX"))()
+end)
+
+b:Button("Music Visualizer", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Music.lua"))()
 end)
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
