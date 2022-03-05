@@ -1,0 +1,3 @@
+game:GetService("ReplicatedStorage").GameEvents.Misk.ItemPurchase:FireServer("ChargeAbility") -- Gives unreleased charge ability (FREE)
+
+game:GetService("ReplicatedStorage").GameEvents.Misk.ItemPurchase:FireServer("XmasRevolver") -- Unobtainable Revolver (FREE)
