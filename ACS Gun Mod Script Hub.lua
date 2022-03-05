@@ -85,6 +85,11 @@ local b = w:CreateFolder("Mostly Universal",{
 b:Button("VG Hub", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
 end)
+
+ 
+b:Button("Cattori Hub", function()
+    loadstring(game:HttpGet("https://cattori.xyz/main.lua"))()
+end)
  
 local b = w:CreateFolder("Memes",{
     TextSize = 25;
@@ -99,16 +104,7 @@ end)
 b:Button("Invis Car", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/car.lua"))()
 end)
- 
-local b = w:CreateFolder("Arsenal",{
-    TextSize = 25;
-    TextColor = Color3.fromRGB(255,255,255);
-    BgColor = Color3.fromRGB(0,0,0);
-})
- 
-b:Button("Gaming Chair", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Aresenal_Gaming_Chair.lua"))()
-end)
+
  
 local b = w:CreateFolder("Modded Scripts",{
     TextSize = 25;
