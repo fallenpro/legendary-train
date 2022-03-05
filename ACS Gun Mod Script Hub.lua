@@ -348,7 +348,7 @@ local b = w:CreateFolder("Catter's Utilities Hub",{
 })
 
 b:Button("CU Hub", function()
-        loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/CU.lua"))()"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/CU%20Re-Exec.lua"))()
 end)
 
 
