@@ -11553,3 +11553,9 @@ game:GetService("ContextActionService"):BindAction("Toggle", function(action, st
 	end
 end, false, Enum.KeyCode.Z)
 print("end")
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+Title = "Keybinds.";
+Text = "Press Z to enable/disable.";
+Duration = 12.5;
+})
