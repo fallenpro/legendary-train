@@ -349,7 +349,7 @@ b:Button("Custom Dex V3", function()
 end)
 
 b:Button("Music Visualizer", function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Music.lua"))()
+        loadstring(game:HttpGet("https://pastebin.com/raw/0pgvVL33"))()
 end)
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
