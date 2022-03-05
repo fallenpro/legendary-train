@@ -389,7 +389,7 @@ b:Button("Infinite Store", function()
 end)
  
 b:Button("WalkOnWalls", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Gravity%20Controller.lua"))()
 end)
  
 b:Button("LagSwitch", function()
