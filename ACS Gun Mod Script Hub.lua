@@ -318,14 +318,26 @@ b:Button("Song Blocker", function()
         loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/JustEzpi/ROBLOX-Scripts/main/FunkyFriday_Blocker"))()
 end)
 
-local b = w:CreateFolder("Placeholder",{
+local b = w:CreateFolder("KAT",{
     TextSize = 25;
     TextColor = Color3.fromRGB(255,255,255);
     BgColor = Color3.fromRGB(0,0,0);
 })
 
-b:Button("Placeholder", function()
-        loadstring(game:HttpGet(""))()
+b:Button("2 Free Items", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/KAT%20Free%202%20Items"))()
+end)
+
+b:Button("Infinite Ammo", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/KAT%20Infinite%20Ammo.lua"))()
+end)
+
+b:Button("Semi-Invincibility", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/KAT%20Semi%20Invincibility.lua"))()
+end)
+
+b:Button("Silent Aim", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/KAT%20Silent%20Aim.lua"))()
 end)
 
 
