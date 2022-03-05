@@ -348,12 +348,8 @@ b:Button("Custom Dex V3", function()
         loadstring(game:HttpGet("https://pastebin.com/raw/YREfugjX"))()
 end)
 
-b:Button("Visualizer (Syn X)", function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/notif2.lua"))()
-end)
-
-b:Button("Visualizer (KRNL)", function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/notif1.lua"))()
+b:Button("Music Visualizer", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Coldlolololir/bfdzhuiasbghjdlbgjhlas/main/UHH"))()
 end)
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
