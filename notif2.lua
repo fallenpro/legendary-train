@@ -21,4 +21,10 @@ Text = "Paste the newly copied link into your browser.";
 Duration = 10
 })
 
+game:GetService("StarterGui"):SetCore("SendNotification", {
+Title = "Where do I put it?";
+Text = "Put the whole entire loadstring part into your executor.";
+Duration = 10
+})
+
 
