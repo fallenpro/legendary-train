@@ -171,10 +171,14 @@ b:Button("Song Blocker", function()
         loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/JustEzpi/ROBLOX-Scripts/main/FunkyFriday_Blocker"))()
 end)
 
-local b = w:CreateFolder("Main Script Hub")
+local b = w:CreateFolder("Switch or Re-Exec")
 
 b:Button("CATSH Hub", function()
         loadstring(game:HttpGet("https://github.com/fheahdythdr/miniature-tribble/blob/main/ACS%20Gun%20Mod%20Script%20Hub.lua"))()
+end)
+
+b:Button("Re-Exec", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/CU%20Re-Execute.lua"))()
 end)
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
