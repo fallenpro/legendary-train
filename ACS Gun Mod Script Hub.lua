@@ -397,6 +397,10 @@ b:Button("Custom Dex V3", function()
         loadstring(game:HttpGet("https://pastebin.com/raw/YREfugjX"))()
 end)
 
+b:Button("Hitbox Extender", function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Coldlolololir/bfdzhuiasbghjdlbgjhlas/main/heu.lua"))()
+end)
+
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Script Hub";
 Text = "Executed, look in the top left.";
