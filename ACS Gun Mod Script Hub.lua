@@ -416,5 +416,5 @@ Duration = 12.5;
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Updated.";
 Text = "Script Hub has been updated.";
-Duration = 25;
+Duration = 0;
 })
