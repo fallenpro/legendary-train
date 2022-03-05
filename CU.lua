@@ -2,6 +2,10 @@ local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloo
 local w = library:CreateWindow("Catter's Utilities")
 local b = w:CreateFolder("Aimhot, Infinite Store, etc.")
 
+b:Button("AimHot", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Herrtt/AimHot-v8/master/Main.lua", true))()
+end)
+
 b:Button("CMD-X", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
 end)
