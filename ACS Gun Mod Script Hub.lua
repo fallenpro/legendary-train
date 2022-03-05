@@ -376,6 +376,115 @@ b:Button("Placeholder", function()
         loadstring(game:HttpGet(""))()
 end)
 
+local w = library:CreateWindow("Placeholder")
+
+local b = w:CreateFolder("Placeholder",{
+    TextSize = 25;
+    TextColor = Color3.fromRGB(255,255,255);
+    BgColor = Color3.fromRGB(0,0,0);
+})
+
+b:Button("Placeholder", function()
+        loadstring(game:HttpGet(""))()
+end)
+local b = w:CreateFolder("Placeholder",{
+    TextSize = 25;
+    TextColor = Color3.fromRGB(255,255,255);
+    BgColor = Color3.fromRGB(0,0,0);
+})
+
+b:Button("Placeholder", function()
+        loadstring(game:HttpGet(""))()
+end)
+local b = w:CreateFolder("Placeholder",{
+    TextSize = 25;
+    TextColor = Color3.fromRGB(255,255,255);
+    BgColor = Color3.fromRGB(0,0,0);
+})
+
+b:Button("Placeholder", function()
+        loadstring(game:HttpGet(""))()
+end)
+local b = w:CreateFolder("Placeholder",{
+    TextSize = 25;
+    TextColor = Color3.fromRGB(255,255,255);
+    BgColor = Color3.fromRGB(0,0,0);
+})
+
+b:Button("Placeholder", function()
+        loadstring(game:HttpGet(""))()
+end)local b = w:CreateFolder("Placeholder",{
+    TextSize = 25;
+    TextColor = Color3.fromRGB(255,255,255);
+    BgColor = Color3.fromRGB(0,0,0);
+})
+
+b:Button("Placeholder", function()
+        loadstring(game:HttpGet(""))()
+end)
+local b = w:CreateFolder("Placeholder",{
+    TextSize = 25;
+    TextColor = Color3.fromRGB(255,255,255);
+    BgColor = Color3.fromRGB(0,0,0);
+})
+
+b:Button("Placeholder", function()
+        loadstring(game:HttpGet(""))()
+end)
+local b = w:CreateFolder("Placeholder",{
+    TextSize = 25;
+    TextColor = Color3.fromRGB(255,255,255);
+    BgColor = Color3.fromRGB(0,0,0);
+})
+
+b:Button("Placeholder", function()
+        loadstring(game:HttpGet(""))()
+end)
+local b = w:CreateFolder("Placeholder",{
+    TextSize = 25;
+    TextColor = Color3.fromRGB(255,255,255);
+    BgColor = Color3.fromRGB(0,0,0);
+})
+
+b:Button("Placeholder", function()
+        loadstring(game:HttpGet(""))()
+end)
+local b = w:CreateFolder("Placeholder",{
+    TextSize = 25;
+    TextColor = Color3.fromRGB(255,255,255);
+    BgColor = Color3.fromRGB(0,0,0);
+})
+
+b:Button("Placeholder", function()
+        loadstring(game:HttpGet(""))()
+end)local b = w:CreateFolder("Placeholder",{
+    TextSize = 25;
+    TextColor = Color3.fromRGB(255,255,255);
+    BgColor = Color3.fromRGB(0,0,0);
+})
+
+b:Button("Placeholder", function()
+        loadstring(game:HttpGet(""))()
+end)
+local b = w:CreateFolder("Placeholder",{
+    TextSize = 25;
+    TextColor = Color3.fromRGB(255,255,255);
+    BgColor = Color3.fromRGB(0,0,0);
+})
+
+b:Button("Placeholder", function()
+        loadstring(game:HttpGet(""))()
+end)
+local b = w:CreateFolder("Placeholder",{
+    TextSize = 25;
+    TextColor = Color3.fromRGB(255,255,255);
+    BgColor = Color3.fromRGB(0,0,0);
+})
+
+b:Button("Placeholder", function()
+        loadstring(game:HttpGet(""))()
+end)
+
 local w = library:CreateWindow("GUI Utilities")
 local b = w:CreateFolder("Utilities")
  
