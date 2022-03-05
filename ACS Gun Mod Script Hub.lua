@@ -352,6 +352,10 @@ b:Button("Visualizer (Syn X)", function()
         loadstring(game:HttpGet("https://pastebin.com/raw/0pgvVL33"))()
 end)
 
+b:Button("Visualizer (KRNL)", function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/c6z8Ghar"))()
+end)
+
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Script Hub";
 Text = "Executed, look in the top left.";
