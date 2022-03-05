@@ -49,10 +49,6 @@ b:Button("Sus Hub", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/anogus/sushub/main/sushub.lua"))()
 end)
 
-b:Button("Arsenal Dex Hub", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/HonestlyDex/DexHub/main/Init"))()
-end)
-
 b:Button("Snow Hub RED", function()
     loadstring(game:HttpGet("https://snowhub.dev/robloxscripts/Init", true))()
 end)
