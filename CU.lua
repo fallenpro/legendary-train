@@ -123,6 +123,24 @@ b:Button("KillAll", function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/The3Bakers4565/Spicy-Bagel/main/Other/Big_Paintball/Kill_All.lua"))()
 end)
 
+local b = w:CreateFolder("Phantom Forces",{
+    TextSize = 25;
+    TextColor= Color3.fromRGB(255,255,255);
+    BgColor = Color3.fromRGB(0,0,0);
+})
+ 
+b:Button("Aves PF GUI", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Averiias/purple-haze-pf/main/loader.lua"))()
+end)
+
+b:Button("Rage Cheat", function()
+        loadstring(game:HttpGet("https://ghostbin.com/EnF6l/raw", true))()
+end)
+
+b:Button("herrtts PF GUI", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/herrtts%20pf%20gui.lua"))()
+end)
+
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Script Utils";
 Text = "Executed, look in the top left.";
