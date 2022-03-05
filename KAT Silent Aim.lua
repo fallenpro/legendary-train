@@ -1,5 +1,5 @@
 getgenv().silentaim_settings = {
-   fov = 150,
+   fov = 360,
    hitbox = "Head",
    fovcircle = true,
 }
