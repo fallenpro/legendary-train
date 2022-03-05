@@ -64,11 +64,7 @@ end)
 b:Button("Monke Hub", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeHub/main/Loader.lua"))()
 end)
- 
-b:Button("Vertex Hub", function()
-    loadstring(game:HttpGet("https://vertexhub.000webhostapp.com/Loader.lua",true))()
-end)
- 
+
 b:Button("Fun Hub", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/jfnasdoijfo239092jsj/-TJ-O-GIH-EOINDKLGN-OIO-JG-IEOGJE-GJ-EGJ-GJ-EOIOGJ-EGEJ-JGIDGJKLZJEFW-F-T-D-R-/main/lastloadergithub!GLK%7B!%23LL%23%7B!%40L%7B!%23KPG%7B!%23LPG!%23%7BK%7BPKL%7BFL!%40%7B%23G%7BOPAPG%7BSH(%40G.lua", true))()
 end)
@@ -92,10 +88,6 @@ local b = w:CreateFolder("Arsenal",{
     TextColor= Color3.fromRGB(255,255,255);
     BgColor = Color3.fromRGB(0,0,0);
 })
-
-b:Button("KillAll", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/KillAll.lua"))()
-end)
 
 b:Button("Autofarm", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Autofarm.lua"))()
