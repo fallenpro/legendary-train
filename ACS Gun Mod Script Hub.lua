@@ -348,7 +348,7 @@ b:Button("Custom Dex V3", function()
         loadstring(game:HttpGet("https://pastebin.com/raw/YREfugjX"))()
 end)
 
-b:Button("Music Visualizer", function()
+b:Button("Visualizer (Syn X)", function()
         loadstring(game:HttpGet("https://pastebin.com/raw/0pgvVL33"))()
 end)
 
