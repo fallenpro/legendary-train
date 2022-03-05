@@ -7,12 +7,20 @@ Duration = 10
 setclipboard("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/notif%201.2.lua")
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
-Title = "Modifying.";
-Text = "You should know how to do loadstrings. If not, I'll link towards a tutorial in 12.5 seconds..";
-Duration = 12.5
+Title = "Save!";
+Text = "Save the first link somewhere. Just wait a bit.";
+Duration = 10
 })
 
-wait(12.5)
+wait(5)
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+Title = "Modifying.";
+Text = "You should know how to do loadstrings. If not, I'll link towards a tutorial in 25 seconds.";
+Duration = 10
+})
+
+wait(25)
 setclipboard("https://github.com/fheahdythdr/miniature-tribble/blob/main/Loadstring%20Tutorial")
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
