@@ -367,9 +367,3 @@ Title = "Hide Keybind";
 Text = "Press Right Ctrl to hide the gui.";
 Duration = 12.5;
 })
-
-game:GetService("StarterGui"):SetCore("SendNotification", {
-Title = "Updated";
-Text = "GUI has been updated.";
-Duration = 12.5;
-})
