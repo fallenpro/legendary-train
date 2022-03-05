@@ -101,10 +101,6 @@ b:Button("Invisibile", function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/Cesare0328/my-scripts/main/arsenal%20inv.lua'),true))()
 end)
 
-b:Button("Arsenal GUI", function()
-    loadstring(game:HttpGet("https://www.system-exodus.com/shared/Introvert/Arsenal.lua"))()
-end)
-
 local b = w:CreateFolder("BIG Paintball",{
     TextSize = 25;
     TextColor= Color3.fromRGB(255,255,255);
