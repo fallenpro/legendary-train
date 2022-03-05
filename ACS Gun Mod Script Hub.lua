@@ -304,16 +304,19 @@ b:Button("herrtts PF GUI", function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/herrtts%20pf%20gui.lua"))()
 end)
 
-local b = w:CreateFolder("Placeholder",{
+local b = w:CreateFolder("Funky Friday",{
     TextSize = 25;
-    TextColor = Color3.fromRGB(255,255,255);
+    TextColor= Color3.fromRGB(255,255,255);
     BgColor = Color3.fromRGB(0,0,0);
 })
 
-b:Button("Placeholder", function()
-        loadstring(game:HttpGet(""))()
+b:Button("Wally's Autoplayer", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
 end)
 
+b:Button("Song Blocker", function()
+        loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/JustEzpi/ROBLOX-Scripts/main/FunkyFriday_Blocker"))()
+end)
 
 local b = w:CreateFolder("Placeholder",{
     TextSize = 25;
