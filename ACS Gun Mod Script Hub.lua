@@ -405,7 +405,7 @@ b:Button("CMD-X", function()
 end)
 
 b:Button("Re-execute UI", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/ACS%20Gun%20Mod%20Script%20Hub.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/CATSH%20Re-Exec.lua"))()
 end)
 
 b:Button("Server Browser", function()
