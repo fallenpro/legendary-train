@@ -26,7 +26,8 @@ b:Button("Server Browser", function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Lynk-Softworks/Valerie/main/serverBrowser.lua", true))()
 end)
 
-local w = libary:CreateWindow("Utilities")
+local w = library:CreateWindow("Utilities")
+
 local b = w:CreateFolder("Hubs",{
     TextSize = 25;
     TextColor= Color3.fromRGB(255,255,255);
@@ -168,6 +169,12 @@ end)
 
 b:Button("Song Blocker", function()
         loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/JustEzpi/ROBLOX-Scripts/main/FunkyFriday_Blocker"))()
+end)
+
+local b = w:CreateFolder("Main Script Hub")
+
+b:Button("CATSH Hub", function()
+        loadstring(game:HttpGet("https://github.com/fheahdythdr/miniature-tribble/blob/main/ACS%20Gun%20Mod%20Script%20Hub.lua"))()
 end)
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
