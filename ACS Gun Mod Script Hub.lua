@@ -341,14 +341,14 @@ b:Button("Silent Aim", function()
 end)
 
 
-local b = w:CreateFolder("Placeholder",{
+local b = w:CreateFolder("Catter's Utilities Hub",{
     TextSize = 25;
     TextColor = Color3.fromRGB(255,255,255);
     BgColor = Color3.fromRGB(0,0,0);
 })
 
-b:Button("Placeholder", function()
-        loadstring(game:HttpGet(""))()
+b:Button("CU Hub", function()
+        loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/CU.lua"))()"))()
 end)
 
 
