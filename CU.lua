@@ -26,6 +26,7 @@ b:Button("Server Browser", function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Lynk-Softworks/Valerie/main/serverBrowser.lua", true))()
 end)
 
+local w = libary:CreateWindow("Utilities")
 local b = w:CreateFolder("Hubs",{
     TextSize = 25;
     TextColor= Color3.fromRGB(255,255,255);
@@ -69,6 +70,24 @@ b:Button("Fun Hub", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/jfnasdoijfo239092jsj/-TJ-O-GIH-EOINDKLGN-OIO-JG-IEOGJE-GJ-EGJ-GJ-EOIOGJ-EGEJ-JGIDGJKLZJEFW-F-T-D-R-/main/lastloadergithub!GLK%7B!%23LL%23%7B!%40L%7B!%23KPG%7B!%23LPG!%23%7BK%7BPKL%7BFL!%40%7B%23G%7BOPAPG%7BSH(%40G.lua", true))()
 end)
  
+local b = w:CreateFolder("KAT")
+
+b:Button("2 Free Items", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/KAT%20Free%202%20Items"))()
+end)
+
+b:Button("Infinite Ammo", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/KAT%20Infinite%20Ammo.lua"))()
+end)
+
+b:Button("Semi-Invincibility", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/KAT%20Semi%20Invincibility.lua"))()
+end)
+
+b:Button("Silent Aim", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/KAT%20Silent%20Aim.lua"))()
+end)
+
 local b = w:CreateFolder("Memes",{
     TextSize = 25;
     TextColor = Color3.fromRGB(255,255,255);
