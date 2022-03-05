@@ -349,7 +349,7 @@ b:Button("Custom Dex V3", function()
 end)
 
 b:Button("Music Visualizer", function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Coldlolololir/bfdzhuiasbghjdlbgjhlas/main/UHH"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/xaxaxaxaxaxaxaxaxa/Ciazware/main/Hat-Visualizer", true))()
 end)
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
@@ -367,5 +367,5 @@ Duration = 12.5;
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Updated.";
 Text = "Script Hub has been updated.";
-Duration = 0;
+Duration = 20;
 })
