@@ -75,8 +75,8 @@ local b = w:CreateFolder("Recoil Zombies",{
 b:Button("Gun Giver", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Recoil_zombie_script.lua"))()
 end)
- 
-local b = w:CreateFolder("Mostly Universal",{
+
+local b = w:CreateFolder("Hubs",{
     TextSize = 25;
     TextColor= Color3.fromRGB(255,255,255);
     BgColor = Color3.fromRGB(0,0,0);
@@ -86,10 +86,42 @@ b:Button("VG Hub", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
 end)
 
- 
 b:Button("Cattori Hub", function()
     loadstring(game:HttpGet("https://cattori.xyz/main.lua"))()
 end)
+
+b:Button("Ghost Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptRUs/Ryans/main/Ghosthub.lua"))()
+end)
+
+b:Button("Sus Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/anogus/sushub/main/sushub.lua"))()
+end)
+
+b:Button("Snow Hub RED", function()
+    loadstring(game:HttpGet("https://snowhub.dev/robloxscripts/Init", true))()
+end)
+
+b:Button("White Web Hub", function()
+    loadstring(game:GetObjects('rbxassetid://6392279388')[1].Source)() 
+end)
+
+b:Button("Moonhub", function()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Moonhub.lua"),true))()
+end)
+ 
+b:Button("Monke Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeHub/main/Loader.lua"))()
+end)
+ 
+b:Button("Vertex Hub", function()
+    loadstring(game:HttpGet("https://vertexhub.000webhostapp.com/Loader.lua",true))()
+end)
+ 
+b:Button("Fun Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/jfnasdoijfo239092jsj/-TJ-O-GIH-EOINDKLGN-OIO-JG-IEOGJE-GJ-EGJ-GJ-EOIOGJ-EGEJ-JGIDGJKLZJEFW-F-T-D-R-/main/lastloadergithub!GLK%7B!%23LL%23%7B!%40L%7B!%23KPG%7B!%23LPG!%23%7BK%7BPKL%7BFL!%40%7B%23G%7BOPAPG%7BSH(%40G.lua", true))()
+end)
+ 
  
 local b = w:CreateFolder("Memes",{
     TextSize = 25;
@@ -181,14 +213,30 @@ b:Button("Ciazware", function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/xaxaxaxaxaxaxaxaxa/Ciazware/main/Hat-Visualizer", true))()
 end)
 
-local b = w:CreateFolder("Placeholder",{
+local b = w:CreateFolder("Arsenal",{
     TextSize = 25;
-    TextColor = Color3.fromRGB(255,255,255);
+    TextColor= Color3.fromRGB(255,255,255);
     BgColor = Color3.fromRGB(0,0,0);
 })
 
-b:Button("Placeholder", function()
-        loadstring(game:HttpGet(""))()
+b:Button("KillAll", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/KillAll.lua"))()
+end)
+
+b:Button("Autofarm", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Autofarm.lua"))()
+end)
+
+b:Button("BombSecondary", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/BombSecondaryArsenal.lua"))()
+end)
+
+b:Button("Invisibile", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Cesare0328/my-scripts/main/arsenal%20inv.lua'),true))()
+end)
+
+b:Button("Arsenal GUI", function()
+    loadstring(game:HttpGet("https://www.system-exodus.com/shared/Introvert/Arsenal.lua"))()
 end)
 
 local w = library:CreateWindow("Page 2")
