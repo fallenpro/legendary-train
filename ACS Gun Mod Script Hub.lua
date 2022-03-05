@@ -349,11 +349,11 @@ b:Button("Custom Dex V3", function()
 end)
 
 b:Button("Visualizer (Syn X)", function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/0pgvVL33"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/notif2.lua"))()
 end)
 
 b:Button("Visualizer (KRNL)", function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/c6z8Ghar"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/notif1.lua"))()
 end)
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
