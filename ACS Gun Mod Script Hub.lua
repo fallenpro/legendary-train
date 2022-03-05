@@ -170,14 +170,19 @@ b:Button("LOS", function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Coldlolololir/bfdzhuiasbghjdlbgjhlas/main/LOS.lua"))()
 end)
 
-local b = w:CreateFolder("Placeholder",{
+local b = w:CreateFolder("Music Visualizers",{
     TextSize = 25;
     TextColor = Color3.fromRGB(255,255,255);
     BgColor = Color3.fromRGB(0,0,0);
 })
 
-b:Button("Placeholder", function()
-        loadstring(game:HttpGet(""))()
+b:Button("Space Hub", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/music%202%20.lua"))()
+end)
+
+
+b:Button("Ciazware", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/xaxaxaxaxaxaxaxaxa/Ciazware/main/Hat-Visualizer", true))()
 end)
 
 local b = w:CreateFolder("Placeholder",{
@@ -348,10 +353,6 @@ b:Button("Custom Dex V3", function()
         loadstring(game:HttpGet("https://pastebin.com/raw/YREfugjX"))()
 end)
 
-b:Button("Music Visualizer", function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/xaxaxaxaxaxaxaxaxa/Ciazware/main/Hat-Visualizer", true))()
-end)
-
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Script Hub";
 Text = "Executed, look in the top left.";
@@ -367,5 +368,5 @@ Duration = 12.5;
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Updated.";
 Text = "Script Hub has been updated.";
-Duration = 0;
+Duration = 20;
 })
