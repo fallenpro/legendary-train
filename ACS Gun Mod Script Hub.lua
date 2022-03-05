@@ -286,14 +286,22 @@ b:Button("CS", function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/LaDamage/releases/main/Clicker-Simulator.lua"))()
 end)
 
-local b = w:CreateFolder("Placeholder",{
+local b = w:CreateFolder("Phantom Forces",{
     TextSize = 25;
-    TextColor = Color3.fromRGB(255,255,255);
+    TextColor= Color3.fromRGB(255,255,255);
     BgColor = Color3.fromRGB(0,0,0);
 })
 
-b:Button("Placeholder", function()
-        loadstring(game:HttpGet(""))()
+b:Button("Aves PF GUI", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Averiias/purple-haze-pf/main/loader.lua"))()
+end)
+
+b:Button("Rage Cheat", function()
+        loadstring(game:HttpGet("https://ghostbin.com/EnF6l/raw", true))()
+end)
+
+b:Button("herrtts PF GUI", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/herrtts%20pf%20gui.lua"))()
 end)
 
 local b = w:CreateFolder("Placeholder",{
@@ -353,8 +361,8 @@ end)
 local w = library:CreateWindow("GUI Utilities")
 local b = w:CreateFolder("Utilities")
  
-b:Button("AimHot", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Herrtt/AimHot-v8/master/Main.lua", true))()
+b:Button("Cripware", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/q0maHVH/cripware/main/main"))()
 end)
  
 b:Button("Silent Aim", function()
