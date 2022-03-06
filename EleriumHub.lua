@@ -2151,7 +2151,7 @@ do -- Example UI
 		end)
 								
 		Tab:AddButton("LostPoint FE", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/JunglePush/LostPoint/main/LostPointScript"))()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/JunglePush/LostPoint-Revamp/main/LoadLostPoint'))()
 		end)
 									
 		Tab:AddButton("Evo V2", function()
