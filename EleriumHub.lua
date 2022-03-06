@@ -2023,15 +2023,15 @@ function library:AddWindow(title, options)
 end
 
 do -- Example UI
-	local Window = library:AddWindow("Preview", {
+	local Window = library:AddWindow("Tanki's Scripts", {
 		main_color = Color3.fromRGB(41, 74, 122),
 		min_size = Vector2.new(500, 600),
 		toggle_key = Enum.KeyCode.RightControl,
 		can_resize = true,
 	})
 
-	local Tab = Window:AddTab("ACSG System Gun Mods")
- 
+	local Tab = Window:AddTab("Scripts")
+	local Folder = Tab:AddFolder("ACSG System Gun Mods") 
 	do -- Elements
  
 		Tab:AddButton("Cold's Gun Mods", function()
@@ -2050,7 +2050,7 @@ do -- Example UI
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/ACS%20Tsar%20Bomba%20Bullets.lua"))()
 		end)
 
-	local Tab = Window:AddTab("Big Paintball")
+	local Folder = Tab:AddFolder("Big Paintball")
  
 	do -- Elements
  
@@ -2066,7 +2066,7 @@ do -- Example UI
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/The3Bakers4565/Spicy-Bagel/main/Other/Big_Paintball/Kill_All.lua"))()
 		end)
 
-	local Tab = Window:AddTab("Isle")
+	local Folder = Tab:AddFolder("Isle")
  
 	do -- Elements
  
@@ -2074,7 +2074,7 @@ do -- Example UI
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/superior%20isle%20esp.lua"))()
 		end)
 
-	local Tab = Window:AddTab("State of Anarchy")
+	local Folder = Tab:AddFolder("State of Anarchy")
  
 	do -- Elements
  
@@ -2082,7 +2082,7 @@ do -- Example UI
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/soa.lua"))()
 		end)
 
-	local Tab = Window:AddTab("SCP RP")
+	local Folder = Tab:AddFolder("SCP RP")
  
 	do -- Elements
  
@@ -2090,12 +2090,20 @@ do -- Example UI
 			loadstring(game:HttpGet("https://anomaly.cool/scripts/scp-rp.lua"))()
 		end)
 
-	local Tab = Window:AddTab("Recoil Zombies")
+	local Folder = Tab:AddFolder("Recoil Zombies")
  
 	do -- Elements
  
 		Tab:AddButton("Gun Giver", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Recoil_zombie_script.lua"))()
+		end)
+		
+	local Folder = Tab:AddFolder("Clicking Simulator")
+ 
+	do -- Elements
+ 
+		Tab:AddButton("CS", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/LaDamage/releases/main/Clicker-Simulator.lua"))()
 		end)
 
 	local Tab = Window:AddTab("Hubs")
@@ -2146,7 +2154,8 @@ do -- Example UI
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/JunglePush/LostPoint/main/LostPointScript"))()
 		end)
 
-	local Tab = Window:AddTab("Memes")
+	local Tab = Window:AddTab("Page 2")
+	local Folder = Tab:AddFolder("Memes")
  
 	do -- Elements
  
@@ -2157,7 +2166,7 @@ do -- Example UI
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/car.lua"))()
 		end)
 
-	local Tab = Window:AddTab("Cafe Destroyers")
+	local Folder = Tab:AddFolder("Cafe Destroyers")
  
 	do -- Elements
  
@@ -2165,7 +2174,7 @@ do -- Example UI
 			loadstring(game:HttpGet("https://pastebin.com/raw/v8PX741z"))()
 		end)
 
-	local Tab = Window:AddTab("Frontlines")
+	local Folder = Tab:AddFolder("Frontlines")
  
 	do -- Elements
  
@@ -2173,7 +2182,7 @@ do -- Example UI
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/roblox-scripts/main/frontlines.lua"))()
 		end)
 
-	local Tab = Window:AddTab("Destruction Sim")
+	local Folder = Tab:AddFolder("Destruction Sim")
  
 	do -- Elements
  
@@ -2181,7 +2190,7 @@ do -- Example UI
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/FadeRemix/RND-Games/main/DestructionSim.lua"))()
 		end)
 
-	local Tab = Window:AddTab("SCP 3008")
+	local Folder = Tab:AddFolder("SCP 3008")
  
 	do -- Elements
  
@@ -2189,7 +2198,7 @@ do -- Example UI
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/SCP%203008%20anticheat%20bypass.lua"))()
 		end)
 
-	local Tab = Window:AddTab("Music Visualizers")
+	local Folder = Tab:AddFolder("Music Visualizers")
  
 	do -- Elements
  
@@ -2201,7 +2210,7 @@ do -- Example UI
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/xaxaxaxaxaxaxaxaxa/Ciazware/main/Hat-Visualizer", true))()
 		end)
 
-	local Tab = Window:AddTab("Anomic")
+	local Folder = Tab:AddFolder("Anomic")
  
 	do -- Elements
  
@@ -2213,7 +2222,7 @@ do -- Example UI
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/Shariiii/Anomic-Stuff/main/OP%20OP%20Gun%20Script%20V0.1", true))()
 		end)
 
-	local Tab = Window:AddTab("Pistol 1v1")
+	local Folder = Tab:AddFolder("Pistol 1v1")
  
 	do -- Elements
  
@@ -2221,7 +2230,7 @@ do -- Example UI
 			loadstring(game:HttpGet("loadstring(game:HttpGet('https://raw.githubusercontent.com/zReal-King/1v1-Pistol-/main/Gui'))()"))()
 		end)
 
-	local Tab = Window:AddTab("Vehicle Simulator")
+	local Folder = Tab:AddFolder("Vehicle Simulator")
  
 	do -- Elements
  
@@ -2229,15 +2238,8 @@ do -- Example UI
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/WetCheezit/Releases/main/VehicleSimulator/Source.lua"))()
 		end)
 
-	local Tab = Window:AddTab("Clicking Simulator")
- 
-	do -- Elements
- 
-		Tab:AddButton("CS", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/LaDamage/releases/main/Clicker-Simulator.lua"))()
-		end)
-
-	local Tab = Window:AddTab("Phantom Forces")
+	local Tab = Window:AddTab("Page 3")
+	local Folder = Tab:AddFolder("Phantom Forces")
  
 	do -- Elements
  
@@ -2253,7 +2255,7 @@ do -- Example UI
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/herrtts%20pf%20gui.lua"))()
 		end)
 
-	local Tab = Window:AddTab("Funky Friday")
+	local Folder = Tab:AddFolder("Funky Friday")
  
 	do -- Elements
  
@@ -2261,7 +2263,7 @@ do -- Example UI
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
 		end)
 
-	local Tab = Window:AddTab("KAT")
+	local Folder = Tab:AddFolder("KAT")
  
 	do -- Elements
  
@@ -2281,7 +2283,7 @@ do -- Example UI
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/KAT%20Silent%20Aim.lua"))()
 		end)
 
-	local Tab = Window:AddTab("Catter's Utilities Hub")
+	local Folder = Tab:AddFolder("Catter's Utilities Hub")
  
 	do -- Elements
  
@@ -2289,7 +2291,7 @@ do -- Example UI
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/CU%20Re-Exec.lua"))()
 		end)
 
-	local Tab = Window:AddTab("Da Hood")
+	local Folder = Tab:AddFolder("Da Hood")
  
 	do -- Elements
  
@@ -2297,7 +2299,7 @@ do -- Example UI
 			loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SuperCustomServerCrasher'))()
 		end)
 
-	local Tab = Window:AddTab("GUI Utilities")
+	local Folder = Tab:AddFolder("GUI Utilities")
  
 	do -- Elements
  
@@ -2321,6 +2323,8 @@ do -- Example UI
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/LagSwitch.lua"))()
 		end)
 		
+	local Tab = Window:AddTab("GUI Utils Page 2")
+
 		Tab:AddButton("BackdoorChecker", function()
 			loadstring(game:HttpGet(('https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua'),true))()
 		end)
@@ -2348,6 +2352,8 @@ do -- Example UI
 		Tab:AddButton("Earrape V2", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Earrape.lua"))()
 		end)
+		
+		local Tab = Window:AddTab("Executor")
 
 		local Console = Tab:AddConsole({
 			["y"] = 100,
@@ -2368,4 +2374,4 @@ do -- Example UI
 
 	Tab:Show()
 	library:FormatWindows()
-end
+end end end end end end end end end end end end end end end end end end end end end end end
