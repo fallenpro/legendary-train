@@ -2380,8 +2380,8 @@ do -- Example UI
 		HA:AddButton("Catter's Utilities", function()
 		    Console:Set('loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/rtryhtgnujyfbjugfj-n/main/CU%20Re-Exec.lua"))()')
 		end)
-		HA:AddButton("Placeholder Custom Hub", function()
-		    Console:Set('print("placeholder")')
+		HA:AddButton("Anim Changer", function()
+		    Console:Set('loadstring(game:HttpGet("https://raw.githubusercontent.com/Coldlolololir/bfdzhuiasbghjdlbgjhlas/main/anim.lua"))()')
         	end)
 
 	end
