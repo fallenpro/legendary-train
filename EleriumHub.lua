@@ -2327,7 +2327,7 @@ do -- Example UI
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/LagSwitch.lua"))()
 		end)
 		
-	local Tab = Window:AddTab("GUI Utils Page 2")
+	local Tab = Window:AddTab("GUI")
 
 		Tab:AddButton("BackdoorChecker", function()
 			loadstring(game:HttpGet(('https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua'),true))()
