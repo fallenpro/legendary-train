@@ -173,8 +173,12 @@ end)
 
 local b = w:CreateFolder("Switch or Re-Exec")
 
-b:Button("CATSH Hub", function()
+b:Button("CATSH Hub (Old)", function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/CATSH%20Re-Exec.lua"))()
+end)
+
+b:Button("CATSH Hub (New)", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/EleriumHub.lua"))()
 end)
 
 b:Button("Re-Exec", function()
