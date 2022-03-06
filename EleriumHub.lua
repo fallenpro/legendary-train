@@ -2340,12 +2340,8 @@ do -- Example UI
 		Tab:AddButton("Server Browser", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/Lynk-Softworks/Valerie/main/serverBrowser.lua", true))()
 		end)
-		
-		Tab:AddButton("Custom Dex V4", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/loglizzy/dexV4/main/main.lua"))()
-		end)
-		
-		Tab:AddButton("Custom Dex V3", function()
+
+		Tab:AddButton("Dark Dex", function()
 			loadstring(game:HttpGet("https://pastebin.com/raw/YREfugjX"))()
 		end)
 		
@@ -2355,6 +2351,10 @@ do -- Example UI
 		
 		Tab:AddButton("Earrape V2", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Earrape.lua"))()
+		end)
+		
+		Tab:AddButton("Animation Changer", function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/MonkoTubeYT/animationedit/main/GUI',true))()
 		end)
 		
 		local Tab = Window:AddTab("Executor")
