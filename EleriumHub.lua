@@ -2373,6 +2373,12 @@ do -- Example UI
 		HA:AddButton("Clear", function()
 			Console:Set("")
 		end)
+		HA:AddButton("Catter's Utilities", function()
+		    Console:Set('loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/rtryhtgnujyfbjugfj-n/main/CU%20Re-Exec.lua"))()')
+		end)
+		HA:AddButton("Placeholder Custom Hub", function()
+		    Console:Set('print("placeholder")')
+        	end)
 
 	end
 
