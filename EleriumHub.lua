@@ -2169,6 +2169,10 @@ do -- Example UI
 		Tab:AddButton("Invis Car", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/car.lua"))()
 		end)
+										
+		Tab:AddButton("BECOME UKRAINE", function()
+			loadstring(game:HttpGet(('https://gist.githubusercontent.com/Gogogamer61/9dfef86c0f09498af244509609f2b940/raw/a6177f2bbdfde2d4362e6600779b90a01aee1fb2/BecomeUkraineFlag'),true))()
+		end)
 
 	local Folder = Tab:AddFolder("Cafe Destroyers")
  
