@@ -1,7 +1,7 @@
 local ui_options = {
 	main_color = Color3.fromRGB(41, 74, 122),
 	min_size = Vector2.new(400, 300),
-	toggle_key = Enum.KeyCode.RightControl,
+	toggle_key = Enum.KeyCode.RightShift,
 	can_resize = true,
 }
 
@@ -2017,170 +2017,337 @@ function library:AddWindow(title, options)
 end
 
 do -- Example UI
-	local Window = library:AddWindow("Tanki's Script Hub", {
+	local Window = library:AddWindow("Preview", {
 		main_color = Color3.fromRGB(41, 74, 122),
 		min_size = Vector2.new(500, 600),
-		toggle_key = Enum.KeyCode.RightShift,
+		toggle_key = Enum.KeyCode.RightControl,
 		can_resize = true,
 	})
-	local Tab = Window:AddTab("ACSG System Gun Mods")
 
+	local Tab = Window:AddTab("ACSG System Gun Mods")
+ 
 	do -- Elements
+ 
 		Tab:AddButton("Cold's Gun Mods", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/ACS%20Cold's%20Modifications.lua"))()
 		end)
-    
-    Tab:AddButton("Explosive Bullets", function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/ACS%20Giant%20Explosions.lua"))()
-    end)
-    
-    Tab:AddButton("HE Bullets", function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Nuclear.lua"))()
-    end)
-    
-    Tab:AddButton("Bye, gun safety!", function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/ACS%20Tsar%20Bomba%20Bullets.lua"))()
-    end)
-    
-	local Tab = Window:AddTab("BIG Paintball")
-    
-	do
+		
+		Tab:AddButton("Explosive Bullets", function()
+		 	loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/ACS%20Giant%20Explosions.lua"))()
+	 	end)
+		
+		Tab:AddButton("HE Bullets", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Nuclear.lua"))()
+		end)
+		
+		Tab:AddButton("Bye, gun safety!", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/ACS%20Tsar%20Bomba%20Bullets.lua"))()
+		end)
+
+	local Tab = Window:AddTab("Big Paintball")
+ 
+	do -- Elements
+ 
 		Tab:AddButton("Unlock All", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/big%20paintball%20unlock%20all.lua"))()
 		end)
-    
-    Tab:AddButton("omaewa mou", function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/teleports%20behind%20you.lua"))()
-    end)
-    
-    Tab:AddButton("KillAll", function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/The3Bakers4565/Spicy-Bagel/main/Other/Big_Paintball/Kill_All.lua"))()
-    end)
-      
-   local Tab = Window:AddTab("Isle")
-      
-  do
-    Tab:AddButton("ESP", function()
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/superior%20isle%20esp.lua"))()
-     end)
-        
-   local Tab = Window:AddTab("State of Anarchy")
-        
-  do
-    Tab:AddButton("SOA GUI", function()
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/soa.lua"))()
-    end)
-          
-    local Tab = Window:AddTab("SCP RP")
-          
-  do
-    Tab:AddButton("SCP RP GUI", function()
-            loadstring(game:HttpGet("https://anomaly.cool/scripts/scp-rp.lua"))()
-    end)
-            
-    local Tab = Window:AddTab("Recoil Zombies")
-            
-  do
-   Tab:AddButton("Gun Giver", function()
-                  loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Recoil_zombie_script.lua"))()
-   end)
-              
-   local Tab = Window:AddTab("Hubs")
-              
-  do
-    Tab:AddButton("VG Hub", function()
-         loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
-    end)
-
-    Tab:AddButton("Cattori Hub", function()
-         loadstring(game:HttpGet("https://cattori.xyz/main.lua"))()
-    end)
-
-    Tab:AddButton("Ghost Hub", function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptRUs/Ryans/main/Ghosthub.lua"))()
-    end)
-
-    Tab:AddButton("Sus Hub", function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/anogus/sushub/main/sushub.lua"))()
-    end)
-
-    Tab:AddButton("Snow Hub RED", function()
-        loadstring(game:HttpGet("https://snowhub.dev/robloxscripts/Init", true))()
-    end)
-
-    Tab:AddButton("White Web Hub", function()
-        loadstring(game:GetObjects('rbxassetid://6392279388')[1].Source)() 
-    end)
-
-    Tab:AddButton("Moonhub", function()
-        loadstring(game:HttpGet(("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Moonhub.lua"),true))()
-    end)
- 
-    Tab:AddButton("Monke Hub", function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeHub/main/Loader.lua"))()
-    end)
- 
-    Tab:AddButton("Vertex Hub", function()
-        loadstring(game:HttpGet("https://vertexhub.000webhostapp.com/Loader.lua",true))()
-    end)
- 
-    Tab:AddButton("Fun Hub", function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/jfnasdoijfo239092jsj/-TJ-O-GIH-EOINDKLGN-OIO-JG-IEOGJE-GJ-EGJ-GJ-EOIOGJ-EGEJ-JGIDGJKLZJEFW-F-T-D-R-/main/lastloadergithub!GLK%7B!%23LL%23%7B!%40L%7B!%23KPG%7B!%23LPG!%23%7BK%7BPKL%7BFL!%40%7B%23G%7BOPAPG%7BSH(%40G.lua", true))()
-    end)
-
-    Tab:AddButton("LostPoint FE", function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/JunglePush/LostPoint/main/LostPointScript"))()
-    end)
-                
-    local Tab = Window:AddTab("Memes")
-                
-  do
-     Tab:AddButton("Ukraine", function()
-         loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Ukraine.lua"))()
-     end)
-
-     Tab:AddButton("Invis Car", function()
-         loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/car.lua"))()
-     end)
-                  
-    local Tab = Window:AddTab("Frontlines")
-                  
-  do
-    Tab:AddButton("wally", function()
-                        loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/roblox-scripts/main/frontlines.lua"))()
-   end)
-                    
-    local Tab = Window:AddTab("Destruction Sim")
-            
-  do
-    Tab:AddButton("DS GUI", function()
-                          loadstring(game:HttpGet("https://raw.githubusercontent.com/FadeRemix/RND-Games/main/DestructionSim.lua"))()
-    end)
-                      
-    local Tab = Window:AddTab("SCP 3008 AC")
-                     
-   do
-    Tab:AddButton("Anticheat Bypass", function()
-                            loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/SCP%203008%20anticheat%20bypass.lua"))()
-    end)
-                        
-    local Tab = Window:AddTab("Legends of Speed")
-                        
-   do
-    Tab:AddButton("LOS", function()
-                 loadstring(game:HttpGet("https://raw.githubusercontent.com/Coldlolololir/bfdzhuiasbghjdlbgjhlas/main/LOS.lua"))()
-    end)
-
-		local CP = Tab:AddColorPicker(function(color)
-			print(color)
+			
+		Tab:AddButton("omaewa mou", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/teleports%20behind%20you.lua"))()
 		end)
-		CP:Set(Color3.new(1, 0, 0))
+			
+		Tab:AddButton("KillAll", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/The3Bakers4565/Spicy-Bagel/main/Other/Big_Paintball/Kill_All.lua"))()
+		end)
+
+	local Tab = Window:AddTab("Isle")
+ 
+	do -- Elements
+ 
+		Tab:AddButton("ESP", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/superior%20isle%20esp.lua"))()
+		end)
+
+	local Tab = Window:AddTab("State of Anarchy")
+ 
+	do -- Elements
+ 
+		Tab:AddButton("SOA GUI", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/soa.lua"))()
+		end)
+
+	local Tab = Window:AddTab("SCP RP")
+ 
+	do -- Elements
+ 
+		Tab:AddButton("SCP RP", function()
+			loadstring(game:HttpGet("https://anomaly.cool/scripts/scp-rp.lua"))()
+		end)
+
+	local Tab = Window:AddTab("Recoil Zombies")
+ 
+	do -- Elements
+ 
+		Tab:AddButton("Gun Giver", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Recoil_zombie_script.lua"))()
+		end)
+
+	local Tab = Window:AddTab("Hubs")
+ 
+	do -- Elements
+ 
+		Tab:AddButton("VG Hub", function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+		end)
+								
+	 	Tab:AddButton("Cattori Hub", function()
+			loadstring(game:HttpGet("https://cattori.xyz/main.lua"))()
+		end)
+								
+		Tab:AddButton("Ghost Hub", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptRUs/Ryans/main/Ghosthub.lua"))()
+		end)
+								
+		Tab:AddButton("Sus Hub", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/anogus/sushub/main/sushub.lua"))()
+		end)
+								
+		Tab:AddButton("Snow Hub RED", function()
+			loadstring(game:HttpGet("https://snowhub.dev/robloxscripts/Init", true))()
+		end)
+								
+		Tab:AddButton("White Web Hub", function()
+			loadstring(game:GetObjects('rbxassetid://6392279388')[1].Source)()
+		end)
+								
+		Tab:AddButton("Moonhub", function()
+			loadstring(game:HttpGet(("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Moonhub.lua"),true))()
+		end)
+								
+		Tab:AddButton("Monke Hub", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeHub/main/Loader.lua"))()
+		end)
+								
+		Tab:AddButton("Vertex Hub", function()
+			loadstring(game:HttpGet("https://vertexhub.000webhostapp.com/Loader.lua",true))()
+		end)
+								
+		Tab:AddButton("Fun Hub", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/jfnasdoijfo239092jsj/-TJ-O-GIH-EOINDKLGN-OIO-JG-IEOGJE-GJ-EGJ-GJ-EOIOGJ-EGEJ-JGIDGJKLZJEFW-F-T-D-R-/main/lastloadergithub!GLK%7B!%23LL%23%7B!%40L%7B!%23KPG%7B!%23LPG!%23%7BK%7BPKL%7BFL!%40%7B%23G%7BOPAPG%7BSH(%40G.lua", true))()
+		end)
+								
+		Tab:AddButton("LostPoint FE", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/JunglePush/LostPoint/main/LostPointScript"))()
+		end)
+
+	local Tab = Window:AddTab("Memes")
+ 
+	do -- Elements
+ 
+		Tab:AddButton("Ukraine", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Ukraine.lua"))()
+		end)
+		Tab:AddButton("Invis Car", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/car.lua"))()
+		end)
+
+	local Tab = Window:AddTab("Cafe Destroyers")
+ 
+	do -- Elements
+ 
+		Tab:AddButton("op_killer", function()
+			loadstring(game:HttpGet("https://pastebin.com/raw/v8PX741z"))()
+		end)
+
+	local Tab = Window:AddTab("Frontlines")
+ 
+	do -- Elements
+ 
+		Tab:AddButton("wally", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/roblox-scripts/main/frontlines.lua"))()
+		end)
+
+	local Tab = Window:AddTab("Destruction Sim")
+ 
+	do -- Elements
+ 
+		Tab:AddButton("DS GUI", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/FadeRemix/RND-Games/main/DestructionSim.lua"))()
+		end)
+
+	local Tab = Window:AddTab("SCP 3008")
+ 
+	do -- Elements
+ 
+		Tab:AddButton("AC Bypass", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/SCP%203008%20anticheat%20bypass.lua"))()
+		end)
+
+	local Tab = Window:AddTab("Music Visualizers")
+ 
+	do -- Elements
+ 
+		Tab:AddButton("Space Hub", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/music%202%20.lua"))()
+		end)
+														
+		Tab:AddButton("Ciazware", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/xaxaxaxaxaxaxaxaxa/Ciazware/main/Hat-Visualizer", true))()
+		end)
+
+	local Tab = Window:AddTab("Anomic")
+ 
+	do -- Elements
+ 
+		Tab:AddButton("Anomic Revamp", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Shariiii/Anomic-Revamp-aka-Anomic-v2-/main/OP%20OP%20Gun%20Script%20V2"))()
+		end)
+															
+		Tab:AddButton("Anomic", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Shariiii/Anomic-Stuff/main/OP%20OP%20Gun%20Script%20V0.1", true))()
+		end)
+
+	local Tab = Window:AddTab("Pistol 1v1")
+ 
+	do -- Elements
+ 
+		Tab:AddButton("GUI", function()
+			loadstring(game:HttpGet("loadstring(game:HttpGet('https://raw.githubusercontent.com/zReal-King/1v1-Pistol-/main/Gui'))()"))()
+		end)
+
+	local Tab = Window:AddTab("Vehicle Simulator")
+ 
+	do -- Elements
+ 
+		Tab:AddButton("VS GUI", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/WetCheezit/Releases/main/VehicleSimulator/Source.lua"))()
+		end)
+
+	local Tab = Window:AddTab("Clicking Simulator")
+ 
+	do -- Elements
+ 
+		Tab:AddButton("CS", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/LaDamage/releases/main/Clicker-Simulator.lua"))()
+		end)
+
+	local Tab = Window:AddTab("Phantom Forces")
+ 
+	do -- Elements
+ 
+		Tab:AddButton("Aves PF GUI", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Averiias/purple-haze-pf/main/loader.lua"))()
+		end)
+		
+		Tab:AddButton("Rage Cheat", function()
+			loadstring(game:HttpGet("https://ghostbin.com/EnF6l/raw", true))()
+		end)
+		
+		Tab:AddButton("herrtts PF GUI", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/herrtts%20pf%20gui.lua"))()
+		end)
+
+	local Tab = Window:AddTab("Funky Friday")
+ 
+	do -- Elements
+ 
+		Tab:AddButton("Wally's Autoplayer", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
+		end)
+
+	local Tab = Window:AddTab("KAT")
+ 
+	do -- Elements
+ 
+		Tab:AddButton("2 Free Items", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/KAT%20Free%202%20Items"))()
+		end)
+		
+		Tab:AddButton("Infinite Ammo", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/KAT%20Infinite%20Ammo.lua"))()
+		end)
+		
+		Tab:AddButton("Semi-Invincibility", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/KAT%20Semi%20Invincibility.lua"))()
+		end)
+		
+		Tab:AddButton("Silent Aim", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/KAT%20Silent%20Aim.lua"))()
+		end)
+
+	local Tab = Window:AddTab("Catter's Utilities Hub")
+ 
+	do -- Elements
+ 
+		Tab:AddButton("CU HUB", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/CU%20Re-Exec.lua"))()
+		end)
+
+	local Tab = Window:AddTab("Da Hood")
+ 
+	do -- Elements
+ 
+		Tab:AddButton("Server Crasher", function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SuperCustomServerCrasher'))()
+		end)
+
+	local Tab = Window:AddTab("GUI Utilities")
+ 
+	do -- Elements
+ 
+		Tab:AddButton("Cripware", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/q0maHVH/cripware/main/main"))()
+		end)
+		
+		Tab:AddButton("Universal Silent Aim", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Averiias/Universal-SilentAim/main/main.lua"))()
+		end)
+		
+		Tab:AddButton("Infinite Yield", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Infinite-Store/Infinite-Store/main/main.lua"))()
+		end)
+		
+		Tab:AddButton("WalkOnWalls", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Gravity%20Controller.lua"))()
+		end)
+		
+		Tab:AddButton("LagSwitch", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/LagSwitch.lua"))()
+		end)
+		
+		Tab:AddButton("BackdoorChecker", function()
+			loadstring(game:HttpGet(('https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua'),true))()
+		end)
+		
+		Tab:AddButton("CMD-X", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+		end)
+		
+		Tab:AddButton("Server Browser", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Lynk-Softworks/Valerie/main/serverBrowser.lua", true))()
+		end)
+		
+		Tab:AddButton("Custom Dex V4", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/loglizzy/dexV4/main/main.lua"))()
+		end)
+		
+		Tab:AddButton("Custom Dex V3", function()
+			loadstring(game:HttpGet("https://pastebin.com/raw/YREfugjX"))()
+		end)
+		
+		Tab:AddButton("Hitbox Extender", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Coldlolololir/bfdzhuiasbghjdlbgjhlas/main/heu.lua"))()
+		end)
+		
+		Tab:AddButton("Earrape V2", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Earrape.lua"))()
+		end)
 
 		local Console = Tab:AddConsole({
 			["y"] = 100,
 			["source"] = "Lua",
 		})
-		Console:Set("--Gaming. execute lua scripts here.")
+		Console:Set("-- Gamer time! Execute lua scripts here.")
 		print(Console:Get())
 
 		local HA = Tab:AddHorizontalAlignment()
