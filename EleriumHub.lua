@@ -2153,6 +2153,10 @@ do -- Example UI
 		Tab:AddButton("LostPoint FE", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/JunglePush/LostPoint/main/LostPointScript"))()
 		end)
+									
+		Tab:AddButton("Evo V2", function()
+			loadstring(game:HttpGet("https://projectevo.xyz/script/loader.lua"))()
+		end)
 
 	local Tab = Window:AddTab("Page 2")
 	local Folder = Tab:AddFolder("Memes")
