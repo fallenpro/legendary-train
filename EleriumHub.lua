@@ -2311,9 +2311,6 @@ do -- Example UI
  
 	do -- Elements
  
-		Tab:AddButton("Cripware", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/q0maHVH/cripware/main/main"))()
-		end)
 		
 		Tab:AddButton("Universal Silent Aim", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/Averiias/Universal-SilentAim/main/main.lua"))()
