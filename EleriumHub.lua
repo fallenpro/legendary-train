@@ -2157,6 +2157,10 @@ do -- Example UI
 		Tab:AddButton("Evo V2", function()
 			loadstring(game:HttpGet("https://projectevo.xyz/script/loader.lua"))()
 		end)
+									
+		Tab:AddButton("Domain X", function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source',true))()
+		end)
 
 	local Tab = Window:AddTab("Page 2")
 	local Folder = Tab:AddFolder("Memes")
