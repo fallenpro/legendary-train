@@ -17,6 +17,7 @@ do
 end
 
 local imgui = Instance.new("ScreenGui")
+syn.protect_gui(imgui)
 local Prefabs = Instance.new("Frame")
 local Label = Instance.new("TextLabel")
 local Window = Instance.new("ImageLabel")
@@ -25,10 +26,10 @@ local Bar = Instance.new("Frame")
 local Toggle = Instance.new("ImageButton")
 local Base = Instance.new("ImageLabel")
 local Top = Instance.new("ImageLabel")
-local Tabs = Instance.new("Frame")
+local Tabs = Instance.new("ScrollingFrame")
 local Title = Instance.new("TextLabel")
 local TabSelection = Instance.new("ImageLabel")
-local TabButtons = Instance.new("Frame")
+local TabButtons = Instance.new("ScrollingFrame")
 local UIListLayout = Instance.new("UIListLayout")
 local Frame = Instance.new("Frame")
 local Tab = Instance.new("Frame")
@@ -2105,153 +2106,14 @@ do -- Example UI
 		Tab:AddButton("CS", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/LaDamage/releases/main/Clicker-Simulator.lua"))()
 		end)
-
-	local Tab = Window:AddTab("Hubs")
+		
+    	local Folder = Tab:AddFolder("Jailbird")
  
-	do -- Elements
- 
-		Tab:AddButton("VG Hub", function()
-			loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+ 	    Tab:AddButton("Asgar's GUI", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/1iseo/rbx/main/jailbird/jailbird.lua"))()
 		end)
-								
-	 	Tab:AddButton("Cattori Hub", function()
-			loadstring(game:HttpGet("https://cattori.xyz/main.lua"))()
-		end)
-								
-		Tab:AddButton("Ghost Hub", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptRUs/Ryans/main/Ghosthub.lua"))()
-		end)
-								
-		Tab:AddButton("Sus Hub", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/anogus/sushub/main/sushub.lua"))()
-		end)
-								
-		Tab:AddButton("Snow Hub RED", function()
-			loadstring(game:HttpGet("https://snowhub.dev/robloxscripts/Init", true))()
-		end)
-								
-		Tab:AddButton("White Web Hub", function()
-			loadstring(game:GetObjects('rbxassetid://6392279388')[1].Source)()
-		end)
-								
-		Tab:AddButton("Moonhub", function()
-			loadstring(game:HttpGet(("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Moonhub.lua"),true))()
-		end)
-								
-		Tab:AddButton("Monke Hub", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeHub/main/Loader.lua"))()
-		end)
-								
-		Tab:AddButton("Vertex Hub", function()
-			loadstring(game:HttpGet("https://vertexhub.000webhostapp.com/Loader.lua",true))()
-		end)
-								
-		Tab:AddButton("Fun Hub", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/jfnasdoijfo239092jsj/-TJ-O-GIH-EOINDKLGN-OIO-JG-IEOGJE-GJ-EGJ-GJ-EOIOGJ-EGEJ-JGIDGJKLZJEFW-F-T-D-R-/main/lastloadergithub!GLK%7B!%23LL%23%7B!%40L%7B!%23KPG%7B!%23LPG!%23%7BK%7BPKL%7BFL!%40%7B%23G%7BOPAPG%7BSH(%40G.lua", true))()
-		end)
-								
-		Tab:AddButton("LostPoint FE", function()
-			loadstring(game:HttpGet('https://raw.githubusercontent.com/JunglePush/LostPoint-Revamp/main/LoadLostPoint'))()
-		end)
-									
-		Tab:AddButton("Evo V2", function()
-			loadstring(game:HttpGet("https://projectevo.xyz/script/loader.lua"))()
-		end)
-									
-		Tab:AddButton("Domain X", function()
-			loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source',true))()
-		end)
-
-	local Tab = Window:AddTab("Page 2")
-	local Folder = Tab:AddFolder("Memes")
- 
-	do -- Elements
- 
-		Tab:AddButton("Ukraine", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Ukraine.lua"))()
-		end)
-		Tab:AddButton("Invis Car", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/car.lua"))()
-		end)
-										
-		Tab:AddButton("BECOME UKRAINE", function()
-			loadstring(game:HttpGet(('https://gist.githubusercontent.com/Gogogamer61/9dfef86c0f09498af244509609f2b940/raw/a6177f2bbdfde2d4362e6600779b90a01aee1fb2/BecomeUkraineFlag'),true))()
-		end)
-
-	local Folder = Tab:AddFolder("Cafe Destroyers")
- 
-	do -- Elements
- 
-		Tab:AddButton("op_killer", function()
-			loadstring(game:HttpGet("https://pastebin.com/raw/v8PX741z"))()
-		end)
-
-	local Folder = Tab:AddFolder("Frontlines")
- 
-	do -- Elements
- 
-		Tab:AddButton("wally", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/roblox-scripts/main/frontlines.lua"))()
-		end)
-
-	local Folder = Tab:AddFolder("Destruction Sim")
- 
-	do -- Elements
- 
-		Tab:AddButton("DS GUI", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/FadeRemix/RND-Games/main/DestructionSim.lua"))()
-		end)
-
-	local Folder = Tab:AddFolder("SCP 3008")
- 
-	do -- Elements
- 
-		Tab:AddButton("AC Bypass", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/SCP%203008%20anticheat%20bypass.lua"))()
-		end)
-
-	local Folder = Tab:AddFolder("Music Visualizers")
- 
-	do -- Elements
- 
-		Tab:AddButton("Space Hub", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/music%202%20.lua"))()
-		end)
-														
-		Tab:AddButton("Ciazware", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/xaxaxaxaxaxaxaxaxa/Ciazware/main/Hat-Visualizer", true))()
-		end)
-
-	local Folder = Tab:AddFolder("Anomic")
- 
-	do -- Elements
- 
-		Tab:AddButton("Anomic Revamp", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/Shariiii/Anomic-Revamp-aka-Anomic-v2-/main/OP%20OP%20Gun%20Script%20V2"))()
-		end)
-															
-		Tab:AddButton("Anomic", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/Shariiii/Anomic-Stuff/main/OP%20OP%20Gun%20Script%20V0.1", true))()
-		end)
-
-	local Folder = Tab:AddFolder("Pistol 1v1")
- 
-	do -- Elements
- 
-		Tab:AddButton("GUI", function()
-			loadstring(game:HttpGet("loadstring(game:HttpGet('https://raw.githubusercontent.com/zReal-King/1v1-Pistol-/main/Gui'))()"))()
-		end)
-
-	local Folder = Tab:AddFolder("Vehicle Simulator")
- 
-	do -- Elements
- 
-		Tab:AddButton("VS GUI", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/WetCheezit/Releases/main/VehicleSimulator/Source.lua"))()
-		end)
-
-	local Tab = Window:AddTab("Page 3")
-	local Folder = Tab:AddFolder("Phantom Forces")
+		
+		local Folder = Tab:AddFolder("Phantom Forces")
  
 	do -- Elements
  
@@ -2310,15 +2172,152 @@ do -- Example UI
 		Tab:AddButton("Server Crasher", function()
 			loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SuperCustomServerCrasher'))()
 		end)
-
-	local Folder = Tab:AddFolder("Jailbird")
+		
+		local Folder = Tab:AddFolder("Memes")
  
 	do -- Elements
  
-		Tab:AddButton("Asgar's GUI", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/1iseo/rbx/main/jailbird/jailbird.lua"))()
+		Tab:AddButton("Ukraine", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Ukraine.lua"))()
 		end)
-		
+		Tab:AddButton("Invis Car", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/car.lua"))()
+		end)
+										
+		Tab:AddButton("BECOME UKRAINE", function()
+			loadstring(game:HttpGet(('https://gist.githubusercontent.com/Gogogamer61/9dfef86c0f09498af244509609f2b940/raw/a6177f2bbdfde2d4362e6600779b90a01aee1fb2/BecomeUkraineFlag'),true))()
+		end)
+
+	local Folder = Tab:AddFolder("Cafe Destroyers")
+ 
+	do -- Elements
+ 
+		Tab:AddButton("op_killer", function()
+			loadstring(game:HttpGet("https://pastebin.com/raw/v8PX741z"))()
+		end)
+
+	local Folder = Tab:AddFolder("Frontlines")
+ 
+	do -- Elements
+ 
+		Tab:AddButton("wally", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/roblox-scripts/main/frontlines.lua"))()
+		end)
+
+	local Folder = Tab:AddFolder("Destruction Sim")
+ 
+	do -- Elements
+ 
+		Tab:AddButton("DS GUI", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/FadeRemix/RND-Games/main/DestructionSim.lua"))()
+		end)
+
+	local Folder = Tab:AddFolder("SCP 3008")
+ 
+	do -- Elements
+ 
+		Tab:AddButton("AC Bypass", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/SCP%203008%20anticheat%20bypass.lua"))()
+		end)
+
+    local Tab = Window:AddTab("Page 2")
+    
+    	local Folder = Tab:AddFolder("Music Visualizers")
+ 
+	do -- Elements
+ 
+		Tab:AddButton("Space Hub", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/music%202%20.lua"))()
+		end)
+														
+		Tab:AddButton("Ciazware", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/xaxaxaxaxaxaxaxaxa/Ciazware/main/Hat-Visualizer", true))()
+		end)
+
+	local Folder = Tab:AddFolder("Anomic")
+ 
+	do -- Elements
+ 
+		Tab:AddButton("Anomic Revamp", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Shariiii/Anomic-Revamp-aka-Anomic-v2-/main/OP%20OP%20Gun%20Script%20V2"))()
+		end)
+															
+		Tab:AddButton("Anomic", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Shariiii/Anomic-Stuff/main/OP%20OP%20Gun%20Script%20V0.1", true))()
+		end)
+
+	local Folder = Tab:AddFolder("Pistol 1v1")
+ 
+	do -- Elements
+ 
+		Tab:AddButton("GUI", function()
+			loadstring(game:HttpGet("loadstring(game:HttpGet('https://raw.githubusercontent.com/zReal-King/1v1-Pistol-/main/Gui'))()"))()
+		end)
+
+	local Folder = Tab:AddFolder("Vehicle Simulator")
+ 
+	do -- Elements
+ 
+		Tab:AddButton("VS GUI", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/WetCheezit/Releases/main/VehicleSimulator/Source.lua"))()
+		end)
+
+	local Tab = Window:AddTab("Hubs")
+ 
+	do -- Elements
+ 
+		Tab:AddButton("VG Hub", function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+		end)
+								
+	 	Tab:AddButton("Cattori Hub", function()
+			loadstring(game:HttpGet("https://cattori.xyz/main.lua"))()
+		end)
+								
+		Tab:AddButton("Ghost Hub", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptRUs/Ryans/main/Ghosthub.lua"))()
+		end)
+								
+		Tab:AddButton("Sus Hub", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/anogus/sushub/main/sushub.lua"))()
+		end)
+								
+		Tab:AddButton("Snow Hub RED", function()
+			loadstring(game:HttpGet("https://snowhub.dev/robloxscripts/Init", true))()
+		end)
+								
+		Tab:AddButton("White Web Hub", function()
+			loadstring(game:GetObjects('rbxassetid://6392279388')[1].Source)()
+		end)
+								
+		Tab:AddButton("Moonhub", function()
+			loadstring(game:HttpGet(("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Moonhub.lua"),true))()
+		end)
+								
+		Tab:AddButton("Monke Hub", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeHub/main/Loader.lua"))()
+		end)
+								
+		Tab:AddButton("Vertex Hub", function()
+			loadstring(game:HttpGet("https://vertexhub.000webhostapp.com/Loader.lua",true))()
+		end)
+								
+		Tab:AddButton("Fun Hub", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/jfnasdoijfo239092jsj/-TJ-O-GIH-EOINDKLGN-OIO-JG-IEOGJE-GJ-EGJ-GJ-EOIOGJ-EGEJ-JGIDGJKLZJEFW-F-T-D-R-/main/lastloadergithub!GLK%7B!%23LL%23%7B!%40L%7B!%23KPG%7B!%23LPG!%23%7BK%7BPKL%7BFL!%40%7B%23G%7BOPAPG%7BSH(%40G.lua", true))()
+		end)
+								
+		Tab:AddButton("LostPoint FE", function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/JunglePush/LostPoint-Revamp/main/LoadLostPoint'))()
+		end)
+									
+		Tab:AddButton("Evo V2", function()
+			loadstring(game:HttpGet("https://projectevo.xyz/script/loader.lua"))()
+		end)
+									
+		Tab:AddButton("Domain X", function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source',true))()
+		end)
+
 	local Tab = Window:AddTab("GUI")
 
 		Tab:AddButton("BackdoorChecker", function()
@@ -2396,7 +2395,7 @@ do -- Example UI
 
 	Tab:Show()
 	library:FormatWindows()
-end end end end end end end end end end end end end end end end end end end end end end end
+end end end end end end end end end end end end end end end end end end end end end end
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Keybinds";
