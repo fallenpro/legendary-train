@@ -35,4 +35,4 @@ if getgenv().SendNotifications == true then
         Icon = "rbxassetid://6238537240",
         Duration = 5,
     })
-end end
+end
