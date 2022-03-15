@@ -2368,6 +2368,10 @@ do -- Example UI
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/LagSwitch.lua"))()
 		end)
 		
+		Tab:AddButton("AntiKick", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/antikick.lua"))()
+		end)
+		
 		local Tab = Window:AddTab("Executor")
 
 		local Console = Tab:AddConsole({
