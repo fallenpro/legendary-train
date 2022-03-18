@@ -2261,6 +2261,14 @@ do -- Example UI
 		Tab:AddButton("VS GUI", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/WetCheezit/Releases/main/VehicleSimulator/Source.lua"))()
 		end)
+		
+	local Folder = Tab:AddFolder("Cumbat Warriors")
+	
+	do
+	
+		Tab:AddButton("Project Hook", function()
+			loadstring(game:HttpGet("https://projecthook.xyz/scripts/free.lua"))()
+		end)
 
 	local Tab = Window:AddTab("Hubs")
  
