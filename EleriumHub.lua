@@ -2317,6 +2317,10 @@ do -- Example UI
 		Tab:AddButton("Domain X", function()
 			loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source',true))()
 		end)
+		
+		Tab:AddButton("CocoZHUB", function()
+			loadstring(game:HttpGet(('https://raw.githubusercontent.com/MarsQQ/CocoHub/master/CocoZHub'),true))()
+		end)
 
 	local Tab = Window:AddTab("GUI")
 
