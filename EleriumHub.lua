@@ -2414,6 +2414,10 @@ do -- Example UI
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-V2/main/Resources/Scripts/Support%20Checker.lua"))()
 		end)
 		
+		Tab:AddButton("Aimbot V2 Settings Guide", function()
+			syn.write_clipboard("https://github.com/Exunys/Aimbot-V2")
+		end)
+		
 		local Tab = Window:AddTab("Ben")
 		
 		Tab:AddButton("Bypass and Control", function()
