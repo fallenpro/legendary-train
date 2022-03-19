@@ -16,10 +16,8 @@ do
 	if imgui then imgui:Destroy() end
 end
 
-if syn.protect_gui then syn.protect_gui(imgui)
-end
-
 local imgui = Instance.new("ScreenGui")
+syn.protect_gui(imgui)
 local Prefabs = Instance.new("Frame")
 local Label = Instance.new("TextLabel")
 local Window = Instance.new("ImageLabel")
@@ -2331,6 +2329,18 @@ do -- Example UI
 		Tab:AddButton("CocoZHUB", function()
 			loadstring(game:HttpGet(('https://raw.githubusercontent.com/MarsQQ/CocoHub/master/CocoZHub'),true))()
 		end)
+		
+		Tab:AddButton("Syntax V2", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/SYNTAX%20V2.lua"))()
+		end)
+		
+		Tab:AddButton("Syntax V3", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/SYNTAX%20V3.lua"))()
+		end)
+		
+		Tab:AddButton("Adminus", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/adminus%20but%20yes.lua"))()
+		end)
 
 	local Tab = Window:AddTab("GUI")
 
@@ -2380,6 +2390,30 @@ do -- Example UI
 		
 		Tab:AddButton("LagSwitch", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/LagSwitch.lua"))()
+		end)
+		
+		local Tab = Window:AddTab("Exuny's Developer")
+		
+		Tab:AddButton("Aimbot V2 Settings Delete", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-V2/main/Resources/Scripts/Delete%20Settings%20-%20Fix%20Script.lua"))()
+		end)
+		
+		Tab:AddButton("Aimbot V2", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-V2/main/Resources/Scripts/Main.lua"))()
+		end)
+		
+		Tab:AddButton("Aimbot V2 Factory Reset", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-V2/main/Resources/Scripts/Manual%20Factory%20Reset%20Settings.lua"))()
+		end)
+		
+		Tab:AddButton("Aimbot V2 Support Checker", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-V2/main/Resources/Scripts/Support%20Checker.lua"))()
+		end)
+		
+		local Tab = Window:AddTab("Ben")
+		
+		Tab:AddButton("Bypass and Control", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/ben.lua"))()
 		end)
 		
 		local Tab = Window:AddTab("Executor")
