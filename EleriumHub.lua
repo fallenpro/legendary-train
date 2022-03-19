@@ -1,9 +1,3 @@
---[[
-	ui-engine-v2
-	version 1.3a
-	by Singularity (V3rm @ King Singularity) (Discord @ Singularity#5490)
---]]
-
 local ui_options = {
 	main_color = Color3.fromRGB(41, 74, 122),
 	min_size = Vector2.new(700, 700),
@@ -2262,7 +2256,7 @@ do -- Example UI
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/WetCheezit/Releases/main/VehicleSimulator/Source.lua"))()
 		end)
 		
-	local Folder = Tab:AddFolder("Cumbat Warriors")
+	local Folder = Tab:AddFolder("Combat Warriors")
 	
 	do
 	
@@ -2270,9 +2264,7 @@ do -- Example UI
 			loadstring(game:HttpGet("https://projecthook.xyz/scripts/free.lua"))()
 		end)
 		
-	local Folder = Window:AddFolder("Ben")
-		
-	do
+	local Folder = Tab:AddFolder("Ben")
 		
 		Tab:AddButton("Bypass and Control", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/ben.lua"))()
@@ -2462,4 +2454,3 @@ Duration = 12.5;
 })
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/antikick.lua"))()
-end
