@@ -21,14 +21,3 @@ shared.transparency = {
 }
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Memeboiyot/Syntax-V3-Free/main/Syntax%20v3", true))()
-
-
-
-
-----------------------------------------------------------------------
-
-SYNTAX V2 REBORN:
-
-
--- V2 Reborn Key is Syntaxbesthub --
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/Memeboiyot/SyntaxRebornOfficial/main/SyntaxReborn'),true))()
