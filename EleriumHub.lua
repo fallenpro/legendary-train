@@ -16,8 +16,10 @@ do
 	if imgui then imgui:Destroy() end
 end
 
+if syn.protect_gui then syn.protect_gui(imgui)
+end
+
 local imgui = Instance.new("ScreenGui")
-syn.protect_gui(imgui)
 local Prefabs = Instance.new("Frame")
 local Label = Instance.new("TextLabel")
 local Window = Instance.new("ImageLabel")
@@ -2416,3 +2418,4 @@ Duration = 12.5;
 })
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/antikick.lua"))()
+end
