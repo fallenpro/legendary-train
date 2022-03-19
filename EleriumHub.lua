@@ -2269,6 +2269,14 @@ do -- Example UI
 		Tab:AddButton("Project Hook", function()
 			loadstring(game:HttpGet("https://projecthook.xyz/scripts/free.lua"))()
 		end)
+		
+	local Folder = Window:AddFolder("Ben")
+		
+	do
+		
+		Tab:AddButton("Bypass and Control", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/ben.lua"))()
+		end)
 
 	local Tab = Window:AddTab("Hubs")
  
@@ -2418,12 +2426,6 @@ do -- Example UI
 			syn.write_clipboard("https://github.com/Exunys/Aimbot-V2")
 		end)
 		
-		local Tab = Window:AddTab("Ben")
-		
-		Tab:AddButton("Bypass and Control", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/ben.lua"))()
-		end)
-		
 		local Tab = Window:AddTab("Executor")
 
 		local Console = Tab:AddConsole({
@@ -2451,7 +2453,7 @@ do -- Example UI
 
 	Tab:Show()
 	library:FormatWindows()
-end end end end end end end end end end end end end end end end end end end end end end
+end end end end end end end end end end end end end end end end end end end end end end end
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Keybinds";
