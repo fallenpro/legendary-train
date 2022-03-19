@@ -2269,6 +2269,12 @@ do -- Example UI
 		Tab:AddButton("Bypass and Control", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/ben.lua"))()
 		end)
+		
+	local Folder = Tab:AddFolder("Giant Survival")
+	
+		Tab:AddButton("OP GUI", function()
+			loadstring(game:HttpGet('https://pastebin.com/raw/0nSpe8y9', true))()
+		end)
 
 	local Tab = Window:AddTab("Hubs")
  
