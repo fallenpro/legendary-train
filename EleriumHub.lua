@@ -2392,7 +2392,7 @@ do -- Example UI
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/LagSwitch.lua"))()
 		end)
 		
-		local Tab = Window:AddTab("Exuny's Developer")
+		local Tab = Window:AddTab("Exuny")
 		
 		Tab:AddButton("Aimbot V2 Settings Delete", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-V2/main/Resources/Scripts/Delete%20Settings%20-%20Fix%20Script.lua"))()
