@@ -38,7 +38,6 @@ b:Button("VG Hub", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
 end)
 
- 
 b:Button("Cattori Hub", function()
     loadstring(game:HttpGet("https://cattori.xyz/main.lua"))()
 end)
