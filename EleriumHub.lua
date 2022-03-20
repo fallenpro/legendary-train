@@ -8,7 +8,7 @@ local ui_options = {
 }
 
 do
-	local imgui = game:GetService("CoreGui"):FindFirstChild("imgui")
+	local imgui = game:GetService("CoreGui"):FindFirstChild("elerhub")
 	if imgui then imgui:Destroy() end
 end
 
@@ -85,8 +85,8 @@ local Input = Instance.new("TextButton")
 local Input_Roundify_4px = Instance.new("ImageLabel")
 local Windows = Instance.new("Frame")
 
-imgui.Name = "imgui"
-syn.protect_gui(imgui)
+imgui.Name = "elerhub"
+syn.protect_gui(elerhub)
 imgui.Parent = game:GetService("CoreGui")
 
 Prefabs.Name = "Prefabs"
