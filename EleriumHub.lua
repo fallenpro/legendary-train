@@ -2418,9 +2418,9 @@ do -- Example UI
             end
 
             for v in message:gmatch"." do
-                 wait(.5)
+                 wait(1)
                 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(v, "All")
-                wait(.5)
+                wait(1)
                 bypass()
             end
             
