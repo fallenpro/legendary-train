@@ -2470,6 +2470,20 @@ do -- Example UI
 		HA:AddButton("Anim Changer", function()
 		    Console:Set('loadstring(game:HttpGet("https://raw.githubusercontent.com/Coldlolololir/bfdzhuiasbghjdlbgjhlas/main/anim.lua"))()')
         	end)
+		
+		local Tab = Window:AddTab("Credits")
+		
+		local Folder = Tab:AddFolder("UI Creator")
+		Folder:AddLabel("Q: Who made this UI?")
+		Folder:AddLabel("A: Singularity on V3rm and on Discord Singularity#5490")
+		
+		local Folder2 = Tab:AddFolder("UI Scrolling")
+		Folder2:AddLabel("Q: How'd you get the UI to scroll?")
+		Folder2:AddLabel("A: Modified some of the source code.")
+		
+		local Folder3 = Tab:AddFolder("Keybinds")
+		Folder3:AddLabel("Q: What the fuck do I press to hide/show the gui?")
+		Folder3:AddLabel("A: You press the * on the keypad aka KeypadMultiply.")
         
 	end
 
@@ -2480,7 +2494,7 @@ end end end end end end end end end end end end end end end end end end end end 
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Keybinds";
 Text = "Press KeypadMultiply to hide the gui.";
-Duration = 12.5;
+Duration = 25;
 })
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/antikick.lua"))()
@@ -2494,5 +2508,5 @@ Duration = 15;
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "wtf did you do";
 Text = "I modified the source code a bit just to have more capability.";
-Duration = 17.5;
+Duration = 15;
 })
