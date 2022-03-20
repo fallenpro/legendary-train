@@ -1,3 +1,5 @@
+local message = bruh
+
 local ui_options = {
 	main_color = Color3.fromRGB(41, 74, 122),
 	min_size = Vector2.new(700, 700),
@@ -2401,6 +2403,24 @@ do -- Example UI
 		Tab:AddButton("LagSwitch", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/LagSwitch.lua"))()
 		end)
+		
+		Tab:AddTextBox("Bypasser", function(message)
+            math.randomseed(tick())
+            local ChatMain = require(game:GetService("Players").LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+
+            local function bypass()
+                ChatMain.MessagePosted:fire("dffhdfshfd"..math.random(100000,1000000))
+                ChatMain.MessagesChanged:fire(math.random(100000,1000000))
+            end
+
+            for v in message:gmatch"." do
+                 wait(.5)
+                game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(v, "All")
+                wait(.5)
+                bypass()
+            end
+            
+        end)
 		
 		local Tab = Window:AddTab("Exuny")
 		
