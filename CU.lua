@@ -6,8 +6,8 @@ b:Button("BackdoorChecker", function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua'),true))()
 end)
 
-b:Button("Cripware", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/q0maHVH/cripware/main/main"))()
+b:Button("Aimlabs v2.1", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/aimlabs%20v2.1.lua"))()
 end)
 
 b:Button("CMD-X", function()
@@ -69,6 +69,18 @@ end)
 
 b:Button("Fun Hub", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/jfnasdoijfo239092jsj/-TJ-O-GIH-EOINDKLGN-OIO-JG-IEOGJE-GJ-EGJ-GJ-EOIOGJ-EGEJ-JGIDGJKLZJEFW-F-T-D-R-/main/lastloadergithub!GLK%7B!%23LL%23%7B!%40L%7B!%23KPG%7B!%23LPG!%23%7BK%7BPKL%7BFL!%40%7B%23G%7BOPAPG%7BSH(%40G.lua", true))()
+end)
+
+b:Button("Evo V2", function()
+        loadstring(game:HttpGet("https://projectevo.xyz/script/loader.lua"))()
+end)
+
+b:Button("Orca", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Orca.lua"))()
+end)
+
+b:Button("Domain X", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source',true))()
 end)
  
 local b = w:CreateFolder("KAT")
