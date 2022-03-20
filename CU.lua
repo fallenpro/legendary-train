@@ -28,7 +28,7 @@ b:Button("Server Browser", function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Lynk-Softworks/Valerie/main/serverBrowser.lua", true))()
 end)
 
-b:Box("Box","number",function(message)
+b:Box("Box","string",function(message)
     math.randomseed(tick())
     local ChatMain = require(game:GetService("Players").LocalPlayer.PlayerScripts.ChatScript.ChatMain)
 
