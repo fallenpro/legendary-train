@@ -85,8 +85,8 @@ local Input = Instance.new("TextButton")
 local Input_Roundify_4px = Instance.new("ImageLabel")
 local Windows = Instance.new("Frame")
 
-imgui.Name = "eleriumhub"
-syn.protect_gui(eleriumhub)
+imgui.Name = "imgui"
+syn.protect_gui(imgui)
 imgui.Parent = game:GetService("CoreGui")
 
 Prefabs.Name = "Prefabs"
