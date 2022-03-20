@@ -84,9 +84,8 @@ local Title_4 = Instance.new("TextLabel")
 local Input = Instance.new("TextButton")
 local Input_Roundify_4px = Instance.new("ImageLabel")
 local Windows = Instance.new("Frame")
-
-imgui.Name = "imgui"
 syn.protect_gui(imgui)
+imgui.Name = "imgui"
 imgui.Parent = game:GetService("CoreGui")
 
 Prefabs.Name = "Prefabs"
