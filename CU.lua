@@ -2,6 +2,8 @@ local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloo
 local w = library:CreateWindow("Catter's Utilities")
 local b = w:CreateFolder("GUI Utils")
 
+local message = bruh
+
 b:Button("BackdoorChecker", function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua'),true))()
 end)
@@ -25,6 +27,23 @@ end)
 b:Button("Server Browser", function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Lynk-Softworks/Valerie/main/serverBrowser.lua", true))()
 end)
+
+b:Box("Box","number",function(message)
+    math.randomseed(tick())
+    local ChatMain = require(game:GetService("Players").LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+
+    local function bypass()
+     ChatMain.MessagePosted:fire("dffhdfshfd"..math.random(100000,1000000))
+     ChatMain.MessagesChanged:fire(math.random(100000,1000000))
+    end
+
+    for v in message:gmatch"." do
+     wait(.5)
+    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(v, "All")
+     wait(.5)
+     bypass()
+    end
+    end)
 
 local w = library:CreateWindow("Utilities")
 
