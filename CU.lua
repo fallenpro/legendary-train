@@ -211,7 +211,7 @@ Duration = 12.5;
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Updated";
 Text = "New scripts.";
-Duration = 7.5;
+Duration = 0;
 })
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/antikick.lua"))()
