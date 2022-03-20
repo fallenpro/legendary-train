@@ -3,7 +3,7 @@ local message = bruh
 local ui_options = {
 	main_color = Color3.fromRGB(41, 74, 122),
 	min_size = Vector2.new(700, 700),
-	toggle_key = Enum.KeyCode.RightShift,
+	toggle_key = Enum.KeyCode.Asterisk,
 	can_resize = true,
 }
 
@@ -2479,7 +2479,7 @@ end end end end end end end end end end end end end end end end end end end end 
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Keybinds";
-Text = "Press Right Shift to hide the gui.";
+Text = "Press * aka Asterisk to hide the gui.";
 Duration = 12.5;
 })
 
