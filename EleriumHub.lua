@@ -13,7 +13,6 @@ do
 end
 
 local imgui = Instance.new("ScreenGui")
-syn.protect_gui(imgui)
 local Prefabs = Instance.new("Frame")
 local Label = Instance.new("TextLabel")
 local Window = Instance.new("ImageLabel")
@@ -204,6 +203,9 @@ TabButtons.Parent = TabSelection
 TabButtons.BackgroundColor3 = Color3.new(1, 1, 1)
 TabButtons.BackgroundTransparency = 1
 TabButtons.Size = UDim2.new(1, 0, 1, 0)
+TabButtons.ScrollingDirection = 1
+TabButtons.CanvasSize = UDim2.new(10, 0, 0, 0)
+TabButtons.ScrollBarThickness = 1
 
 UIListLayout.Parent = TabButtons
 UIListLayout.FillDirection = Enum.FillDirection.Horizontal
@@ -223,6 +225,7 @@ Tab.BackgroundColor3 = Color3.new(1, 1, 1)
 Tab.BackgroundTransparency = 1
 Tab.Size = UDim2.new(1, 0, 1, 0)
 Tab.Visible = false
+
 
 UIListLayout_2.Parent = Tab
 UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
@@ -2466,7 +2469,7 @@ do -- Example UI
 		HA:AddButton("Anim Changer", function()
 		    Console:Set('loadstring(game:HttpGet("https://raw.githubusercontent.com/Coldlolololir/bfdzhuiasbghjdlbgjhlas/main/anim.lua"))()')
         	end)
-
+        
 	end
 
 	Tab:Show()
