@@ -215,3 +215,11 @@ Duration = 0;
 })
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/antikick.lua"))()
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+Title = "Who made this UI library?";
+Text = "Release thread on v3rm has been copied to clipboard.";
+Duration = 15;
+})
+
+setclipboard('https://v3rmillion.net/showthread.php?tid=1040650')
