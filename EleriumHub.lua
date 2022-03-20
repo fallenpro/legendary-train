@@ -2484,3 +2484,15 @@ Duration = 12.5;
 })
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/antikick.lua"))()
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+Title = "Credits";
+Text = "UI Lib was made by Singularity on V3rm/Singularity#5490";
+Duration = 15;
+})
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+Title = "wtf did you do";
+Text = "I modified the source code a bit just to have more capability.";
+Duration = 17.5;
+})
