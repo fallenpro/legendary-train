@@ -2473,8 +2473,14 @@ do -- Example UI
 		local Tab = Window:AddTab("Credits")
 		
 		Tab:AddLabel("Q: Who made this UI?")
-		Tab:AddLabel("A: Singularity on V3rm and on Discord Singularity#5490, UI name is Elerium.")
-		
+		Tab:AddLabel("A: Singularity on V3rm and on Discord Singularity#5490.")
+		Tab:AddLabel("This is singlehandedly one of the best UI's I've used.")
+		Tab:AddLabel("Q: What's this UI named?")
+		Tab:AddLabel("A: Elerium.")
+		Tab:AddLabel("Source is below.")
+		Tab:AddButton("Copy Source", function()
+			setclipboard('https://github.com/bloodball/UI-Librarys/blob/main/Elerium')
+		end)
 		Tab:AddLabel("Q: How'd you get the UI to scroll?")
 		Tab:AddLabel("A: Modified some of the source code.")
 		
