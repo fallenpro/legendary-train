@@ -2362,6 +2362,10 @@ do -- Example UI
 		Tab:AddButton("Orca", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Orca.lua"))()
 		end)
+		
+		Tab:AddButton("Dark Hub", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Dark%20Hub.lua"))()
+		end)
 
 	local Tab = Window:AddTab("GUI")
 
