@@ -36,5 +36,6 @@ Tab2S:CreateButton("Invis Car", function()
 end)
   
 else if key ~= cattersuiremake
-    return end
+  then return end
+end
 
