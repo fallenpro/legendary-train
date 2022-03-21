@@ -2280,6 +2280,12 @@ do -- Example UI
 		Tab:AddButton("OP GUI", function()
 			loadstring(game:HttpGet('https://pastebin.com/raw/0nSpe8y9', true))()
 		end)
+		
+	local Folder = Tab:AddFolder("The W")
+	
+		Tab:AddButton("The W", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/CheeseOnGithub/shimter/main/main.lua",true))()
+		end)
 
 	local Tab = Window:AddTab("Hubs")
  
