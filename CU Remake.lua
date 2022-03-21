@@ -32,3 +32,44 @@ end)
 Tab2S:CreateButton("Invis Car", function()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/car.lua"))()
 end)
+
+local Tab3 = CoastingLibrary:CreateTab("Phantom Forces")
+local Tab3S = Tab3:CreateSection("Scripts")
+
+Tab3S:CreateButton("herrtts PF GUI", function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/herrtts%20pf%20gui.lua"))()
+end)
+
+local Tab3S2 = Tab3:CreateSection("Funky Friday")
+
+Tab3S2:CreateButton("Wally's Autoplayer", function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
+end)
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+Title = "Script Utils";
+Text = "Executed, look in the top left.";
+Duration = 8;
+})
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+Title = "Hide Keybind";
+Text = "Press Right Ctrl to hide the gui.";
+Duration = 12.5;
+})
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+Title = "Updated";
+Text = "New scripts.";
+Duration = 0;
+})
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/antikick.lua"))()
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+Title = "Who made this UI library?";
+Text = "Release thread on v3rm has been copied to clipboard.";
+Duration = 15;
+})
+
+setclipboard('https://v3rmillion.net/showthread.php?tid=1071849&pid=7590441')
