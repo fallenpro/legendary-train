@@ -2250,7 +2250,7 @@ do -- Example UI
 	do -- Elements
  
 		Tab:AddButton("GUI", function()
-			loadstring(game:HttpGet("loadstring(game:HttpGet('https://raw.githubusercontent.com/zReal-King/1v1-Pistol-/main/Gui'))()"))()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/zReal-King/1v1-Pistol-/main/Gui'))()
 		end)
 
 	local Folder = Tab:AddFolder("Vehicle Simulator")
@@ -2307,8 +2307,8 @@ do -- Example UI
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/anogus/sushub/main/sushub.lua"))()
 		end)
 								
-		Tab:AddButton("Snow Hub RED", function()
-			loadstring(game:HttpGet("https://snowhub.dev/robloxscripts/Init", true))()
+		Tab:AddButton("Solaris Hub", function()
+			loadstring(game:HttpGet('https://solarishub.dev/script.lua',true))()
 		end)
 								
 		Tab:AddButton("White Web Hub", function()
@@ -2489,12 +2489,12 @@ do -- Example UI
 		Tab:AddLabel("A: Elerium.")
 		Tab:AddLabel("Source is below.")
 		Tab:AddButton("Copy Source", function()
-			setclipboard('https://github.com/bloodball/UI-Librarys/blob/main/Elerium')
+			syn.write_clipboard('https://github.com/bloodball/UI-Librarys/blob/main/Elerium')
 		end)
 		Tab:AddLabel("Q: How'd you get the UI to scroll?")
 		Tab:AddLabel("A: Modified some of the source code.")
 		
-		Tab:AddLabel("Q: What the fuck do I press to hide/show the gui?")
+		Tab:AddLabel("Q: What the hell do I press to hide/show the gui?")
 		Tab:AddLabel("A: You press the * on the keypad aka KeypadMultiply.")
 		
 	end
