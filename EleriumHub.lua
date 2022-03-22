@@ -2299,10 +2299,6 @@ do -- Example UI
 			loadstring(game:HttpGet("https://cattori.xyz/main.lua"))()
 		end)
 								
-		Tab:AddButton("Ghost Hub", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptRUs/Ryans/main/Ghosthub.lua"))()
-		end)
-								
 		Tab:AddButton("Sus Hub", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/anogus/sushub/main/sushub.lua"))()
 		end)
