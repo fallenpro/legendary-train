@@ -2359,7 +2359,7 @@ do -- Example UI
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/Hax0963/FrostyHubBeta/main/Script"))()
 		end)
 
-	local Tab = Window:AddTab("GUI")
+	local Tab = Window:AddTab("Misc")
 
 		Tab:AddButton("BackdoorChecker", function()
 			loadstring(game:HttpGet(('https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua'),true))()
@@ -2399,6 +2399,10 @@ do -- Example UI
 		
 		Tab:AddButton("Infinite Yield", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/Infinite-Store/Infinite-Store/main/main.lua"))()
+		end)
+		
+		Tab:AddButton("Fate's Admin (iy but better)", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))()
 		end)
 		
 		Tab:AddButton("WalkOnWalls", function()
