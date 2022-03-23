@@ -2354,6 +2354,10 @@ do -- Example UI
 		Tab:AddButton("Dark Hub", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Dark%20Hub.lua"))()
 		end)
+		
+		Tab:AddButton("Frosty Hub", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Hax0963/FrostyHubBeta/main/Script"))()
+		end)
 
 	local Tab = Window:AddTab("GUI")
 
