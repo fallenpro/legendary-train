@@ -2434,7 +2434,7 @@ do -- Example UI
 	
 		Tab:AddTextBox("Remote Event Multiplier", function(repeattimes)
 		
-		local settings = {repeatamount = 40, exceptions = {"SayMessageRequest","MeleeUpdateEvent","NinjaBombEvent","BulletUpdateEvent"}}
+		local settings = {repeatamount = 1, exceptions = {"SayMessageRequest","MeleeUpdateEvent","NinjaBombEvent","BulletUpdateEvent"}}
 
 		local mt = getrawmetatable(game)
 		local old = mt.__namecall
@@ -2457,13 +2457,6 @@ do -- Example UI
 		end
 
 		setreadonly(mt, true)
-		
-		
-		game:GetService("StarterGui"):SetCore("SendNotification", {
-		Title = "executed";
-		Text = "no executy again";
-		Duration = 13;
-		})
 		
 		end)
 		
