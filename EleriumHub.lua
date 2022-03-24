@@ -2458,6 +2458,13 @@ do -- Example UI
 
 		setreadonly(mt, true)
 		
+		
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "executed";
+		Text = "no executy again";
+		Duration = 13;
+		})
+		
 		end)
 		
 		local Tab = Window:AddTab("Exuny")
