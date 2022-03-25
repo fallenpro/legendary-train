@@ -2288,6 +2288,12 @@ do -- Example UI
 		Tab:AddButton("The W", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/CheeseOnGithub/shimter/main/main.lua",true))()
 		end)
+		
+	local Folder = Tab:AddFolder("War Simulator")
+		
+		Tab:AddButton("GUI", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Fixed%20War%20Sim%20UI.lua"))()
+		end)
 
 	local Tab = Window:AddTab("Hubs")
  
