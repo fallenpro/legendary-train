@@ -2360,6 +2360,10 @@ do -- Example UI
 		Tab:AddButton("Frosty Hub", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/Hax0963/FrostyHubBeta/main/Script"))()
 		end)
+		
+		Tab:AddButton("RealZZHub", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/RealZzHub/MainV2/main/Main.lua"))()
+		end)
 
 	local Tab = Window:AddTab("Misc")
 
