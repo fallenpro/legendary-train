@@ -2036,20 +2036,8 @@ do -- Example UI
 	local Folder = Tab:AddFolder("ACSG System Gun Mods") 
 	do -- Elements
  
-		Tab:AddButton("Cold's Gun Mods", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/ACS%20Cold's%20Modifications.lua"))()
-		end)
-		
-		Tab:AddButton("Explosive Bullets", function()
-		 	loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/ACS%20Giant%20Explosions.lua"))()
-	 	end)
-		
-		Tab:AddButton("HE Bullets", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Nuclear.lua"))()
-		end)
-		
-		Tab:AddButton("Bye, gun safety!", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/ACS%20Tsar%20Bomba%20Bullets.lua"))()
+		Tab:AddButton("HUB", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/acs%20gun%20mods.lua"))()
 		end)
 
 	local Folder = Tab:AddFolder("Big Paintball")
