@@ -2366,6 +2366,10 @@ do -- Example UI
 		Tab:AddButton("RealZZHub", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/RealZzHub/MainV2/main/Main.lua"))()
 		end)
+		
+		Tab:AddButton("Vape V4", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+		end)
 
 	local Tab = Window:AddTab("Misc")
 
