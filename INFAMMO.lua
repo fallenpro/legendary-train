@@ -18,6 +18,11 @@ local old; old = hookmetamethod(game, "__namecall", function(self, ...)
             [1] = 0,
             [2] = 0
         }
+   
+  weapon_properties["Mode"] = "Auto"
+  weapon_properties["BulletPenetration"] = 5000
+  weapon_properties["BSpeed"] = 99999
+  weapon_properties["BDrop"] = 0
 
   return self.FireServer(self, unpack(args))
  end
