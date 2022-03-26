@@ -40,9 +40,3 @@ local old; old = hookmetamethod(game, "__namecall", function(self, ...)
  end
 return old(self, ...)
 end)
-
-game:GetService("StarterGui"):SetCore("SendNotification", {
-Title = "Gun Mod";
-Text = "Executed, re-equip weapon.";
-Duration = 7;
-})
