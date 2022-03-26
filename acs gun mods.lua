@@ -4,7 +4,7 @@ local ui = loadstring(game:HttpGet('https://raw.githubusercontent.com/bloodball/
 
 local window = ui:AddWindow('Gun Mods')
 
-window:Button('Infinite Ammo', function()
+window:Button('Infinite Ammo + firerate', function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/INFAMMO.lua"))()
 end)
 
@@ -18,6 +18,10 @@ end)
 
 window:Button('Really Explosive Bullets', function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/ACS%20Tsar%20Bomba%20Bullets.lua"))()
+end)
+
+window:Button('Infinite Ammo', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/infammo%20v2.lua"))()
 end)
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
