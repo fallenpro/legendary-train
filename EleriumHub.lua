@@ -2487,6 +2487,10 @@ do -- Example UI
 		
 		end)
 		
+		Tab:AddButton("Rejoin Game", function()
+			game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId,game.JobId)
+		end)
+		
 		local Tab = Window:AddTab("Exuny")
 		
 		Tab:AddButton("Aimbot V2 Settings Delete", function()
