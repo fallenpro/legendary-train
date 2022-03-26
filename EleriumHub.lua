@@ -2300,6 +2300,20 @@ do -- Example UI
 		Tab:AddButton("Break Blocks Instantly", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/0%20HP%20Bedwars.lua"))()
 		end)
+		
+	local Folder = Tab:AddFolder("Decaying Winter")
+		
+		Tab:AddButton("Infinite XP", function()
+			loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aidez/decaying_winter/main/INFINITE_XP'),true))()
+		end)
+		
+		Tab:AddButton("Goodwill", function()
+			loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aidez/decaying_winter/main/GOODWILL_COMMAND_SCRIPT'),true))()
+		end)
+		
+		Tab:AddButton("Odens Farm", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Aidez/decaying_winter/main/ODENS_FARM"))()
+		end)
 
 	local Tab = Window:AddTab("Hubs")
  
