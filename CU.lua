@@ -43,7 +43,11 @@ b:Box("Box","string",function(message)
      wait(1)
      bypass()
     end
-    end)
+end)
+
+b:Button("UI Remake", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/CU%20Remake.lua"))()
+end)
 
 local w = library:CreateWindow("Utilities")
 
