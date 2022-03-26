@@ -4,7 +4,7 @@ local Tab = Main:Tab("ACS")
 local Section = Tab:Section("Gun Mods")
 Section:Item(
     "button",
-    "Infinite Ammo, No Recoil and Firerate",
+    "Infinite Ammo",
     function()
         library.Warn("Re-equip weapon.")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/INFAMMO.lua"))()
@@ -13,7 +13,7 @@ Section:Item(
 
 Section:Item(
     "button",
-    "Explosive Bullets + everything before",
+    "Explosive Bullets",
     function()
         library.Warn("Re-equip weapon.")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/ACS%20Giant%20Explosions.lua"))()
@@ -33,7 +33,7 @@ Section:Item(
     "button",
     "Infinite Ammo but DAMAGE",
     function()
-        library.Warn("Re-equip weapon."
+        library.Warn("Re-equip weapon.")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/INFAMMO%20%2B%20DAMAGE.lua"))()
     end
 )
