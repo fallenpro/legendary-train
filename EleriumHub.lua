@@ -2294,6 +2294,24 @@ do -- Example UI
 		Tab:AddButton("GUI", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Fixed%20War%20Sim%20UI.lua"))()
 		end)
+		
+	local Folder = Tab:AddFolder("BedWars")
+	
+		Tab:AddButton("SuperGamingBro4s GUI", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/SuperGamingBros4/Roblox-HAX/main/Updated_Totally_Original_Script_Hub.Lua"))()
+		end)
+		
+		Tab:AddButton("Vape V4", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+		end)
+		
+		Tab:AddButton("Unnamed GUI", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeyScripts/main/BedWarsMonkey.lua"))()
+		end)
+		
+		Tab:AddButton("Break Blocks Instantly", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/0%20HP%20Bedwars.lua"))()
+		end)
 
 	local Tab = Window:AddTab("Hubs")
  
@@ -2365,10 +2383,6 @@ do -- Example UI
 		
 		Tab:AddButton("RealZZHub", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/RealZzHub/MainV2/main/Main.lua"))()
-		end)
-		
-		Tab:AddButton("Vape V4", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
 		end)
 
 	local Tab = Window:AddTab("Misc")
