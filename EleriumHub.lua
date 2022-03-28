@@ -2408,6 +2408,10 @@ do -- Example UI
 		Tab:AddButton("Andromeda Hub", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/TrustsenseDev/Roblox-Scripts/main/Andromeda%20Loader"))()
 		end)
+		
+		Tab:AddButton("Owl Hub", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))()
+		end)
 
 	local Tab = Window:AddTab("Misc")
 
