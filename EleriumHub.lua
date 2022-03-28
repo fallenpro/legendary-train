@@ -2025,7 +2025,7 @@ function library:AddWindow(title, options)
 end
 
 do -- Example UI
-	local Window = library:AddWindow("legendary-train", {
+	local Window = library:AddWindow("Methamphetamine Solutions", {
 		main_color = Color3.fromRGB(41, 74, 122),
 		min_size = Vector2.new(500, 600),
 		toggle_key = Enum.KeyCode.RightControl,
@@ -2558,6 +2558,7 @@ do -- Example UI
 		
 		Tab:AddLabel("Q: What the hell do I press to hide/show the gui?")
 		Tab:AddLabel("A: You press the * on the keypad aka KeypadMultiply.")
+		Tab:AddLabel("i was on methamphetamine and cocaine while making this")
 		
 	end
 
