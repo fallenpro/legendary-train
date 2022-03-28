@@ -2410,7 +2410,7 @@ do -- Example UI
 		end)
 		
 		Tab:AddButton("Owl Hub", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/Games.txt"))()
 		end)
 
 	local Tab = Window:AddTab("Misc")
