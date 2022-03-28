@@ -2596,4 +2596,10 @@ Text = "Press KeypadMultiply to hide the gui.";
 Duration = 25;
 })
 
+game:GetService("StarterGui"):SetCore("SendNotification", {
+Title = "Update";
+Text = "Script updated.";
+Duration = 5;
+})
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/antikick.lua"))()
