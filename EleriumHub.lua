@@ -2211,7 +2211,7 @@ do -- Example UI
 																		
 	local Folder = Tab:AddFolder("Mad City")
 																		
-		Tab:AddButton("idfk", function()
+		Tab:AddButton("MadLads AR Autofarm", function()
 			loadstring(game:HttpGet('https://www.system-exodus.com/scripts/madcity/MadLadsAR.lua'))()
 		end)
 
