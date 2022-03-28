@@ -13,3 +13,7 @@ end)
 window:Button('r6 gorila', function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/vrscript.lua"))()
 end)
+
+window:Button('fullbody gorila', function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/gorila%20but%20better.lua"))()
+end)
