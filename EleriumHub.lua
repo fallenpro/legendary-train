@@ -2208,6 +2208,12 @@ do -- Example UI
 		Tab:AddButton("AC Bypass", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/SCP%203008%20anticheat%20bypass.lua"))()
 		end)
+																		
+	local Folder = Tab:AddFolder("Mad City")
+																		
+		Tab:AddButton("idfk", function()
+			loadstring(game:HttpGet('https://www.system-exodus.com/scripts/madcity/MadLadsAR.lua'))()
+		end)
 
     local Tab = Window:AddTab("Page 2")
     
