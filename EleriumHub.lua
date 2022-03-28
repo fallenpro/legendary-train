@@ -2320,6 +2320,18 @@ do -- Example UI
 		Tab:AddButton("Odens Farm", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/Aidez/decaying_winter/main/ODENS_FARM"))()
 		end)
+		
+	local Folder = Tab:AddFolder("Break In")
+	
+		Tab:AddButton("Break In GUI", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/RubyBoo4life/break-in-v1/main/.gitignore"))();
+		end)
+		
+	local Folder = Tab:AddFolder("Flood Escape 2")
+	
+		Tab:AddButton("Infinite Air", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/kosuke14/REBOYHub/main/games/FE2GodMode.lua",true))()
+		end)
 
 	local Tab = Window:AddTab("Hubs")
  
@@ -2392,6 +2404,14 @@ do -- Example UI
 		Tab:AddButton("RealZZHub", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/RealZzHub/MainV2/main/Main.lua"))()
 		end)
+		
+		Tab:AddButton("Andromeda Hub", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/TrustsenseDev/Roblox-Scripts/main/Andromeda%20Loader"))()
+		end)
+		
+		Tab:AddButton("Unnamed Cheat Hub", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/UnnamedCheat/main/Loader"))();
+		end)
 
 	local Tab = Window:AddTab("Misc")
 
@@ -2445,6 +2465,10 @@ do -- Example UI
 		
 		Tab:AddButton("LagSwitch", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/LagSwitch.lua"))()
+		end)
+		
+		Tab:AddButton("Universal Cart Rider Fucker Upper", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/universal%20cart%20ride.lua"))()
 		end)
 		
 		Tab:AddTextBox("Bypasser", function(message)
