@@ -2450,7 +2450,7 @@ do -- Example UI
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/LagSwitch.lua"))()
 		end)
 		
-		Tab:AddButton("Universal Cart Rider Fucker Upper", function()
+		Tab:AddButton("Universal Cart Ride Fucker Upper", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/universal%20cart%20ride.lua"))()
 		end)
 		
