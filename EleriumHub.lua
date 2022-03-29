@@ -2521,6 +2521,10 @@ do -- Example UI
 			game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId,game.JobId)
 		end)
 		
+		Tab:AddButton("Antikick", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/antikick.lua"))()
+		end)
+		
 		local Tab = Window:AddTab("Exuny")
 		
 		Tab:AddButton("Aimbot V2 Settings Delete", function()
@@ -2603,5 +2607,3 @@ Notify({
     Title = " NEW SCRIPTS";
     Duration = 0;
     });
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/antikick.lua"))()
