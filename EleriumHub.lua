@@ -2247,11 +2247,8 @@ do -- Example UI
 			loadstring(game:HttpGet("https://projecthook.xyz/scripts/free.lua"))()
 		end)
 		
-	local Folder = Tab:AddFolder("Ben")
+	local Folder = Tab:AddFolder("Placeholder")
 		
-		Tab:AddButton("Bypass and Control", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/ben.lua"))()
-		end)
 		
 	local Folder = Tab:AddFolder("Giant Survival")
 	
