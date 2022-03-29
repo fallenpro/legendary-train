@@ -2494,6 +2494,9 @@ do -- Example UI
 			game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId,game.JobId)
 		end)
 		
+		Tab:AddButton("Advanced HTTP Spy", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/batusz/main/roblox/advanced_http_spy"))()
+		
 		local Tab = Window:AddTab("Exuny")
 		
 		Tab:AddButton("Aimbot V2 Settings Delete", function()
