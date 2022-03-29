@@ -2496,6 +2496,7 @@ do -- Example UI
 		
 		Tab:AddButton("Advanced HTTP Spy", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/batusz/main/roblox/advanced_http_spy"))()
+		end)
 		
 		local Tab = Window:AddTab("Exuny")
 		
