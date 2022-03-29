@@ -2590,16 +2590,18 @@ do -- Example UI
 	library:FormatWindows()
 end end end end end end end end end end end end end end end end end end end end end end end
 
-game:GetService("StarterGui"):SetCore("SendNotification", {
-Title = "Keybind";
-Text = "Press KeypadMultiply to hide the gui.";
-Duration = 25;
-})
+local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/batusz/uilibrarys/main/AkaliNotifLib"))();
+local Notify = AkaliNotif.Notify;
+Notify({
+    Description = " KEYBIND ";
+    Title = " PRESS * ON NUMPAD TO HIDE/SHOW UI";
+    Duration = 12.5;
+    });
 
-game:GetService("StarterGui"):SetCore("SendNotification", {
-Title = "Update";
-Text = "Script updated.";
-Duration = 0;
-})
+Notify({
+    Description = " UPDATE ";
+    Title = " NEW SCRIPTS";
+    Duration = 0;
+    });
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/antikick.lua"))()
