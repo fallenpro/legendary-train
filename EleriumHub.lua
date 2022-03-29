@@ -2025,13 +2025,12 @@ function library:AddWindow(title, options)
 end
 
 do -- Example UI
-	local Window = library:AddWindow("Methamphetamine Solutions, {
+	local Window = library:AddWindow("Methamphetamine Solutions", {
 		main_color = Color3.fromRGB(41, 74, 122),
 		min_size = Vector2.new(500, 600),
 		toggle_key = Enum.KeyCode.RightControl,
 		can_resize = true,
 	})
-
 	local Tab = Window:AddTab("Scripts")
 	local Folder = Tab:AddFolder("ACSG System Gun Mods") 
 	do -- Elements
@@ -2039,7 +2038,6 @@ do -- Example UI
 		Tab:AddButton("HUB", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/acs%20gun%20mods.lua"))()
 		end)
-
 	local Folder = Tab:AddFolder("Big Paintball")
  
 	do -- Elements
@@ -2055,7 +2053,6 @@ do -- Example UI
 		Tab:AddButton("KillAll", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/The3Bakers4565/Spicy-Bagel/main/Other/Big_Paintball/Kill_All.lua"))()
 		end)
-
 	local Folder = Tab:AddFolder("Isle")
  
 	do -- Elements
@@ -2063,7 +2060,6 @@ do -- Example UI
 		Tab:AddButton("ESP", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/superior%20isle%20esp.lua"))()
 		end)
-
 	local Folder = Tab:AddFolder("State of Anarchy")
  
 	do -- Elements
@@ -2071,7 +2067,6 @@ do -- Example UI
 		Tab:AddButton("SOA GUI", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/soa.lua"))()
 		end)
-
 	local Folder = Tab:AddFolder("SCP RP")
  
 	do -- Elements
@@ -2079,7 +2074,6 @@ do -- Example UI
 		Tab:AddButton("SCP RP", function()
 			loadstring(game:HttpGet("https://anomaly.cool/scripts/scp-rp.lua"))()
 		end)
-
 	local Folder = Tab:AddFolder("Recoil Zombies")
  
 	do -- Elements
@@ -2117,7 +2111,6 @@ do -- Example UI
 		Tab:AddButton("herrtts PF GUI", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/herrtts%20pf%20gui.lua"))()
 		end)
-
 	local Folder = Tab:AddFolder("Funky Friday")
  
 	do -- Elements
@@ -2125,7 +2118,6 @@ do -- Example UI
 		Tab:AddButton("Wally's Autoplayer", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
 		end)
-
 	local Folder = Tab:AddFolder("KAT")
  
 	do -- Elements
@@ -2145,7 +2137,6 @@ do -- Example UI
 		Tab:AddButton("Silent Aim", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/KAT%20Silent%20Aim.lua"))()
 		end)
-
 	local Folder = Tab:AddFolder("Catter's Utilities Hub")
  
 	do -- Elements
@@ -2153,7 +2144,6 @@ do -- Example UI
 		Tab:AddButton("CU HUB", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/CU%20Re-Exec.lua"))()
 		end)
-
 	local Folder = Tab:AddFolder("Da Hood")
  
 	do -- Elements
@@ -2176,7 +2166,6 @@ do -- Example UI
 		Tab:AddButton("BECOME UKRAINE", function()
 			loadstring(game:HttpGet(('https://gist.githubusercontent.com/Gogogamer61/9dfef86c0f09498af244509609f2b940/raw/a6177f2bbdfde2d4362e6600779b90a01aee1fb2/BecomeUkraineFlag'),true))()
 		end)
-
 	local Folder = Tab:AddFolder("Cafe Destroyers")
  
 	do -- Elements
@@ -2184,7 +2173,6 @@ do -- Example UI
 		Tab:AddButton("op_killer", function()
 			loadstring(game:HttpGet("https://pastebin.com/raw/v8PX741z"))()
 		end)
-
 	local Folder = Tab:AddFolder("Frontlines")
  
 	do -- Elements
@@ -2192,7 +2180,6 @@ do -- Example UI
 		Tab:AddButton("wally", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/roblox-scripts/main/frontlines.lua"))()
 		end)
-
 	local Folder = Tab:AddFolder("Destruction Sim")
  
 	do -- Elements
@@ -2200,7 +2187,6 @@ do -- Example UI
 		Tab:AddButton("DS GUI", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/FadeRemix/RND-Games/main/DestructionSim.lua"))()
 		end)
-
 	local Folder = Tab:AddFolder("SCP 3008")
  
 	do -- Elements
@@ -2214,7 +2200,6 @@ do -- Example UI
 		Tab:AddButton("MadLads AR Autofarm", function()
 			loadstring(game:HttpGet('https://www.system-exodus.com/scripts/madcity/MadLadsAR.lua'))()
 		end)
-
     local Tab = Window:AddTab("Page 2")
     
     	local Folder = Tab:AddFolder("Music Visualizers")
@@ -2228,7 +2213,6 @@ do -- Example UI
 		Tab:AddButton("Ciazware", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/xaxaxaxaxaxaxaxaxa/Ciazware/main/Hat-Visualizer", true))()
 		end)
-
 	local Folder = Tab:AddFolder("Anomic")
  
 	do -- Elements
@@ -2240,7 +2224,6 @@ do -- Example UI
 		Tab:AddButton("Anomic", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/Shariiii/Anomic-Stuff/main/OP%20OP%20Gun%20Script%20V0.1", true))()
 		end)
-
 	local Folder = Tab:AddFolder("Pistol 1v1")
  
 	do -- Elements
@@ -2248,7 +2231,6 @@ do -- Example UI
 		Tab:AddButton("GUI", function()
 			loadstring(game:HttpGet('https://raw.githubusercontent.com/zReal-King/1v1-Pistol-/main/Gui'))()
 		end)
-
 	local Folder = Tab:AddFolder("Vehicle Simulator")
  
 	do -- Elements
@@ -2332,7 +2314,6 @@ do -- Example UI
 		Tab:AddButton("Infinite Air", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/kosuke14/REBOYHub/main/games/FE2GodMode.lua",true))()
 		end)
-
 	local Tab = Window:AddTab("Hubs")
  
 	do -- Elements
@@ -2412,9 +2393,7 @@ do -- Example UI
 		Tab:AddButton("Owl Hub", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/Games.txt"))()
 		end)
-
 	local Tab = Window:AddTab("Misc")
-
 		Tab:AddButton("BackdoorChecker", function()
 			loadstring(game:HttpGet(('https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua'),true))()
 		end)
@@ -2426,7 +2405,6 @@ do -- Example UI
 		Tab:AddButton("Server Browser", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/Lynk-Softworks/Valerie/main/serverBrowser.lua", true))()
 		end)
-
 		Tab:AddButton("Dark Dex", function()
 			loadstring(game:HttpGet("https://pastebin.com/raw/YREfugjX"))()
 		end)
@@ -2474,12 +2452,10 @@ do -- Example UI
 		Tab:AddTextBox("Bypasser", function(message)
             math.randomseed(tick())
             local ChatMain = require(game:GetService("Players").LocalPlayer.PlayerScripts.ChatScript.ChatMain)
-
             local function bypass()
                 ChatMain.MessagePosted:fire("dffhdfshfd"..math.random(100000,1000000))
                 ChatMain.MessagesChanged:fire(math.random(100000,1000000))
             end
-
             for v in message:gmatch"." do
                  wait(.5)
                 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(v, "All")
@@ -2492,11 +2468,9 @@ do -- Example UI
 		Tab:AddTextBox("Remote Event Multiplier", function(repeattimes)
 		
 		local settings = {repeatamount = placeholder, exceptions = {"SayMessageRequest","MeleeUpdateEvent","NinjaBombEvent","BulletUpdateEvent"}}
-
 		local mt = getrawmetatable(game)
 		local old = mt.__namecall
 		setreadonly(mt, false)
-
 		mt.__namecall = function(uh, ...)
    			local args = {...}
    			local method = getnamecallmethod()
@@ -2512,17 +2486,12 @@ do -- Example UI
    			end
    			return old(uh, ...)
 		end
-
 		setreadonly(mt, true)
 		
 		end)
 		
 		Tab:AddButton("Rejoin Game", function()
 			game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId,game.JobId)
-		end)
-		
-		Tab:AddButton("Antikick", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/antikick.lua"))()
 		end)
 		
 		local Tab = Window:AddTab("Exuny")
@@ -2548,7 +2517,6 @@ do -- Example UI
 		end)
 		
 		local Tab = Window:AddTab("Executor")
-
 		local Console = Tab:AddConsole({
 			["y"] = 500,
 			["source"] = "Lua",
@@ -2597,8 +2565,8 @@ end end end end end end end end end end end end end end end end end end end end 
 local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/batusz/uilibrarys/main/AkaliNotifLib"))();
 local Notify = AkaliNotif.Notify;
 Notify({
-    Description = " KEYBIND ";
-    Title = " PRESS * ON NUMPAD TO HIDE/SHOW UI";
+    Description = " PRESS * ON NUMPAD TO HIDE/SHOW UI ";
+    Title = " KEYBIND";
     Duration = 12.5;
     });
 
@@ -2607,3 +2575,5 @@ Notify({
     Title = " NEW SCRIPTS";
     Duration = 0;
     });
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/antikick.lua"))()
