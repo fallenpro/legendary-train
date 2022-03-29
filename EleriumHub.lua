@@ -2392,7 +2392,12 @@ do -- Example UI
 		
 		Tab:AddButton("Owl Hub", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/Games.txt"))()
+		end
+		
+		Tab:AddButton("Ez Hub", function()
+			loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
 		end)
+		
 	local Tab = Window:AddTab("Misc")
 		Tab:AddButton("BackdoorChecker", function()
 			loadstring(game:HttpGet(('https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua'),true))()
