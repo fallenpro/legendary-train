@@ -11,7 +11,7 @@ local GUI = Mercury:Create{
 
 local Tab = GUI:Tab{
 	Name = "GUN MODS",
-	Icon = "rbxassetid://8569322835"
+	Icon = "rbxassetid://6034996695"
 }
 
 Tab:Button{
