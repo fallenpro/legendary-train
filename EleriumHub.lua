@@ -2504,6 +2504,10 @@ do -- Example UI
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/batusz/main/roblox/advanced_http_spy"))()
 		end)
 		
+		Tab:AddButton("Enable Reset Button", function()
+			loadstring(game:HttpGet("https://pastebin.com/raw/mW24cfXm", true))()
+		end)
+		
 		local Tab = Window:AddTab("Exuny")
 		
 		Tab:AddButton("Aimbot V2 Settings Delete", function()
