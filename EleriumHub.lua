@@ -2395,6 +2395,10 @@ do -- Example UI
 			loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
 		end)
 		
+		Tab:AddButton("Marine Hub", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Hypious/Marine-Hub/main/Main"))()
+		end)
+		
 	local Tab = Window:AddTab("Misc")
 		Tab:AddButton("BackdoorChecker", function()
 			loadstring(game:HttpGet(('https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua'),true))()
