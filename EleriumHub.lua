@@ -2187,13 +2187,10 @@ do -- Example UI
 		Tab:AddButton("DS GUI", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/FadeRemix/RND-Games/main/DestructionSim.lua"))()
 		end)
-	local Folder = Tab:AddFolder("SCP 3008")
+	local Folder = Tab:AddFolder("Placeholder")
  
 	do -- Elements
  
-		Tab:AddButton("AC Bypass", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/SCP%203008%20anticheat%20bypass.lua"))()
-		end)
 																		
 	local Folder = Tab:AddFolder("Mad City")
 																		
