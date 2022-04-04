@@ -2094,7 +2094,11 @@ do -- Example UI
  
  	    Tab:AddButton("Asgar's GUI", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/1iseo/rbx/main/jailbird/jailbird.lua"))()
-		end)
+	    end)
+								
+	   Tab:AddButton("New GUI", function()
+			loadstring(game:HttpGet("https://rawscripts.net/raw/Jailbird-Beta-15.2-jail-bird-GUI-1554"))()
+	end)
 		
 		local Folder = Tab:AddFolder("Phantom Forces")
  
@@ -2187,9 +2191,18 @@ do -- Example UI
 		Tab:AddButton("DS GUI", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/FadeRemix/RND-Games/main/DestructionSim.lua"))()
 		end)
-	local Folder = Tab:AddFolder("Placeholder")
+	local Folder = Tab:AddFolder("Innovation Inc Spaceship")
  
 	do -- Elements
+																		
+		Tab:AddButton("Infinite Money", function()
+			local A_1 = -99999
+			local A_2 = "blackorange"
+
+			local Event = game:GetService("ReplicatedStorage").TakeMoney
+
+			Event:FireServer(A_1, A_2)
+		end)
  
 																		
 	local Folder = Tab:AddFolder("Mad City")
@@ -2409,7 +2422,7 @@ do -- Example UI
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/Lynk-Softworks/Valerie/main/serverBrowser.lua", true))()
 		end)
 		Tab:AddButton("Dark Dex", function()
-			loadstring(game:HttpGet("https://pastebin.com/raw/YREfugjX"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Uvxtq/lua/main/Dark%20Dex%20Made%20by%20Moon%2C%20wally%2C%20and%20ic3.lua"))()
 		end)
 		
 		Tab:AddButton("Hitbox Extender", function()
@@ -2470,6 +2483,10 @@ do -- Example UI
 		
 		Tab:AddButton("Shed's Bypasser", function()
 			loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
+		end)
+		
+		Tab:AddButton("Hdmi's Bypasser", function()
+			loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-hdmi's-bypasser-1570"))()
 		end)
 	
 		Tab:AddTextBox("Remote Event Multiplier", function(repeattimes)
