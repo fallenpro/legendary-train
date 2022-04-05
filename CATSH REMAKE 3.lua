@@ -14,7 +14,7 @@ local Section = Tab:Section{
 }
 Section:Button{
 	Name = "ACS Gun Script Hub",
-	Description = My custom script hub,
+	Description = nil,
 	Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/acs%20gun%20mods.lua"))()
     end
@@ -24,66 +24,66 @@ local Section = Tab:Section{
 }
 Section:Button{
     Name = "Unlock All",
-    Description = Unlocks every weapon,
+    Description = nil,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/big%20paintball%20unlock%20all.lua"))()
     end
 }
 Section:Button{
     Name = "Kill All",
-    Description = Kills everyone,
+    Description = nil,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/The3Bakers4565/Spicy-Bagel/main/Other/Big_Paintball/Kill_All.lua"))()
     end
 }
 Tab:Button{
     Name = "Isle ESP",
-    Description = just some isle esp,
+    Description = nil,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/superior%20isle%20esp.lua"))()
     end
 }
 Tab:Button{
     Name = "State of Anarchy GUI",
-    Description = A SOA gui,
+    Description = nil,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/soa.lua"))()
     end
 }
 Tab:Button{
     Name = "SCP RP GUI",
-    Description = An SCP gui,
+    Description = nil,
     Callback = function()
         loadstring(game:HttpGet("https://anomaly.cool/scripts/scp-rp.lua"))()
     end
 }
 local Section = Tab:Section{
-    Name = Jailbird"
+    Name = "Jailbird"
 }
 Section:Button{
     Name = "Asgar's GUI",
-    Description = Old GUI but still useful,
+    Description = nil,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/1iseo/rbx/main/jailbird/jailbird.lua"))()
     end
 }
 Section:Button{
     Name = "New GUI",
-    Description = New GUI but I dont know the name,
+    Description = nil,
     Callback = function()
         loadstring(game:HttpGet("https://rawscripts.net/raw/Jailbird-Beta-15.2-jail-bird-GUI-1554"))()
     end
 }
 Tab:Button{
-    Name = "Wally's Autoplayer",
-    Description = A Funky Friday script,
+    Name = "Wally's Autoplayer (Funky Friday",
+    Description = nil,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
     end
 }
 Tab:Button{
     Name = "Innovation Inc Spaceship Infinite Money",
-    Description = Get infinite money,
+    Description = nil,
     Callback = function()
         local A_1 = -99999
         local A_2 = "blackorange"
@@ -91,12 +91,11 @@ Tab:Button{
         local Event = game:GetService("ReplicatedStorage").TakeMoney
 
         Event:FireServer(A_1, A_2)
-    end)
-end
+    end
 }
 Tab:Button{
     Name = "Project Hook (Combat Warriors)",
-    Description = Best free combat warriors script,
+    Description = nil,
     Callback = function()
         loadstring(game:HttpGet("https://projecthook.xyz/scripts/free.lua"))()
     end
@@ -106,7 +105,7 @@ local Section = Tab:Section{
 }
 Section:Button{
     Name = "Vape V4",
-    Description = One of the best bedwars scripts,
+    Description = nil,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
     end
@@ -116,21 +115,21 @@ local Section = Tab:Section{
 }
 Section:Button{
     Name = "Infinite XP",
-    Description = Infinite XP. Thats all,
+    Description = nil,
     Callback = function()
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aidez/decaying_winter/main/INFINITE_XP'),true))()
     end
 }
 Section:Button{
     Name = "Goodwill",
-    Description = The best Decaying Winter script,
+    Description = nil,
     Callback = function()
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aidez/decaying_winter/main/GOODWILL_COMMAND_SCRIPT'),true))()
     end
 }
 Tab:Button{
     Name = "Break In GUI",
-    Description = Some break_in gui I found,
+    Description = nil,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/RubyBoo4life/break-in-v1/main/.gitignore"))();
     end
@@ -187,20 +186,20 @@ local Tab = GUI:Tab{
 }
 Tab:Button{
     Name = "Ukraine",
-    Description = Russian Warship Go Fuck Yourself,
+    Description = nil,
     Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Ukraine.lua"))()
 end}
 
 Tab:Button{
     Name = "Invis Car",
-    Description = sir why are you floating,
+    Description = nil,
     Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/car.lua"))()
 end}
 Tab:Button{
     Name = "Aimlabs v2.1b",
-    Description = Good aimbot script.,
+    Description = nil,
     Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/aimlabs%20v2.1.lua"))()
 end}
@@ -222,13 +221,13 @@ Tab:Button{
 end}
 Tab:Button{
     Name = "BackdoorChecker",
-    Description = Checks for_ backdoors,
+    Description = nil,
     Callback = function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua'),true))()
 end}
 Tab:Button{
     Name = "Server Browser",
-    Description = Literally just a server browser,
+    Description = nil,
     Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Lynk-Softworks/Valerie/main/serverBrowser.lua", true))()
 end}
