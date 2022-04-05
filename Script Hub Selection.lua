@@ -29,3 +29,11 @@ Tab:Button{
         }
     end,
 }
+if syn then
+GUI:Notification{
+	Title = "EXIT",
+	Text = "Press the X after executing synapse script hub.",
+	Duration = 12.5,
+	Callback = function() end
+}
+end
