@@ -17,7 +17,7 @@ tab:button({
             Text = "Pick between Syn X only or free executor supported.",
             Buttons = {
                 Syn X Only = function()
-                loadstring(game:HttpGet("https://github.com/fheahdythdr/miniature-tribble/blob/main/EleriumHub.lua"))()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/EleriumHub.lua"))()
                 end
                 Free Executor = function()
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/CATSH%20REMAKE%203.lua"))()
