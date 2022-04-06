@@ -4,7 +4,7 @@ local GUI = Mercury:Create{
     Name = "Selection",
     Size = UDim2.fromOffset(600, 400),
     Theme = Mercury.Themes.Dark,
-    Link = "https://github.com/deeeity/mercury-lib"
+    Link = "https://github.com/fheahdythdr/legendary-train/blob/main/README.md"
 }
 
 local Tab = GUI:Tab{
@@ -23,7 +23,7 @@ Tab:Button{
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/EleriumHub.lua"))()
                 end,
                 Others = function()
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/CATSH%20REMAKE%203.lua"))()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/catsh%20remake%20again.lua"))()
                 end,
             }
         }
