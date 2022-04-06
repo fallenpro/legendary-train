@@ -17,7 +17,7 @@ Tab:Button{
     Callback = function()
         Tab:Prompt{
             Title = "Which script hub do you want?",
-            Text = "Pick between Syn X only or free executor supported.",
+            Text = "Pick between Syn X only or other executors.",
             Buttons = {
                 Synapse = function()
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/EleriumHub.lua"))()
