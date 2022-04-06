@@ -75,7 +75,7 @@ Section:Button{
     end
 }
 Tab:Button{
-    Name = "Wally's Autoplayer (Funky Friday",
+    Name = "Wally's Autoplayer (Funky Friday)",
     Description = nil,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
