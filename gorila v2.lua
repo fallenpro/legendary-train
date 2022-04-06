@@ -8,17 +8,17 @@ local goril = AimbotTab:CreateSection("GORILLA")
 
 
 goril:CreateButton("gorila tag", function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/gorila%20tag.lua"))()   
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/gorila%20tag.lua"))()   
 end)
 
 goril:CreateButton("netbypass", function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/netless.lua"))()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/netless.lua"))()
 end)
 
 goril:CreateButton("r6 gorila", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/vrscript.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/vrscript.lua"))()
 end)
 
 goril:CreateButton("fullbody gorila", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/gorila%20but%20better.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/gorila%20but%20better.lua"))()
 end)
