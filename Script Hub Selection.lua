@@ -20,10 +20,10 @@ Tab:Button{
             Text = "Pick between Syn X only or other executors.",
             Buttons = {
                 Synapse = function()
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/EleriumHub.lua"))()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/EleriumHub.lua"))()
                 end,
                 Others = function()
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/CATSH%20REMAKE%203.lua"))()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/CATSH%20REMAKE%203.lua"))()
                 end,
             }
         }
@@ -37,3 +37,9 @@ GUI:Notification{
 	Callback = function() end
 }
 end
+
+GUI:Credit{
+	Name = "Cold",
+	Description = "Contributed to the original hub, and put some scripts in one of his github things.",
+	Discord = "coldlolololir#6969"
+}
