@@ -14,6 +14,7 @@ do
 end
 
 local imgui = Instance.new("ScreenGui")
+syn.protect_gui(imgui)
 local Prefabs = Instance.new("Frame")
 local Label = Instance.new("TextLabel")
 local Window = Instance.new("ImageLabel")
@@ -87,7 +88,6 @@ local Input_Roundify_4px = Instance.new("ImageLabel")
 local Windows = Instance.new("Frame")
 
 imgui.Name = "imgui"
-syn.protect_gui(imgui)
 imgui.Parent = game:GetService("CoreGui")
 
 Prefabs.Name = "Prefabs"
@@ -2025,10 +2025,10 @@ function library:AddWindow(title, options)
 end
 
 do -- Example UI
-	local Window = library:AddWindow("Methamphetamine Solutions", {
+	local Window = library:AddWindow("quantum supremacy hub", {
 		main_color = Color3.fromRGB(41, 74, 122),
 		min_size = Vector2.new(500, 600),
-		toggle_key = Enum.KeyCode.RightControl,
+		toggle_key = Enum.KeyCode.KeypadMultiply,
 		can_resize = true,
 	})
 	local Tab = Window:AddTab("Scripts")
@@ -2391,10 +2391,6 @@ do -- Example UI
 		
 		Tab:AddButton("RealZZHub", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/RealZzHub/MainV2/main/Main.lua"))()
-		end)
-		
-		Tab:AddButton("Andromeda Hub", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/TrustsenseDev/Roblox-Scripts/main/Andromeda%20Loader"))()
 		end)
 		
 		Tab:AddButton("Owl Hub", function()
