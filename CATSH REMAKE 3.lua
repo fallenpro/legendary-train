@@ -237,6 +237,12 @@ Tab:Button{
     Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/discord%20invite.lua"))()
 end}
+Tab:Button{
+    Name = "SimpleSpy",
+    Description = nil,
+    Callback = function()
+        loadstring(game:HttpGet("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))()
+end}
 
 gui:Notification{
 	Title = "KEYBINDS",
