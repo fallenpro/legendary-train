@@ -2583,7 +2583,7 @@ do -- Example UI
 		
 		Tab:AddLabel("Q: What the hell do I press to hide/show the gui?")
 		Tab:AddLabel("A: You press the * on the keypad aka KeypadMultiply.")
-		Tab:AddLabel("made by methamphetamine productions")
+		Tab:AddLabel("made by demonstrating quantum supremacy gang")
 		
 	end
 
