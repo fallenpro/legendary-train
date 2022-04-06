@@ -2036,18 +2036,18 @@ do -- Example UI
 	do -- Elements
  
 		Tab:AddButton("HUB", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/acs%20gun%20mods.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/acs%20gun%20mods.lua"))()
 		end)
 	local Folder = Tab:AddFolder("Big Paintball")
  
 	do -- Elements
  
 		Tab:AddButton("Unlock All", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/big%20paintball%20unlock%20all.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/big%20paintball%20unlock%20all.lua"))()
 		end)
 			
 		Tab:AddButton("omaewa mou", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/teleports%20behind%20you.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-trainmain/teleports%20behind%20you.lua"))()
 		end)
 			
 		Tab:AddButton("KillAll", function()
@@ -2058,14 +2058,14 @@ do -- Example UI
 	do -- Elements
  
 		Tab:AddButton("ESP", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/superior%20isle%20esp.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/superior%20isle%20esp.lua"))()
 		end)
 	local Folder = Tab:AddFolder("State of Anarchy")
  
 	do -- Elements
  
 		Tab:AddButton("SOA GUI", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/soa.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/soa.lua"))()
 		end)
 	local Folder = Tab:AddFolder("SCP RP")
  
@@ -2079,7 +2079,7 @@ do -- Example UI
 	do -- Elements
  
 		Tab:AddButton("Gun Giver", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Recoil_zombie_script.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Recoil_zombie_script.lua"))()
 		end)
 		
 	local Folder = Tab:AddFolder("Clicking Simulator")
@@ -2113,7 +2113,7 @@ do -- Example UI
 		end)
 		
 		Tab:AddButton("herrtts PF GUI", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/herrtts%20pf%20gui.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/herrtts%20pf%20gui.lua"))()
 		end)
 	local Folder = Tab:AddFolder("Funky Friday")
  
@@ -2127,26 +2127,26 @@ do -- Example UI
 	do -- Elements
  
 		Tab:AddButton("2 Free Items", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/KAT%20Free%202%20Items"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/KAT%20Free%202%20Items"))()
 		end)
 		
 		Tab:AddButton("Infinite Ammo", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/KAT%20Infinite%20Ammo.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/KAT%20Infinite%20Ammo.lua"))()
 		end)
 		
 		Tab:AddButton("Semi-Invincibility", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/KAT%20Semi%20Invincibility.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/KAT%20Semi%20Invincibility.lua"))()
 		end)
 		
 		Tab:AddButton("Silent Aim", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/KAT%20Silent%20Aim.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-trainmain/KAT%20Silent%20Aim.lua"))()
 		end)
 	local Folder = Tab:AddFolder("Catter's Utilities Hub")
  
 	do -- Elements
  
 		Tab:AddButton("CU HUB", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/CU%20Re-Exec.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/CU%20Re-Exec.lua"))()
 		end)
 	local Folder = Tab:AddFolder("Da Hood")
  
@@ -2161,10 +2161,10 @@ do -- Example UI
 	do -- Elements
  
 		Tab:AddButton("Ukraine", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Ukraine.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Ukraine.lua"))()
 		end)
 		Tab:AddButton("Invis Car", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/car.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/car.lua"))()
 		end)
 										
 		Tab:AddButton("BECOME UKRAINE", function()
@@ -2217,7 +2217,7 @@ do -- Example UI
 	do -- Elements
  
 		Tab:AddButton("Space Hub", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/music%202%20.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/music%202%20.lua"))()
 		end)
 														
 		Tab:AddButton("Ciazware", function()
@@ -2275,7 +2275,7 @@ do -- Example UI
 	local Folder = Tab:AddFolder("War Simulator")
 		
 		Tab:AddButton("GUI", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Fixed%20War%20Sim%20UI.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Fixed%20War%20Sim%20UI.lua"))()
 		end)
 		
 	local Folder = Tab:AddFolder("BedWars")
@@ -2293,7 +2293,7 @@ do -- Example UI
 		end)
 		
 		Tab:AddButton("Break Blocks Instantly", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/0%20HP%20Bedwars.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/0%20HP%20Bedwars.lua"))()
 		end)
 		
 	local Folder = Tab:AddFolder("Decaying Winter")
@@ -2346,7 +2346,7 @@ do -- Example UI
 		end)
 								
 		Tab:AddButton("Moonhub", function()
-			loadstring(game:HttpGet(("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Moonhub.lua"),true))()
+			loadstring(game:HttpGet(("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Moonhub.lua"),true))()
 		end)
 								
 		Tab:AddButton("Monke Hub", function()
@@ -2370,23 +2370,23 @@ do -- Example UI
 		end)
 		
 		Tab:AddButton("Syntax V2", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/SYNTAX%20V2.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/SYNTAX%20V2.lua"))()
 		end)
 		
 		Tab:AddButton("Syntax V3", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/SYNTAX%20V3.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/SYNTAX%20V3.lua"))()
 		end)
 		
 		Tab:AddButton("Adminus", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/adminus%20but%20yes.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/adminus%20but%20yes.lua"))()
 		end)
 		
 		Tab:AddButton("Orca", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Orca.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Orca.lua"))()
 		end)
 		
 		Tab:AddButton("Dark Hub", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Dark%20Hub.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Dark%20Hub.lua"))()
 		end)
 		
 		Tab:AddButton("RealZZHub", function()
@@ -2430,7 +2430,7 @@ do -- Example UI
 		end)
 		
 		Tab:AddButton("Earrape V2", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Earrape.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Earrape.lua"))()
 		end)
 		
 		Tab:AddButton("Animation Changer", function()
@@ -2438,7 +2438,7 @@ do -- Example UI
 		end)
 		
 		Tab:AddButton("AimLabs v2.1", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/aimlabs%20v2.1.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/aimlabs%20v2.1.lua"))()
 		end)
 		
 		Tab:AddButton("Universal Silent Aim", function()
@@ -2454,15 +2454,15 @@ do -- Example UI
 		end)
 		
 		Tab:AddButton("WalkOnWalls", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Gravity%20Controller.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Gravity%20Controller.lua"))()
 		end)
 		
 		Tab:AddButton("LagSwitch", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/LagSwitch.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-trainmain/LagSwitch.lua"))()
 		end)
 		
 		Tab:AddButton("Universal Cart Ride Fucker Upper", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/universal%20cart%20ride.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/universal%20cart%20ride.lua"))()
 		end)
 		
 		Tab:AddTextBox("Bypasser", function(message)
@@ -2605,4 +2605,4 @@ Notify({
     Duration = 0;
     });
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/antikick.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antikick.lua"))()
