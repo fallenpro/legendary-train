@@ -263,6 +263,7 @@ GUI:Notification{
 	Text = "Our discord invite is in the Misc tab.",
 	Duration = 15,
 	Callback = function() end
+}
 
 GUI:set_status("v1.0b")
 
