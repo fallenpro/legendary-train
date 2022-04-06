@@ -2526,6 +2526,10 @@ do -- Example UI
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/discord%20invite.lua"))()
 		end)
 		
+		Tab:AddButton("SimpleSpy", function()
+			loadstring(game:HttpGet("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))()
+		end)
+		
 		local Tab = Window:AddTab("Exuny")
 		
 		Tab:AddButton("Aimbot V2 Settings Delete", function()
