@@ -180,6 +180,41 @@ Tab:Button{
         loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source',true))()
     end
 }
+Tab:Button{
+	Name = "Orca",
+	Description = nil,
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Orca.lua"))()
+	end
+}
+Tab:Button{
+	Name = "RealZZHub",
+	Description = nil,
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RealZzHub/MainV2/main/Main.lua"))()
+	end
+}
+Tab:Button{
+	Name = "Dark Hub",
+	Description = nil,
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Dark%20Hub.lua"))()
+	end
+}
+Tab:Button{
+	Name = "Coco Z Script Hub",
+	Description = nil,
+	Callback = function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/MarsQQ/CocoHub/master/CocoZHub'),true))()
+	end
+}
+Tab:Button{
+	Name = "Solaris Hub",
+	Description = nil,
+	Callback = function()
+		loadstring(game:HttpGet('https://solarishub.dev/script.lua',true))()
+	end
+}
 local Tab = GUI:Tab{
     Icon = "rbxassetid://8583043737",
     Name = "Misc"
