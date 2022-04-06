@@ -2522,6 +2522,10 @@ do -- Example UI
 			loadstring(game:HttpGet("https://pastebin.com/raw/mW24cfXm", true))()
 		end)
 		
+		Tab:AddButton("Join our Discord!", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/discord%20invite.lua"))()
+		end)
+		
 		local Tab = Window:AddTab("Exuny")
 		
 		Tab:AddButton("Aimbot V2 Settings Delete", function()
@@ -2590,8 +2594,14 @@ end end end end end end end end end end end end end end end end end end end end 
 local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/batusz/uilibrarys/main/AkaliNotifLib"))();
 local Notify = AkaliNotif.Notify;
 Notify({
-    Description = " PRESS * ON NUMPAD TO HIDE/SHOW UI ";
+    Description = " Press * on numpad to hide/show ";
     Title = " KEYBIND";
+    Duration = 12.5;
+    });
+
+Notify({
+    Description = " Discord invite is in misc tab. ";
+    Title = " Invite";
     Duration = 12.5;
     });
 
