@@ -231,6 +231,12 @@ Tab:Button{
     Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Lynk-Softworks/Valerie/main/serverBrowser.lua", true))()
 end}
+Tab:Button{
+    Name = "Discord Join",
+    Description = nil,
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/discord%20invite.lua"))()
+end}
 
 gui:Notification{
 	Title = "KEYBINDS",
@@ -245,6 +251,12 @@ gui:Notification{
 	Duration = 0,
 	Callback = function() end
 }
+
+gui:Notification{
+	Title = "Discord Invite",
+	Text = "Our discord invite is in the Misc tab.",
+	Duration = 15,
+	Callback = function() end
 
 gui:set_status("v1.0")
 
