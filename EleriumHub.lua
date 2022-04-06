@@ -2445,7 +2445,7 @@ do -- Example UI
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/Infinite-Store/Infinite-Store/main/main.lua"))()
 		end)
 		
-		Tab:AddButton("Fate's Admin (iy but better)", function()
+		Tab:AddButton("Fate's Admin", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))()
 		end)
 		
