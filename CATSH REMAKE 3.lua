@@ -258,9 +258,11 @@ gui:Notification{
 	Duration = 15,
 	Callback = function() end
 
-gui:set_status("v1.0")
+gui:set_status("v1.0b")
 
-gui:Credit{
+	
+GUI:Credit{
 	Name = "watermelon with a gun",
-	Description = "Took some time to make this script hub.",
+	Description = "Organized some scripts and put them in this ui lib.",
+	Discord = "oogabooga#7914"
 }
