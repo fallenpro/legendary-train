@@ -6,3 +6,5 @@ script is:
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Script%20Hub%20Selection.lua"))()
 
 credits are in the main hubs.
+
+if you're the creator or owner of one of the scripts or hubs and want credits, dm me on discord (discord is oogabooga#7914) and i'll add it, just specify which hub your script is in as the two hubs have different scripts.
