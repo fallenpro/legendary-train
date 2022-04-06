@@ -40,6 +40,6 @@ end
 
 GUI:Credit{
 	Name = "Cold",
-	Description = "Contributed to the original hub, and put some scripts in one of his github things.",
+	Description = "Contributed to the original hub, and put some scripts in one of his github repositories.",
 	Discord = "coldlolololir#6969"
 }
