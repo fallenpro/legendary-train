@@ -10,3 +10,5 @@ credits are in the main hubs.
 if you're the creator or owner of one of the scripts or hubs and want credits, dm me on discord (discord is oogabooga#7914) and i'll add it, just specify which hub your script is in as the two hubs have different scripts.
 
 feel free to make pull requests or ask for a certain script to be added
+
+i check the discord alt i put here every now and again, don't expect an immediate response
