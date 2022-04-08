@@ -16,7 +16,11 @@ Section:Button{
 	Name = "ACS Gun Script Hub",
 	Description = nil,
 	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/acs%20gun%20mods.lua"))()
+		if syn then
+        		loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/acs%20gun%20mods.lua"))()
+		else
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/acs%20gun%20mod%20no%20syn%20x%20compatability.lua"))()
+		end
     end
 }
 local Section = Tab:Section{
@@ -308,3 +312,5 @@ GUI:Credit{
 	Description = "Organized some scripts and put them in this ui lib.",
 	Discord = "oogabooga#7914"
 }
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antikick.lua"))()
