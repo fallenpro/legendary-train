@@ -17,7 +17,7 @@ Section:Button{
 	Description = nil,
 	Callback = function()
 		if syn then
-        		loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/acs%20gun%20mods.lua"))()
+        		loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/acs%20gun%20mods.lua"))()
 		else
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/acs%20gun%20mod%20no%20syn%20x%20compatability.lua"))()
 		end
@@ -30,7 +30,7 @@ Section:Button{
     Name = "Unlock All",
     Description = nil,
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/big%20paintball%20unlock%20all.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/big%20paintball%20unlock%20all.lua"))()
     end
 }
 Section:Button{
@@ -44,14 +44,14 @@ Tab:Button{
     Name = "Isle ESP",
     Description = nil,
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/superior%20isle%20esp.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/superior%20isle%20esp.lua"))()
     end
 }
 Tab:Button{
     Name = "State of Anarchy GUI",
     Description = nil,
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/soa.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/soa.lua"))()
     end
 }
 Tab:Button{
@@ -188,7 +188,7 @@ Tab:Button{
 	Name = "Orca",
 	Description = nil,
 	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Orca.lua"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Orca.lua"))()
 	end
 }
 Tab:Button{
@@ -202,7 +202,7 @@ Tab:Button{
 	Name = "Dark Hub",
 	Description = nil,
 	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Dark%20Hub.lua"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Dark%20Hub.lua"))()
 	end
 }
 Tab:Button{
@@ -227,20 +227,20 @@ Tab:Button{
     Name = "Ukraine",
     Description = nil,
     Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/Ukraine.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Ukraine.lua"))()
 end}
 
 Tab:Button{
     Name = "Invis Car",
     Description = nil,
     Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/car.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/car.lua"))()
 end}
 Tab:Button{
     Name = "Aimlabs v2.1b",
     Description = nil,
     Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/miniature-tribble/main/aimlabs%20v2.1.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/aimlabs%20v2.1.lua"))()
 end}
 Tab:Button{
     Name = "Admin",
