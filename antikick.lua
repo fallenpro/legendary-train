@@ -1,3 +1,5 @@
+local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/batusz/uilibrarys/main/AkaliNotifLib"))();
+local Notify = AkaliNotif.Notify;
 --// Variables
 
 local Players = game:GetService("Players")
@@ -14,12 +16,11 @@ OldNameCall = hookmetamethod(game, "__namecall", function(Self, ...)
 
     if tostring(string.lower(NameCallMethod)) == "kick" then
         if getgenv().SendNotifications == true then
-            game:GetService("StarterGui"):SetCore("SendNotification", {
-                Title = "Exunys Developer",
-                Text = "You almost got kicked! Successfully prevented.",
-                Icon = "rbxassetid://6238540373",
-                Duration = 3,
-            })
+            Notify({
+                Description = " Successfully prevented kick. ";
+                Title = " You were almost kicked!";
+                Duration = 12.5;
+                });
         end
         
         return nil
@@ -29,10 +30,9 @@ OldNameCall = hookmetamethod(game, "__namecall", function(Self, ...)
 end)
 
 if getgenv().SendNotifications == true then
-    game:GetService("StarterGui"):SetCore("SendNotification", {
-        Title = "Exunys Developer",
-        Text = "Anti-Kick script loaded",
-        Icon = "rbxassetid://6238537240",
-        Duration = 5,
-    })
+  Notify({
+      Description = " Exuny's Antikick has been loaded. ";
+      Title = " Antikick loaded!";
+      Duration = 12.5;
+      });
 end
