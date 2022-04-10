@@ -282,7 +282,7 @@ end}
 GUI:Notification{
 	Title = "KEYBINDS",
 	Text = "Press Delete to hide, change in settings.",
-	Duration = 12.5,
+	Duration = 6,
 	Callback = function() end
 }
 
@@ -296,11 +296,11 @@ GUI:Notification{
 GUI:Notification{
 	Title = "Discord Invite",
 	Text = "Our discord invite is in the Misc tab.",
-	Duration = 15,
+	Duration = 7.5,
 	Callback = function() end
 }
 
-GUI:set_status("v1.0b")
+GUI:set_status("v1.0c")
 
 	
 GUI:Credit{
