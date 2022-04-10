@@ -1,5 +1,4 @@
-local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/batusz/uilibrarys/main/AkaliNotifLib"))();
-local Notify = AkaliNotif.Notify;
+local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
 --// Variables
 
 local Players = game:GetService("Players")
@@ -16,11 +15,7 @@ OldNameCall = hookmetamethod(game, "__namecall", function(Self, ...)
 
     if tostring(string.lower(NameCallMethod)) == "kick" then
         if getgenv().SendNotifications == true then
-            Notify({
-                Description = " Successfully prevented kick. ";
-                Title = " You were almost kicked!";
-                Duration = 12.5;
-                });
+            Lib.prompt('KICK PREVENTED', 'Kick was successfully prevented, you were almost kicked!', 10)
         end
         
         return nil
@@ -30,9 +25,5 @@ OldNameCall = hookmetamethod(game, "__namecall", function(Self, ...)
 end)
 
 if getgenv().SendNotifications == true then
-  Notify({
-      Description = " Exuny's Antikick has been loaded. ";
-      Title = " Antikick loaded!";
-      Duration = 12.5;
-      });
+  Lib.prompt('ANTIKICK LOADED', "Exuny's Antikick has been loaded.", 10)
 end
