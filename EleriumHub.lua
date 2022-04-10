@@ -2603,13 +2603,13 @@ local Notify = AkaliNotif.Notify;
 Notify({
     Description = " Press * on numpad to hide/show ";
     Title = " KEYBIND";
-    Duration = 12.5;
+    Duration = 7.5;
     });
 
 Notify({
     Description = " Discord invite is in misc tab. ";
     Title = " Invite";
-    Duration = 12.5;
+    Duration = 6;
     });
 
 Notify({
