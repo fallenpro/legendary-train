@@ -15,7 +15,7 @@ OldNameCall = hookmetamethod(game, "__namecall", function(Self, ...)
 
     if tostring(string.lower(NameCallMethod)) == "kick" then
         if getgenv().SendNotifications == true then
-            Lib.prompt('KICK PREVENTED', 'Kick was successfully prevented, you were almost kicked!', 10)
+            Lib.prompt('KICK PREVENTED', 'Kick was successfully prevented, you were almost kicked!', 7.5)
         end
         
         return nil
@@ -25,5 +25,5 @@ OldNameCall = hookmetamethod(game, "__namecall", function(Self, ...)
 end)
 
 if getgenv().SendNotifications == true then
-  Lib.prompt('ANTIKICK LOADED', "Exuny's Antikick has been loaded.", 10)
+  Lib.prompt('ANTIKICK LOADED', "Exuny's Antikick has been loaded.", 5)
 end
