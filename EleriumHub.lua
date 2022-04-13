@@ -2067,13 +2067,8 @@ do -- Example UI
 		Tab:AddButton("SOA GUI", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/soa.lua"))()
 		end)
-	local Folder = Tab:AddFolder("SCP RP")
- 
-	do -- Elements
- 
-		Tab:AddButton("SCP RP", function()
-			loadstring(game:HttpGet("https://anomaly.cool/scripts/scp-rp.lua"))()
-		end)
+	local Folder = Tab:AddFolder("Placeholder")
+					
 	local Folder = Tab:AddFolder("Recoil Zombies")
  
 	do -- Elements
