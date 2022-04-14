@@ -2447,6 +2447,9 @@ do -- Example UI
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))()
 		end)
 		
+		Tab:AddButton("Fate's ESP", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-esp/main/main.lua"))()
+		
 		Tab:AddButton("WalkOnWalls", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Gravity%20Controller.lua"))()
 		end)
