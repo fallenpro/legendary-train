@@ -279,6 +279,13 @@ Tab:Button{
         loadstring(game:HttpGet("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))()
 end}
 
+Tab:Button{
+    Name = "Fate's ESP",
+    Description = nil,
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-esp/main/main.lua"))()
+end}
+
 GUI:Notification{
 	Title = "KEYBINDS",
 	Text = "Press Delete to hide, change in settings.",
