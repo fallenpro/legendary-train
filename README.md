@@ -3,7 +3,7 @@ okay so, you might be wondering what this is. this was originally meant to be a 
 
 script is:
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Script%20Hub%20Selection.lua"))()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Script%20Hub%20Selection.lua"))()
 
 credits are in the main hubs.
 
