@@ -2544,6 +2544,7 @@ do -- Example UI
 				foreground = "#f0f6fc";
 			};
 		}
+		end)
 		
 		Tab:AddLabel("Mollermethod's keybind is Left Bracket, aka [")
 		
