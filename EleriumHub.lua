@@ -1,5 +1,6 @@
 local repeattimes = placeholder
 local message = bruh
+local bracket_toggle = Enum.KeyCode.LeftBracket
 
 local ui_options = {
 	main_color = Color3.fromRGB(41, 74, 122),
@@ -2531,6 +2532,19 @@ do -- Example UI
 		Tab:AddButton("SimpleSpy", function()
 			loadstring(game:HttpGetAsync("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))()
 		end)
+		
+		Tab:AddButton("Mollermethod", function()
+			loadstring(game:HttpGet 'https://mthd.ml') {
+				bracket_toggle = Enum.KeyCode.LeftBracket;
+				debug = false;
+				volume = 5;
+				bracket_external = false;
+			theme = {
+				accent = "#ff4539";
+				background = "#1c1c1c";
+				foreground = "#f0f6fc";
+			};
+		}
 		
 		local Tab = Window:AddTab("FloppaMods")
 		
