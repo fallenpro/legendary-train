@@ -2532,6 +2532,12 @@ do -- Example UI
 			loadstring(game:HttpGetAsync("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))()
 		end)
 		
+		local Tab = Window:AddTab("FloppaMods")
+		
+		Tab:AddButton("ESP for The Backrooms (K. Pixels)", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Open%20Source%20Backrooms%20Entity%20ESP.lua"))()
+		end)
+		
 		local Tab = Window:AddTab("Exuny")
 		
 		Tab:AddButton("Aimbot V2 Settings Delete", function()
