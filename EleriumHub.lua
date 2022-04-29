@@ -1,6 +1,5 @@
 local repeattimes = placeholder
 local message = bruh
-local bracket_toggle = Enum.KeyCode.LeftBracket
 
 local ui_options = {
 	main_color = Color3.fromRGB(41, 74, 122),
