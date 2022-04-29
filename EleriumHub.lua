@@ -2546,6 +2546,8 @@ do -- Example UI
 			};
 		}
 		
+		Tab:AddLabel("Mollermethod's keybind is Left Bracket, aka [")
+		
 		local Tab = Window:AddTab("FloppaMods")
 		
 		Tab:AddButton("ESP for The Backrooms (K. Pixels)", function()
