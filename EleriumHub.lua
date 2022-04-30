@@ -2413,7 +2413,7 @@ do -- Example UI
 		end)
 		
 		Tab:AddButton("Server Browser", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Lynk-Softworks/Valerie/main/serverBrowser.lua", true))()
+			loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80",true))()
 		end)
 		Tab:AddButton("Dark Dex", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Uvxtq/lua/main/Dark%20Dex%20Made%20by%20Moon%2C%20wally%2C%20and%20ic3.lua"))()
