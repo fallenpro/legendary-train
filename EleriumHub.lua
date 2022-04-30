@@ -2548,6 +2548,10 @@ do -- Example UI
 		
 		Tab:AddLabel("Mollermethod's keybind is Left Bracket, aka [")
 		
+		Tab:AddButton("ScriptBlox Script Viewer", function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/laderite/scripts/main/Cloudscripts.lua'))()
+		end)
+		
 		local Tab = Window:AddTab("FloppaMods")
 		
 		Tab:AddButton("ESP for The Backrooms (K. Pixels)", function()
