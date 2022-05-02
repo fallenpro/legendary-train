@@ -287,20 +287,9 @@ Tab:Button{
 end}
 
 Tab:Button{
-    Name = "Dex",
+    Name = "Dark Dex",
     Callback = function()
-        Tab:Prompt{
-            Title = "Selection",
-            Text = "Do you want normal Dex or do you want beta Dex?",
-            Buttons = {
-                Normal = function()
-                    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/dark%20dex.lua"))()
-                end,
-                Beta = function()
-                    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/beta%20dark%20dex.lua"))()
-                end
-            }
-        }
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/dark%20dex.lua"))()
 end}
 
 GUI:Notification{
