@@ -2580,25 +2580,6 @@ do -- Example UI
 			syn.write_clipboard("https://github.com/Exunys/Aimbot-V2")
 		end)
 		
-		local Tab = Window:AddTab("Executor")
-		local Console = Tab:AddConsole({
-			["y"] = 500,
-			["source"] = "Lua",
-		})
-		Console:Set("-- Gamer time! Execute lua scripts here.")
-		print(Console:Get())
-
-		local HA = Tab:AddHorizontalAlignment()
-		HA:AddButton("Execute", function()
-			loadstring(Console:Get())()
-		end)
-		HA:AddButton("Clear", function()
-			Console:Set("")
-		end)
-		HA:AddButton("Anim Changer", function()
-		    Console:Set('loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Coldlolololir/bfdzhuiasbghjdlbgjhlas/main/anim.lua"))()')
-        	end)
-		
 		local Tab = Window:AddTab("Credits")
 		
 		Tab:AddLabel("Q: Who made this UI?")
