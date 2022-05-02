@@ -267,7 +267,7 @@ Tab:Button{
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Lynk-Softworks/Valerie/main/serverBrowser.lua", true))()
 end}
 Tab:Button{
-    Name = "Discord Join",
+    Name = "Join our Discord!",
     Description = nil,
     Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/discord%20invite.lua"))()
@@ -284,6 +284,23 @@ Tab:Button{
     Description = nil,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-esp/main/main.lua"))()
+end}
+
+Tab:Button{
+    Name = "Dex",
+    Callback = function()
+        Tab:Prompt{
+            Title = "Selection",
+            Text = "Do you want normal Dex or do you want beta Dex?",
+            Buttons = {
+                Normal = function()
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/dark%20dex.lua"))()
+                end,
+                Beta = function()
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/beta%20dark%20dex.lua"))()
+                end
+            }
+        }
 end}
 
 GUI:Notification{
