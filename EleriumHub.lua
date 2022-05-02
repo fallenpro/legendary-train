@@ -2035,45 +2035,66 @@ do -- Example UI
 	local Folder = Tab:AddFolder("ACSG System Gun Mods") 
 	do -- Elements
  
-		Tab:AddButton("HUB", function()
+		Folder:AddButton("HUB", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/acs%20gun%20mods.lua"))()
 		end)
 	local Folder = Tab:AddFolder("Big Paintball")
  
 	do -- Elements
  
-		Tab:AddButton("Unlock All", function()
+		Folder:AddButton("Unlock All", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/big%20paintball%20unlock%20all.lua"))()
 		end)
 			
-		Tab:AddButton("omaewa mou", function()
+		Folder:AddButton("omaewa mou", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-trainmain/teleports%20behind%20you.lua"))()
 		end)
 			
-		Tab:AddButton("KillAll", function()
+		Folder:AddButton("KillAll", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/The3Bakers4565/Spicy-Bagel/main/Other/Big_Paintball/Kill_All.lua"))()
 		end)
 	local Folder = Tab:AddFolder("Isle")
  
 	do -- Elements
  
-		Tab:AddButton("ESP", function()
+		Folder:AddButton("ESP", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/superior%20isle%20esp.lua"))()
 		end)
 	local Folder = Tab:AddFolder("State of Anarchy")
  
 	do -- Elements
  
-		Tab:AddButton("SOA GUI", function()
+		Folder:AddButton("SOA GUI", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/soa.lua"))()
 		end)
-	local Folder = Tab:AddFolder("Placeholder")
+					
+	local Folder = Tab:AddFolder("Exuny's Scripts")
+					
+		Folder:AddButton("Aimbot V2 Settings Delete", function()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Exunys/Aimbot-V2/main/Resources/Scripts/Delete%20Settings%20-%20Fix%20Script.lua"))()
+		end)
+		
+		Folder:AddButton("Aimbot V2", function()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Exunys/Aimbot-V2/main/Resources/Scripts/Main.lua"))()
+		end)
+		
+		Folder:AddButton("Aimbot V2 Factory Reset", function()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Exunys/Aimbot-V2/main/Resources/Scripts/Manual%20Factory%20Reset%20Settings.lua"))()
+		end)
+		
+		Folder:AddButton("Aimbot V2 Support Checker", function()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Exunys/Aimbot-V2/main/Resources/Scripts/Support%20Checker.lua"))()
+		end)
+		
+		Folder:AddButton("Aimbot V2 Settings Guide", function()
+			syn.write_clipboard("https://github.com/Exunys/Aimbot-V2")
+		end)
 					
 	local Folder = Tab:AddFolder("Recoil Zombies")
  
 	do -- Elements
  
-		Tab:AddButton("Gun Giver", function()
+		Folder:AddButton("Gun Giver", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Recoil_zombie_script.lua"))()
 		end)
 		
@@ -2081,17 +2102,17 @@ do -- Example UI
  
 	do -- Elements
  
-		Tab:AddButton("CS", function()
+		Folder:AddButton("CS", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/LaDamage/releases/main/Clicker-Simulator.lua"))()
 		end)
 		
     	local Folder = Tab:AddFolder("Jailbird")
  
- 	    Tab:AddButton("Asgar's GUI", function()
+ 	    Folder:AddButton("Asgar's GUI", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/1iseo/rbx/main/jailbird/jailbird.lua"))()
 	    end)
 								
-	   Tab:AddButton("New GUI", function()
+	  Folder:AddButton("New GUI", function()
 			loadstring(game:HttpGetAsync("https://rawscripts.net/raw/Jailbird-Beta-15.2-jail-bird-GUI-1554"))()
 	end)
 		
@@ -2099,55 +2120,51 @@ do -- Example UI
  
 	do -- Elements
  
-		Tab:AddButton("Aves PF GUI", function()
+		Folder:AddButton("Aves PF GUI", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Averiias/purple-haze-pf/main/loader.lua"))()
 		end)
 		
-		Tab:AddButton("Rage Cheat", function()
-			loadstring(game:HttpGetAsync("https://ghostbin.com/EnF6l/raw", true))()
-		end)
-		
-		Tab:AddButton("herrtts PF GUI", function()
+		Folder:AddButton("herrtts PF GUI", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/herrtts%20pf%20gui.lua"))()
 		end)
 	local Folder = Tab:AddFolder("Funky Friday")
  
 	do -- Elements
  
-		Tab:AddButton("Wally's Autoplayer", function()
+		Folder:AddButton("Wally's Autoplayer", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
 		end)
 	local Folder = Tab:AddFolder("KAT")
  
 	do -- Elements
  
-		Tab:AddButton("2 Free Items", function()
+		Folder:AddButton("2 Free Items", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/KAT%20Free%202%20Items"))()
 		end)
 		
-		Tab:AddButton("Infinite Ammo", function()
+		Folder:AddButton("Infinite Ammo", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/KAT%20Infinite%20Ammo.lua"))()
 		end)
 		
-		Tab:AddButton("Semi-Invincibility", function()
+		Folder:AddButton("Semi-Invincibility", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/KAT%20Semi%20Invincibility.lua"))()
 		end)
 		
-		Tab:AddButton("Silent Aim", function()
+		Folder:AddButton("Silent Aim", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-trainmain/KAT%20Silent%20Aim.lua"))()
 		end)
 	local Folder = Tab:AddFolder("Catter's Utilities Hub")
  
 	do -- Elements
  
-		Tab:AddButton("CU HUB", function()
+		Folder:AddButton("CU HUB", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/CU%20Re-Exec.lua"))()
 		end)
 	local Folder = Tab:AddFolder("Da Hood")
  
 	do -- Elements
  
-		Tab:AddButton("Server Crasher", function()
+		Folder:AddButton("Server Crasher", function()
 			loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SuperCustomServerCrasher'))()
 		end)
 		
@@ -2155,42 +2172,42 @@ do -- Example UI
  
 	do -- Elements
  
-		Tab:AddButton("Ukraine", function()
+		Folder:AddButton("Ukraine", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Ukraine.lua"))()
 		end)
-		Tab:AddButton("Invis Car", function()
+		Folder:AddButton("Invis Car", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/car.lua"))()
 		end)
 										
-		Tab:AddButton("BECOME UKRAINE", function()
+		Folder:AddButton("BECOME UKRAINE", function()
 			loadstring(game:HttpGetAsync(('https://gist.githubusercontent.com/Gogogamer61/9dfef86c0f09498af244509609f2b940/raw/a6177f2bbdfde2d4362e6600779b90a01aee1fb2/BecomeUkraineFlag'),true))()
 		end)
 	local Folder = Tab:AddFolder("Cafe Destroyers")
  
 	do -- Elements
  
-		Tab:AddButton("op_killer", function()
+		Folder:AddButton("op_killer", function()
 			loadstring(game:HttpGetAsync("https://pastebin.com/raw/v8PX741z"))()
 		end)
 	local Folder = Tab:AddFolder("Frontlines")
  
 	do -- Elements
  
-		Tab:AddButton("wally", function()
+		Folder:AddButton("wally", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/wally-rblx/roblox-scripts/main/frontlines.lua"))()
 		end)
 	local Folder = Tab:AddFolder("Destruction Sim")
  
 	do -- Elements
  
-		Tab:AddButton("DS GUI", function()
+		Folder:AddButton("DS GUI", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/FadeRemix/RND-Games/main/DestructionSim.lua"))()
 		end)
 	local Folder = Tab:AddFolder("Innovation Inc Spaceship")
  
 	do -- Elements
 																		
-		Tab:AddButton("Infinite Money", function()
+		Folder:AddButton("Infinite Money", function()
 			local A_1 = -99999
 			local A_2 = "blackorange"
 
@@ -2202,45 +2219,44 @@ do -- Example UI
 																		
 	local Folder = Tab:AddFolder("Mad City")
 																		
-		Tab:AddButton("MadLads AR Autofarm", function()
+		Folder:AddButton("MadLads AR Autofarm", function()
 			loadstring(game:HttpGetAsync('https://www.system-exodus.com/scripts/madcity/MadLadsAR.lua'))()
 		end)
-    local Tab = Window:AddTab("Page 2")
     
     	local Folder = Tab:AddFolder("Music Visualizers")
  
 	do -- Elements
  
-		Tab:AddButton("Space Hub", function()
+		Folder:AddButton("Space Hub", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/music%202%20.lua"))()
 		end)
 														
-		Tab:AddButton("Ciazware", function()
+		Folder:AddButton("Ciazware", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/xaxaxaxaxaxaxaxaxa/Ciazware/main/Hat-Visualizer", true))()
 		end)
 	local Folder = Tab:AddFolder("Anomic")
  
 	do -- Elements
  
-		Tab:AddButton("Anomic Revamp", function()
+		Folder:AddButton("Anomic Revamp", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Shariiii/Anomic-Revamp-aka-Anomic-v2-/main/OP%20OP%20Gun%20Script%20V2"))()
 		end)
 															
-		Tab:AddButton("Anomic", function()
+		Folder:AddButton("Anomic", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Shariiii/Anomic-Stuff/main/OP%20OP%20Gun%20Script%20V0.1", true))()
 		end)
 	local Folder = Tab:AddFolder("Pistol 1v1")
  
 	do -- Elements
  
-		Tab:AddButton("GUI", function()
+		Folder:AddButton("GUI", function()
 			loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/zReal-King/1v1-Pistol-/main/Gui'))()
 		end)
 	local Folder = Tab:AddFolder("Vehicle Simulator")
  
 	do -- Elements
  
-		Tab:AddButton("VS GUI", function()
+		Folder:AddButton("VS GUI", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/WetCheezit/Releases/main/VehicleSimulator/Source.lua"))()
 		end)
 		
@@ -2248,75 +2264,75 @@ do -- Example UI
 	
 	do
 	
-		Tab:AddButton("Project Hook", function()
+		Folder:AddButton("Project Hook", function()
 			loadstring(game:HttpGetAsync("https://projecthook.xyz/scripts/free.lua"))()
 		end)
 		
 	local Folder = Tab:AddFolder("Kohl's Admin House NBC")
 	
-		Tab:AddButton("Shortcut V2", function()
+		Folder:AddButton("Shortcut V2", function()
 			loadstring(game:HttpGetAsync(('https://raw.githubusercontent.com/M4lw4reT3sts/scripts-cheats-2/main/Obfuscated%20SCV2-NP%20release.txt'),true))()
 		end)
 		
 	local Folder = Tab:AddFolder("Giant Survival")
 	
-		Tab:AddButton("OP GUI", function()
+		Folder:AddButton("OP GUI", function()
 			loadstring(game:HttpGetAsync('https://pastebin.com/raw/0nSpe8y9', true))()
 		end)
 		
 	local Folder = Tab:AddFolder("The W")
 	
-		Tab:AddButton("The W", function()
+		Folder:AddButton("The W", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/CheeseOnGithub/shimter/main/main.lua",true))()
 		end)
 		
 	local Folder = Tab:AddFolder("War Simulator")
 		
-		Tab:AddButton("GUI", function()
+		Folder:AddButton("GUI", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Fixed%20War%20Sim%20UI.lua"))()
 		end)
 		
 	local Folder = Tab:AddFolder("BedWars")
 	
-		Tab:AddButton("SuperGamingBro4s GUI", function()
+		Folder:AddButton("SuperGamingBro4s GUI", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/SuperGamingBros4/Roblox-HAX/main/Updated_Totally_Original_Script_Hub.Lua"))()
 		end)
 		
-		Tab:AddButton("Vape V4", function()
+		Folder:AddButton("Vape V4", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
 		end)
 		
-		Tab:AddButton("Unnamed GUI", function()
+		Folder:AddButton("Unnamed GUI", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/KuriWasTaken/MonkeyScripts/main/BedWarsMonkey.lua"))()
 		end)
 		
-		Tab:AddButton("Break Blocks Instantly", function()
+		Folder:AddButton("Break Blocks Instantly", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/0%20HP%20Bedwars.lua"))()
 		end)
 		
 	local Folder = Tab:AddFolder("Decaying Winter")
 		
-		Tab:AddButton("Infinite XP", function()
+		Folder:AddButton("Infinite XP", function()
 			loadstring(game:HttpGetAsync(('https://raw.githubusercontent.com/Aidez/decaying_winter/main/INFINITE_XP'),true))()
 		end)
 		
-		Tab:AddButton("Goodwill", function()
+		Folder:AddButton("Goodwill", function()
 			loadstring(game:HttpGetAsync(('https://raw.githubusercontent.com/Aidez/decaying_winter/main/GOODWILL_COMMAND_SCRIPT'),true))()
 		end)
 		
-		Tab:AddButton("Odens Farm", function()
+		Folder:AddButton("Odens Farm", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Aidez/decaying_winter/main/ODENS_FARM"))()
 		end)
 		
 	local Folder = Tab:AddFolder("Break In")
 	
-		Tab:AddButton("Break In GUI", function()
+		Folder:AddButton("Break In GUI", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/RubyBoo4life/break-in-v1/main/.gitignore"))();
 		end)
 		
 	local Folder = Tab:AddFolder("Flood Escape 2")
 	
-		Tab:AddButton("Infinite Air", function()
+		Folder:AddButton("Infinite Air", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/kosuke14/REBOYHub/main/games/FE2GodMode.lua",true))()
 		end)
 	local Tab = Window:AddTab("Hubs")
@@ -2557,28 +2573,6 @@ do -- Example UI
 		
 		Tab:AddButton("ESP for The Backrooms (K. Pixels)", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Open%20Source%20Backrooms%20Entity%20ESP.lua"))()
-		end)
-		
-		local Tab = Window:AddTab("Exuny")
-		
-		Tab:AddButton("Aimbot V2 Settings Delete", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Exunys/Aimbot-V2/main/Resources/Scripts/Delete%20Settings%20-%20Fix%20Script.lua"))()
-		end)
-		
-		Tab:AddButton("Aimbot V2", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Exunys/Aimbot-V2/main/Resources/Scripts/Main.lua"))()
-		end)
-		
-		Tab:AddButton("Aimbot V2 Factory Reset", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Exunys/Aimbot-V2/main/Resources/Scripts/Manual%20Factory%20Reset%20Settings.lua"))()
-		end)
-		
-		Tab:AddButton("Aimbot V2 Support Checker", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Exunys/Aimbot-V2/main/Resources/Scripts/Support%20Checker.lua"))()
-		end)
-		
-		Tab:AddButton("Aimbot V2 Settings Guide", function()
-			syn.write_clipboard("https://github.com/Exunys/Aimbot-V2")
 		end)
 		
 		local Tab = Window:AddTab("Credits")
