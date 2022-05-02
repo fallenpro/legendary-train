@@ -2437,7 +2437,7 @@ do -- Example UI
 		end)
 		
 		Tab:AddButton("Beta Dark Dex", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/beta%20dark%20dex.lua))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/beta%20dark%20dex.lua"))()
 		end)
 		
 		Tab:AddButton("Hitbox Extender", function()
