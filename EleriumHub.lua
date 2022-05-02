@@ -2415,12 +2415,9 @@ do -- Example UI
 		Tab:AddButton("Server Browser", function()
 			loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80",true))()
 		end)
-		Tab:AddButton("Dark Dex", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/dark%20dex.lua"))()
-		end)
 		
-		Tab:AddButton("Beta Dark Dex", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/beta%20dark%20dex.lua"))()
+		Tab:AddButton("Dex", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/dark%20dex.lua"))()
 		end)
 		
 		Tab:AddButton("Hitbox Extender", function()
