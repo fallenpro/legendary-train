@@ -2352,7 +2352,7 @@ do -- Example UI
 		end)
 								
 		Tab:AddButton("Solaris Hub", function()
-			loadstring(game:HttpGetAsync('https://solarishub.dev/script.lua',true))()
+			loadstring(game:HttpGetAsync('https://solarishub.net/script.lua',true))()
 		end)
 								
 		Tab:AddButton("White Web Hub", function()
