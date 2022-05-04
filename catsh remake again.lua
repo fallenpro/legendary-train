@@ -103,6 +103,82 @@ Tab:Button{
         }
 end}
 
+Tab:Button{
+    Name = "Admin",
+    Callback = function()
+        tab:prompt{
+            Title = "Selection",
+            Text = "Which admin do you want?",
+            Buttons = {
+                Infinite_Yield = function()
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Infinite-Store/Infinite-Store/main/main.lua"))()
+                end,
+                Fates_Admin = function()
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))()
+                end,
+                CMD_X = function()
+                loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+                end
+            }
+        }
+end}
+
+Tab:Button{
+    Name = "Hitbox Extender",
+    Description = nil,
+    Callback = function()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Coldlolololir/bfdzhuiasbghjdlbgjhlas/main/heu.lua"))()
+end}
+
+Tab:Button{
+    Name = "Earrape V2",
+    Description = nil,
+    Callback = function()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Earrape.lua"))()
+end}
+
+Tab:Button{
+    Name = "Animation Changer",
+    Description = nil,
+    Callback = function()
+loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/MonkoTubeYT/animationedit/main/GUI',true))()
+end}
+
+Tab:Button{
+    Name = "Aimlabs v.2.1",
+    Description = nil,
+    Callback = function()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/aimlabs%20v2.1.lua"))()
+end}
+
+Tab:Button{
+    Name = "Universal Silent Aim",
+    Description = nil,
+    Callback = function()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Averiias/Universal-SilentAim/main/main.lua"))()
+end}
+
+Tab:Button{
+    Name = "Fates ESP"
+    Description = nil,
+    Callback = function()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fatesc/fates-esp/main/main.lua"))()
+end}
+
+Tab:Button{
+    Name = "Spider man but roblox"
+    Description = nil,
+    Callback = function()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Gravity%20Controller.lua"))()
+end}
+
+Tab:Button{
+    Name = "LagSwitch
+    Description = nil,
+    Callback = function()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-trainmain/LagSwitch.lua"))()
+end}
+
 GUI:Notification{
 	Title = "KEYBINDS",
 	Text = "Press Delete to hide, change in settings.",
