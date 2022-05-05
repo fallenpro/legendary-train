@@ -1,3 +1,5 @@
+local message = bruh
+
 local Mercury = loadstring(game:HttpGet("https://raw.githubusercontent.com/deeeity/mercury-lib/master/src.lua"))()
 local GUI = Mercury:Create{
     Name = "quantum supremacy",
@@ -186,11 +188,11 @@ Tab:Button{
 loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/universal%20cart%20ride.lua"))()
 end}
 
-Tab:Button{
+Tab:Textbox{
     Name = "Bypasser",
-    Description = nil,
-    Callback = function()
-local ChatMain = require(game:GetService("Players").LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+    Callback = function(message)
+	math.randomseed(tick())
+	local ChatMain = require(game:GetService("Players").LocalPlayer.PlayerScripts.ChatScript.ChatMain)
             local function bypass()
                 ChatMain.MessagePosted:fire("dffhdfshfd"..math.random(100000,1000000))
                 ChatMain.MessagesChanged:fire(math.random(100000,1000000))
