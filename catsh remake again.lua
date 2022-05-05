@@ -179,6 +179,46 @@ Tab:Button{
 loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-trainmain/LagSwitch.lua"))()
 end}
 
+Tab:Button{
+    Name = "Universal Cart Ride Fucker-Upper",
+    Description = nil,
+    Callback = function()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/universal%20cart%20ride.lua"))()
+end}
+
+Tab:Button{
+    Name = "Bypasser",
+    Description = nil,
+    Callback = function()
+local ChatMain = require(game:GetService("Players").LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+            local function bypass()
+                ChatMain.MessagePosted:fire("dffhdfshfd"..math.random(100000,1000000))
+                ChatMain.MessagesChanged:fire(math.random(100000,1000000))
+            end
+            for v in message:gmatch"." do
+                 wait(.5)
+                game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(v, "All")
+                wait(.5)
+                bypass()
+            end
+end}
+
+Tab:Button{
+    Name = "Shed's Bypasser",
+    Description = nil,
+    Callback = function()
+loadstring(game:HttpGetAsync("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
+end}
+
+Tab:Button{
+    Name = "Hdmi's Bypasser",
+    Description = nil,
+    Callback = function()
+loadstring(game:HttpGetAsync("https://rawscripts.net/raw/Universal-Script-hdmi's-bypasser-1570"))()
+end}
+
+
+
 GUI:Notification{
 	Title = "KEYBINDS",
 	Text = "Press Delete to hide, change in settings.",
