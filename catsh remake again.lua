@@ -18,6 +18,18 @@ local Tab = GUI:Tab{
 }
 
 local Tab = GUI:Tab{
+	Name = "FloppaMods",
+	Icon = "rbxassetid://9509988372"
+}
+Tab:Button{
+    Name = "ESP for The Backrooms (K. Pixels)",
+    Description = nil,
+    Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Open%20Source%20Backrooms%20Entity%20ESP.lua"))()
+end}
+
+
+local Tab = GUI:Tab{
     Icon = "rbxassetid://8583043737",
     Name = "Misc"
 }
@@ -66,7 +78,7 @@ Tab:Button{
     Name = "Server Browser",
     Description = nil,
     Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Lynk-Softworks/Valerie/main/serverBrowser.lua", true))()
+    loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80",true))()
 end}
 Tab:Button{
     Name = "Join our Discord!",
@@ -161,21 +173,14 @@ loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Averiias/Univers
 end}
 
 Tab:Button{
-    Name = "Fates ESP"
-    Description = nil,
-    Callback = function()
-loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fatesc/fates-esp/main/main.lua"))()
-end}
-
-Tab:Button{
-    Name = "Spider man but roblox"
+    Name = "Spider man but roblox",
     Description = nil,
     Callback = function()
 loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Gravity%20Controller.lua"))()
 end}
 
 Tab:Button{
-    Name = "LagSwitch
+    Name = "LagSwitch",
     Description = nil,
     Callback = function()
 loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-trainmain/LagSwitch.lua"))()
@@ -219,6 +224,93 @@ Tab:Button{
 loadstring(game:HttpGetAsync("https://rawscripts.net/raw/Universal-Script-hdmi's-bypasser-1570"))()
 end}
 
+Tab:Textbox{
+	Name = "Remote event duper",
+	Callback = function(dupeamt)
+	 local settings = {repeatamount = dupeamt, exceptions = {"SayMessageRequest","MeleeUpdateEvent","NinjaBombEvent","BulletUpdateEvent"}}
+
+local mt = getrawmetatable(game)
+local old = mt.__namecall
+setreadonly(mt, false)
+
+mt.__namecall = function(uh, ...)
+   local args = {...}
+   local method = getnamecallmethod()
+   for i,o in next, settings.exceptions do
+       if uh.Name == o then
+           return old(uh, ...)
+       end
+   end
+   if method == "FireServer" or method == "InvokeServer" then
+       for i = 1,settings.repeatamount do
+           old(uh, ...)
+       end
+   end
+   return old(uh, ...)
+end
+
+setreadonly(mt, true)
+	end
+}
+
+Tab:Button{
+    Name = "rejoin Game",
+    Description = nil,
+    Callback = function()
+game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId,game.JobId)
+end}
+
+Tab:Button{
+    Name = "Advanced HTTP spy",
+    Description = nil,
+    Callback = function()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/batusz/main/roblox/advanced_http_spy"))()
+end}
+
+Tab:Button{
+    Name = "Enable Reset Button",
+    Description = nil,
+    Callback = function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/mW24cfXm", true))()
+end}
+
+Tab:Button{
+    Name = "SimpleSpy",
+    Description = nil,
+    Callback = function()
+loadstring(game:HttpGetAsync("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))()
+end}
+
+Tab:Button{
+    Name = "MollerMethod",
+    Description = nil,
+    Callback = function()
+loadstring(game:HttpGet 'https://mthd.ml') {
+				bracket_toggle = Enum.KeyCode.LeftBracket;
+				debug = false;
+				volume = 5;
+				bracket_external = false;
+			theme = {
+				accent = "#ff4539";
+				background = "#1c1c1c";
+				foreground = "#f0f6fc";
+			};
+		}
+		GUI:Notification{
+	Title = "MollerMethod Keybind",
+	Text = "Keybind is [ ",
+	Duration = 5,
+	Callback = function() end
+}
+end}
+
+Tab:Button{
+    Name = "ScriptBlox Script Viewer",
+    Description = nil,
+    Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/laderite/scripts/main/Cloudscripts.lua'))()
+end}
+
 
 
 GUI:Notification{
@@ -249,6 +341,12 @@ GUI:Credit{
 	Name = "watermelon with a gun",
 	Description = "Organized some scripts and put them in this ui lib.",
 	Discord = "oogabooga#7914"
+}
+
+GUI:Credit{
+	Name = "Cold",
+	Description = "ported scripts from the main hub",
+	Discord = "The C.#7304"
 }
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antikick.lua"))()
