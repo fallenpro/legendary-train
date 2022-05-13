@@ -2579,6 +2579,10 @@ do -- Example UI
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Open%20Source%20Backrooms%20Entity%20ESP.lua"))()
 		end)
 		
+		Tab:AddButton("shitty phantom forces esp", function()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/phantom%20force%20esp.lua"))()
+		end)
+		
 		local Tab = Window:AddTab("Credits")
 		
 		Tab:AddLabel("Q: Who made this UI?")
