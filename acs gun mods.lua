@@ -62,6 +62,19 @@ Tab:Button{
 	end
 }
 
+Tab:Button{
+	Name = "Set Ammo to Inf",
+	Description = nil,
+	Callback = function()
+	for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetDescendants()) do
+   		 if v:IsA("NumberValue") and v.Name == "Ammo" then
+       			 v.Value = math.huge
+   		 end
+	end
+	end
+}
+
+
 GUI:Notification{
 	Title = "GUN MOD INFO",
 	Text = "RE-EQUIP WEAPON AFTER ACTIVATING A GUN MOD",
