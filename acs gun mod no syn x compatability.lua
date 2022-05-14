@@ -39,6 +39,14 @@ local B6 = Section1:CreateButton("Shotgun Mod", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/acs%20shotgun%20mod.lua"))()
 end)
 
+local B7 = Section1:CreateButton("Set Ammo to Inf", function()
+    for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetDescendants()) do
+    	if v:IsA("NumberValue") and v.Name == "Ammo" then
+        	v.Value = math.huge
+    	end
+end
+end)
+
 local Toggle3 = Section3:CreateToggle("UI Toggle", nil, function(State)
 	Window:Toggle(State)
 end)
