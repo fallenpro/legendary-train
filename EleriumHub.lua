@@ -2036,7 +2036,7 @@ do -- Example UI
 	do -- Elements
  
 		Folder:AddButton("HUB", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/acs%20gun%20mods.lua"))()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/acs%20gun%20mod%20no%20syn%20x%20compatability.lua"))()
 		end)
 	local Folder = Tab:AddFolder("Big Paintball")
  
