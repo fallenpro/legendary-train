@@ -2579,12 +2579,16 @@ do -- Example UI
 		
 		local Tab = Window:AddTab("FloppaMods")
 		
-		Tab:AddButton("ESP for The Backrooms (K. Pixels)", function()
+		Tab:AddButton("Script for The Backrooms (K. Pixels)", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Open%20Source%20Backrooms%20Entity%20ESP.lua"))()
 		end)
 		
 		Tab:AddButton("shitty phantom forces esp", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/phantom%20force%20esp.lua"))()
+		end)
+		
+		Tab:AddButton("Cult of the Cryptids Script", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/cult%20of%20cryptid.lua"))()
 		end)
 		
 		local Tab = Window:AddTab("Credits")
