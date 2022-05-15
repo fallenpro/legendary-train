@@ -2514,7 +2514,7 @@ do -- Example UI
 	
 		Tab:AddTextBox("Remote Event Multiplier", function(repeattimes)
 		
-		local settings = {repeatamount = placeholder, exceptions = {"SayMessageRequest","MeleeUpdateEvent","NinjaBombEvent","BulletUpdateEvent","GunService_EV"}}
+		local settings = {repeatamount = placeholder, exceptions = {"SayMessageRequest","MeleeUpdateEvent","NinjaBombEvent","BulletUpdateEvent","GunService_EV","IndoorsService_EV","GameService","Footsteps","ControlService","ToolService","AudioService","CryptidService","EndingService","DialogService","GunService","CosmeticService","CollectableService","Message","TipService_EV","DialogService","ReviveService","LoadService","BecomeService_EV","SetLookAngles","NightVisionService",}}
 		local mt = getrawmetatable(game)
 		local old = mt.__namecall
 		setreadonly(mt, false)
