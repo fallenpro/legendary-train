@@ -1,3 +1,4 @@
+getgenv().DevBranchQuantumSupremacy = false
 local repeattimes = placeholder
 local message = bruh
 
