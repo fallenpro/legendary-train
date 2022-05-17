@@ -1,4 +1,4 @@
-getgenv().DevBranchQuantumSupremacy = false
+DevBranchQuantumSupremacy = false
 local repeattimes = placeholder
 local message = bruh
 
@@ -2581,17 +2581,16 @@ do -- Example UI
 		local Tab = Window:AddTab("Settings")
 		
 		local Switch = Tab:AddSwitch("Enable Development Branch", function(devbranch)
-			getgenv().DevBranchQuantumSupremacy = devbranch
-			print(getgenv().DevBranchQuantumSupremacy)
+			DevBranchQuantumSupremacy = devbranch
 		end)
 		
 		local Tab = Window:AddTab("FloppaMods")
 		
 		Tab:AddButton("Script for The Backrooms (K. Pixels)", function()
-			if getgenv().DevBranchQuantumSupremacy == true then
+			if DevBranchQuantumSupremacy == true then
 				loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/development/Open%20Source%20Backrooms%20Entity%20ESP.lua"))()
 			end
-			if getgenv().DevBranchQuantumSupremacy == false then
+			if DevBranchQuantumSupremacy == false then
 				loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Open%20Source%20Backrooms%20Entity%20ESP.lua"))()
 			end
 		end)
@@ -2601,10 +2600,10 @@ do -- Example UI
 		end)
 		
 		Tab:AddButton("Cult of the Cryptids Script", function()
-			if getgenv().DevBranchQuantumSupremacy == true then
+			if DevBranchQuantumSupremacy == true then
 				loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/development/cult%20of%20cryptid.lua"))()
 			end
-			if getgenv().DevBranchQuantumSupremacy == false then
+			if DevBranchQuantumSupremacy == false then
 				loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/cult%20of%20cryptid.lua"))()
 			end
 		end)
