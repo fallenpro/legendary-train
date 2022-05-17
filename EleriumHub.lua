@@ -2581,6 +2581,7 @@ do -- Example UI
 		
 		local Switch = Tab:AddSwitch("Enable Development Branch", function(devbranch)
 			getgenv().DevBranchQuantumSupremacy = devbranch
+			print(getgenv().DevBranchQuantumSupremacy)
 		end)
 		
 		local Tab = Window:AddTab("FloppaMods")
