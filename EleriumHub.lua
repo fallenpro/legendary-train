@@ -2579,9 +2579,7 @@ do -- Example UI
 		end)
 		
 		local Tab = Window:AddTab("FloppaMods")
-		
-		Tab:AddLabel("Enable Beta (Dev) Branch")
-		
+
 		local Switch = Tab:AddSwitch("Enable Development Branch", function(devbranch)
 			DevBranchQuantumSupremacy = devbranch
 		end)
