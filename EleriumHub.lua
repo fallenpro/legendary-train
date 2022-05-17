@@ -2578,13 +2578,14 @@ do -- Example UI
 			loadstring(game:HttpGet('https://raw.githubusercontent.com/laderite/scripts/main/Cloudscripts.lua'))()
 		end)
 		
-		local Tab = Window:AddTab("Settings")
+		local Tab = Window:AddTab("FloppaMods")
+		
+		Tab:AddLabel("Enable Beta (Dev) Branch")
 		
 		local Switch = Tab:AddSwitch("Enable Development Branch", function(devbranch)
 			DevBranchQuantumSupremacy = devbranch
 		end)
 		
-		local Tab = Window:AddTab("FloppaMods")
 		
 		Tab:AddButton("Script for The Backrooms (K. Pixels)", function()
 			if DevBranchQuantumSupremacy == true then
