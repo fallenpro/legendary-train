@@ -1,3 +1,8 @@
+--[[
+	bruh
+	github takes a while to update
+]]--
+
 DevBranchQuantumSupremacy = false
 local repeattimes = placeholder
 local message = bruh
