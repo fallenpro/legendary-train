@@ -2622,7 +2622,7 @@ do -- Example UI
 
 	Tab:Show()
 	library:FormatWindows()
-end end end end end end end end end end end end end end end end end end end end end end
+end end end end end end end end end end end end end end end end end end end end end
 
 local AkaliNotif = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/batusz/uilibrarys/main/AkaliNotifLib"))();
 local Notify = AkaliNotif.Notify;
