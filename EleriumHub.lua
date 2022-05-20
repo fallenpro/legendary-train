@@ -2153,13 +2153,7 @@ do -- Example UI
 		Folder:AddButton("Silent Aim", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-trainmain/KAT%20Silent%20Aim.lua"))()
 		end)
-	local Folder = Tab:AddFolder("Catter's Utilities Hub")
- 
-	do -- Elements
- 
-		Folder:AddButton("CU HUB", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/CU%20Re-Exec.lua"))()
-		end)
+
 	local Folder = Tab:AddFolder("Da Hood")
  
 	do -- Elements
