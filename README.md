@@ -10,3 +10,8 @@ credits are in the main hubs.
 if you're the creator or owner of one of the scripts or hubs and want credits, dm me on discord (discord is chad gaming7914) and i'll add it, just specify which hub your script is in as the two hubs have different scripts.
 
 feel free to make pull requests or ask for a certain script to be added
+
+yeah i skid shit here is basically what im saying
+however i still do add credits lol
+i guess this is open source too?
+idk
