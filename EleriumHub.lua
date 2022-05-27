@@ -6,7 +6,7 @@
 if isfile("autoexecexeunyantikick.txt") then
 	readfile("autoexecexeunyantikick.txt")
 else
-	writefile("autoexecexeunyantikick.txt", "autoexecexuny = true")
+	writefile("autoexecexeunyantikick.txt", "autoexecexuny = true somethingidk = true")
 end
 
 DevBranchQuantumSupremacy = false
@@ -2428,10 +2428,10 @@ do -- Example UI
 
 		local Switch = Tab:AddSwitch("Toggle Exuny's Antikick Auto-Executing", function(exunyautoexec)
 			autoexecexuny = exunyautoexec
-			writefile("autoexecexeunyantikick.txt", "autoexecexuny ="..exunyautoexec)
+			writefile("autoexecexeunyantikick.txt", "autoexecexuny = "..exunyautoexec "	somethingidk = "..autoexecexuny)
 		end)
 
-		Switch:Set(autoexecexuny)
+		Switch:Set(somethingidk)
 
 		Tab:AddButton("BackdoorChecker", function()
 			loadstring(game:HttpGetAsync(('https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua'),true))()
