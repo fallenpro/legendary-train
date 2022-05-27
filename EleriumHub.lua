@@ -2641,5 +2641,5 @@ do -- Example UI
 	library:FormatWindows()
 end end end end end end end end end end end end end end end end end end end end end
 
-SendAkaliNotification("	KEYBIND", "Default keybind is *", 8)
-SendAkaliNotification("	INFO", "Anti-Chat Ban auto-loads with this.", 12)
+SendAkaliNotification("KEYBIND", "Default keybind is *", 8)
+SendAkaliNotification("INFO", "Anti-Chat Ban auto-loads with this.", 12)
