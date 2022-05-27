@@ -2491,7 +2491,7 @@ do -- Example UI
 		end)
 		
 		Tab:AddButton("LagSwitch", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-trainmain/LagSwitch.lua"))()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/LagSwitch.lua"))()
 		end)
 		
 		Tab:AddButton("Universal Cart Ride Fucker Upper", function()
