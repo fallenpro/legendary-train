@@ -8,7 +8,6 @@ if antikickexec == true then
 end
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antichatban.lua"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/prerequisites.lua"))()
 
 DevBranchQuantumSupremacy = false
 local repeattimes = placeholder
@@ -2640,6 +2639,8 @@ do -- Example UI
 	Tab:Show()
 	library:FormatWindows()
 end end end end end end end end end end end end end end end end end end end end end
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/prerequisites.lua"))()
 
 SendAkaliNotification("KEYBIND", "Default keybind is *", 8)
 SendAkaliNotification("INFO", "Anti-Chat Ban auto-loads with this.", 12)
