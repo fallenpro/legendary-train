@@ -3,8 +3,10 @@
 	github takes a while to update
 ]]--
 
-if isfile("autoexecexeunyantikick") then
-	readfile("autoexecexeunyantikick")
+if isfile("autoexecexeunyantikick.txt") then
+	readfile("autoexecexeunyantikick.txt")
+else
+	writefile("autoexecexeunyantikick.txt", "autoexecexuny = true")
 end
 
 DevBranchQuantumSupremacy = false
@@ -2426,8 +2428,10 @@ do -- Example UI
 
 		local Switch = Tab:AddSwitch("Toggle Exuny's Antikick Auto-Executing", function(exunyautoexec)
 			autoexecexuny = exunyautoexec
-			writefile("autoexecexeunyantikick", "autoexecexuny ="..exunyautoexec)
+			writefile("autoexecexeunyantikick.txt", "autoexecexuny ="..exunyautoexec)
 		end)
+
+		Switch:Set(autoexecexuny)
 
 		Tab:AddButton("BackdoorChecker", function()
 			loadstring(game:HttpGetAsync(('https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua'),true))()
@@ -2659,4 +2663,7 @@ Notify({
     Duration = 0;
     });
 
+
+if autoexecexuny == true then
 loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antikick.lua"))()
+end
