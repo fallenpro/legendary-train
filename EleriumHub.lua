@@ -9,6 +9,10 @@ else
 	writefile("autoexecexeunyantikick.txt", "autoexecexuny = true somethingidk = true")
 end
 
+if autoexecexuny == true then
+	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antikick.lua"))()
+end
+
 DevBranchQuantumSupremacy = false
 local repeattimes = placeholder
 local message = bruh
@@ -2662,8 +2666,3 @@ Notify({
     Title = " NEW SCRIPTS";
     Duration = 0;
     });
-
-
-if autoexecexuny == true then
-loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antikick.lua"))()
-end
