@@ -2438,11 +2438,7 @@ do -- Example UI
 			loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80",true))()
 		end)
 		
-		Tab:AddButton("Dark Dex (V3)", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/dark%20dex%20v3.lua"))()
-		end)
-		
-		Tab:AddButton("Dark Dex (V4)", function()
+		Tab:AddButton("Dark Dex", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/dark%20dex.lua"))()
 		end)
 		
