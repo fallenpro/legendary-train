@@ -3,6 +3,10 @@
 	github takes a while to update
 ]]--
 
+if isfile("autoexecexeunyantikick") then
+	readfile("autoexecexeunyantikick")
+end
+
 DevBranchQuantumSupremacy = false
 local repeattimes = placeholder
 local message = bruh
@@ -2419,6 +2423,12 @@ do -- Example UI
 		end)
 		
 	local Tab = Window:AddTab("Misc")
+
+		local Switch = Tab:AddSwitch("Toggle Exuny's Antikick Auto-Executing", function(exunyautoexec)
+			autoexecexuny = exunyautoexec
+			writefile("autoexecexeunyantikick", "autoexecexuny ="..exunyautoexec)
+		end)
+
 		Tab:AddButton("BackdoorChecker", function()
 			loadstring(game:HttpGetAsync(('https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua'),true))()
 		end)
