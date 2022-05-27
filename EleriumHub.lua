@@ -3,13 +3,7 @@
 	github takes a while to update
 ]]--
 
-if isfile("autoexecexeunyantikick.txt") then
-	readfile("autoexecexeunyantikick.txt")
-else
-	writefile("autoexecexeunyantikick.txt", "autoexecexuny = true somethingidk = true")
-end
-
-if autoexecexuny == true then
+if antikickexec == true then
 	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antikick.lua"))()
 end
 
@@ -2430,13 +2424,6 @@ do -- Example UI
 		
 	local Tab = Window:AddTab("Misc")
 
-		local Switch = Tab:AddSwitch("Toggle Exuny's Antikick Auto-Executing", function(exunyautoexec)
-			autoexecexuny = exunyautoexec
-			writefile("autoexecexeunyantikick.txt", "autoexecexuny = "..exunyautoexec "	somethingidk = "..autoexecexuny)
-		end)
-
-		Switch:Set(somethingidk)
-
 		Tab:AddButton("BackdoorChecker", function()
 			loadstring(game:HttpGetAsync(('https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua'),true))()
 		end)
@@ -2467,6 +2454,10 @@ do -- Example UI
 		
 		Tab:AddButton("Earrape V2", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Earrape.lua"))()
+		end)
+
+		Tab:AddButton("Exuny's Antikick", function()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antikick.lua"))()
 		end)
 		
 		Tab:AddButton("Animation Changer", function()
