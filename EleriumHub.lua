@@ -8,6 +8,7 @@ if antikickexec == true then
 end
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antichatban.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/prerequisites.lua"))()
 
 DevBranchQuantumSupremacy = false
 local repeattimes = placeholder
@@ -2640,22 +2641,5 @@ do -- Example UI
 	library:FormatWindows()
 end end end end end end end end end end end end end end end end end end end end end
 
-local AkaliNotif = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/batusz/uilibrarys/main/AkaliNotifLib"))();
-local Notify = AkaliNotif.Notify;
-Notify({
-    Description = " Press * on numpad to hide/show ";
-    Title = " KEYBIND";
-    Duration = 7.5;
-    });
-
-Notify({
-    Description = " Discord invite is in misc tab. ";
-    Title = " Invite";
-    Duration = 6;
-    });
-
-Notify({
-    Description = " UPDATE ";
-    Title = " NEW SCRIPTS";
-    Duration = 0;
-    });
+SendAkaliNotification("	KEYBIND", "Default keybind is *", 8)
+SendAkaliNotification("	INFO", "Anti-Chat Ban auto-loads with this.", 12)
