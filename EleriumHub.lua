@@ -7,6 +7,8 @@ if antikickexec == true then
 	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antikick.lua"))()
 end
 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antichatban.lua"))()
+
 DevBranchQuantumSupremacy = false
 local repeattimes = placeholder
 local message = bruh
