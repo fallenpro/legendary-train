@@ -2636,13 +2636,15 @@ do -- Example UI
 	library:FormatWindows()
 end end end end end end end end end end end end end end end end end end end end end
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/prerequisites.lua"))()
-
-local AkaliNotif = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/batusz/uilibrarys/main/AkaliNotifLib"))();
-local Notify = AkaliNotif.Notify;
+local function SendAkaliNotification(titlestring, infostring, timetowait)
+    local AkaliNotif = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/batusz/uilibrarys/main/AkaliNotifLib"))();
+    local Notify = AkaliNotif.Notify;
     Notify({
-    Description = "Keybind is *";
-    Title = "KEYBIND";
-    Duration = 8;
+    Description = ""..infostring;
+    Title = ""..titlestring;
+    Duration = timetowait;
     });
+end
+
+SendAkaliNotification("KEYBIND", "Default keybind is *", 8)
 SendAkaliNotification("INFO", "Anti-Chat Ban auto-loads with this.", 12)
