@@ -2638,6 +2638,11 @@ end end end end end end end end end end end end end end end end end end end end 
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/prerequisites.lua"))()
 
-SendAkaliNotification("test", "test", 1)
-SendAkaliNotification("KEYBIND", "Default keybind is *", 8)
+local AkaliNotif = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/batusz/uilibrarys/main/AkaliNotifLib"))();
+local Notify = AkaliNotif.Notify;
+    Notify({
+    Description = "Keybind is *";
+    Title = "KEYBIND";
+    Duration = 8;
+    });
 SendAkaliNotification("INFO", "Anti-Chat Ban auto-loads with this.", 12)
