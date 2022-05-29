@@ -2646,5 +2646,12 @@ local function SendAkaliNotification(titlestring, infostring, timetowait)
     });
 end
 
-SendAkaliNotification("KEYBIND", "Default keybind is *", 8)
+local AkaliNotif = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/batusz/uilibrarys/main/AkaliNotifLib"))();
+local Notify = AkaliNotif.Notify;
+    Notify({
+    Description = "Defautl keybind is *";
+    Title = "KEYBIND";
+    Duration = 8;
+    });
+
 SendAkaliNotification("INFO", "Anti-Chat Ban auto-loads with this.", 12)
