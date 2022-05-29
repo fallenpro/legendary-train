@@ -2636,9 +2636,9 @@ do -- Example UI
 	library:FormatWindows()
 end end end end end end end end end end end end end end end end end end end end end
 
+local AkaliNotif = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/batusz/uilibrarys/main/AkaliNotifLib"))();
+local Notify = AkaliNotif.Notify;
 local function SendAkaliNotification(titlestring, infostring, timetowait)
-    local AkaliNotif = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/batusz/uilibrarys/main/AkaliNotifLib"))();
-    local Notify = AkaliNotif.Notify;
     Notify({
     Description = ""..infostring;
     Title = ""..titlestring;
@@ -2646,12 +2646,5 @@ local function SendAkaliNotification(titlestring, infostring, timetowait)
     });
 end
 
-local AkaliNotif = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/batusz/uilibrarys/main/AkaliNotifLib"))();
-local Notify = AkaliNotif.Notify;
-    Notify({
-    Description = "Defautl keybind is *";
-    Title = "KEYBIND";
-    Duration = 8;
-    });
-
+SendAkaliNotification("KEYBIND", "Default keybind is *", 8)
 SendAkaliNotification("INFO", "Anti-Chat Ban auto-loads with this.", 12)
