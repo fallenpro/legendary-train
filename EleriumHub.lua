@@ -100,10 +100,6 @@ local Windows = Instance.new("Frame")
 
 imgui.Name = "imgui"
 imgui.Parent = game:GetService("CoreGui")
-local guiprotect = syn.protect_gui or protect_gui or nil
-if guiprotect then
-	guiprotect("imgui")
-end
 
 Prefabs.Name = "Prefabs"
 Prefabs.Parent = imgui
