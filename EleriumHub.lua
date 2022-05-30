@@ -9,6 +9,10 @@ end
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antichatban.lua"))()
 
+pcall(function()
+        syn.protect_gui(game:GetService("CoreGui"))
+end)
+
 DevBranchQuantumSupremacy = false
 local repeattimes = placeholder
 local message = bruh
