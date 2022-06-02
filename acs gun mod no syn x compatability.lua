@@ -45,6 +45,11 @@ local B7 = Section1:CreateButton("Set Ammo to Inf", function()
         	v.Value = math.huge
     	end
 end
+for i,v in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do
+    	if v:IsA("NumberValue") and v.Name == "Ammo" then
+        	v.Value = math.huge
+    	end
+end
 end)
 
 local Toggle3 = Section3:CreateToggle("UI Toggle", nil, function(State)
