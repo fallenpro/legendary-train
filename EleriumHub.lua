@@ -8,6 +8,7 @@ if antikickexec == true then
 end
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antichatban.lua"))()
+local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kiriot22/ESP-Lib/main/ESP.lua"))()
 
 DevBranchQuantumSupremacy = false
 local repeattimes = placeholder
@@ -2634,6 +2635,19 @@ do -- Example UI
 			if DevBranchQuantumSupremacy == false then
 				loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/cult%20of%20cryptid.lua"))()
 			end
+		end)
+		local espfolder = Tab:AddFolder("ESP Toggles (kiriot22's esp lib")
+		espfolder:AddSwitch("Toggle Names", function(value)
+		ESP.Names = value
+		end)
+		espfolder:AddSwitch("Toggle Tracers", function(value)
+		ESP.Tracers = value
+		end)
+		espfolder:AddSwitch("Toggle Boxes", function(value)
+		ESP.Boxes = value
+		end)
+		espfolder:AddSwitch("Toggle ESP", function(value)
+		ESP:Toggle(value)
 		end)
 		
 		local Tab = Window:AddTab("Credits")
