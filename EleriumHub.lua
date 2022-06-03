@@ -2427,6 +2427,12 @@ do -- Example UI
 		end)
 		
 	local Tab = Window:AddTab("Misc")
+	
+		Tab:AddButton("Aimhot V8", function()
+			pcall(function()
+    				loadstring(game:HttpGet("https://raw.githubusercontent.com/Herrtt/AimHot-v8/master/Main.lua", true))()
+			end)
+		end
 
 		Tab:AddButton("BackdoorChecker", function()
 			loadstring(game:HttpGetAsync(('https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua'),true))()
