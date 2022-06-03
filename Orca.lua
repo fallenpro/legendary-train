@@ -1,3 +1,7 @@
+--[[
+	man looking at this what the fuck is this
+]]
+
 local instanceFromId = {}
 
 local idFromInstance = {}
