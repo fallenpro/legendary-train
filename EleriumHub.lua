@@ -4,6 +4,7 @@
 	ITS SO FUCKING SLOW
 	GITHUB UPDATE THE FUCKING RAW
 	HOLY SHIT
+	man im tryna push a fucking fix man
 ]]--
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antichatban.lua"))()
 local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kiriot22/ESP-Lib/main/ESP.lua"))()
