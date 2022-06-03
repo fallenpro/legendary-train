@@ -9,10 +9,6 @@ end
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antichatban.lua"))()
 
-pcall(function()
-        syn.protect_gui(game:GetService("CoreGui"))
-end)
-
 DevBranchQuantumSupremacy = false
 local repeattimes = placeholder
 local message = bruh
@@ -104,6 +100,7 @@ local Windows = Instance.new("Frame")
 
 imgui.Name = "imgui"
 imgui.Parent = game:GetService("CoreGui")
+syn.protect_gui(game:GetService("CoreGui").imgui)
 
 Prefabs.Name = "Prefabs"
 Prefabs.Parent = imgui
