@@ -2457,6 +2457,11 @@ do -- Example UI
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Coldlolololir/bfdzhuiasbghjdlbgjhlas/main/heu.lua"))()
 		end)
 		
+		Tab:AddButton("Homebrew Admin", function()
+			_G.CustomUI = false
+			loadstring(game:HttpGet(('https://raw.githubusercontent.com/mgamingpro/HomebrewAdmin/master/Main'),true))()
+		end)
+		
 		Tab:AddButton("Earrape V2", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Earrape.lua"))()
 		end)
