@@ -3,7 +3,7 @@ local netboost = 1000 --velocity
 --set to false to disable
 --set to a vector3 value if you dont want the velocity to change
 --set to a number to change the velocity in real time with magnitude equal to the number
-local idleMag = 0.005 --used only in case netboost is set to a number value
+local idleMag = 50.000 --used only in case netboost is set to a number value
 --if magnitude of the real velocity of a part is lower than this
 --then the fake velocity is being set to Vector3.new(0, netboost, 0)
 --the lower value the less you jitter but you might loose network ownership
