@@ -12,3 +12,5 @@ local PostMessageHook = function(self, msg)
    return OldFunctionHook(self, msg)
 end
 OldFunctionHook = HookFunction(PostMessage.fire, PostMessageHook)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/prerequisites.lua"))()
+SendAkaliNotification("LOADED", "Anti-Chat Ban has been loaded.", 6)
