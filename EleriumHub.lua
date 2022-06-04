@@ -2485,7 +2485,7 @@ do -- Example UI
 		Tab:AddButton("Infinite Yield", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Infinite-Store/Infinite-Store/main/main.lua"))()
 		end)
-		Tab:AddLabel("CLI is Command Line, if you didn't know")
+		
 		Tab:AddButton("Infinite Yield CLI (don't execute with normal iy)", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"), "IY_FE") "discord.gg/dYHag43eeU"
 			local function cls()
@@ -2508,7 +2508,7 @@ do -- Example UI
 			    end
 			end)(cls(), Hunter, was, here)
 		end)
-		
+		Tab:AddLabel("CLI is Command Line, if you didn't know")
 		Tab:AddButton("Fate's Admin", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))()
 		end)
