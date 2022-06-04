@@ -340,7 +340,9 @@ end)()
 coroutine.wrap(function() -------Checks
 while true do
 if mode2 == true and vented == false and dead == false then
-if Root.Velocity.Magnitude < 2 position = "idle2"> 20 then
+if Root.Velocity.Magnitude < 2 then
+position = "idle2"
+elseif Root.Velocity.Magnitude > 20 then
 position = "walk2"
 end
 end
@@ -353,16 +355,19 @@ while true do
 if vented == false and mode2 == false and attack == false and dead == false then
 if Root.Velocity.y > 1 then
 position = "jump"
-elseif Root.Velocity.y &lt; -1 then
+elseif Root.Velocity.y < -1 then
 position = "fall"
-elseif Root.Velocity.Magnitude < 2 position = "idle" position = "walk"> 20 then
+elseif Root.Velocity.Magnitude < 2 then
+position = "idle"
+elseif Root.Velocity.Magnitude < 20 then
+position = "walk"
+elseif Root.Velocity.Magnitude > 20 then
 position = "run"
 end
 end
 wait()
 end
 end)()
-
 coroutine.wrap(function()
 while true do
 sine = sine + change
