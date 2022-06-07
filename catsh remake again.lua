@@ -374,7 +374,7 @@ end}
 
 Tab:Button{
     Name = "Evo V2",
-    Description = nil,
+    Description = "Evo V2 is currently discontinued. We will put Evo V3's loadstring here once it's released." ,
     Callback = function()
 loadstring(game:HttpGetAsync("https://projectevo.xyz/script/loader.lua"))()
 end}
@@ -512,12 +512,6 @@ Tab:Button{
     Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/car.lua"))()
 end}
-Tab:Button{
-    Name = "Aimlabs v2.1b",
-    Description = nil,
-    Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/aimlabs%20v2.1.lua"))()
-end}
 
 Tab:Button{
     Name = "Admin (Selection 1)",
@@ -615,7 +609,7 @@ end}
 
 Tab:Button{
     Name = "Hitbox Extender",
-    Description = nil,
+    Description = "Tool hitbox extender.",
     Callback = function()
 loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Coldlolololir/bfdzhuiasbghjdlbgjhlas/main/heu.lua"))()
 end}
@@ -636,7 +630,7 @@ end}
 
 Tab:Button{
     Name = "Aimlabs v.2.1",
-    Description = nil,
+    Description = "A GUI themed aimbot.",
     Callback = function()
 loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/aimlabs%20v2.1.lua"))()
 end}
@@ -650,7 +644,7 @@ end}
 
 Tab:Button{
     Name = "Spider man but roblox",
-    Description = nil,
+    Description = "Walk on walls!",
     Callback = function()
 loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Gravity%20Controller.lua"))()
 end}
@@ -688,7 +682,7 @@ end}
 
 Tab:Button{
     Name = "Shed's Bypasser",
-    Description = nil,
+    Description = "A bypasser so you can swear :troll:",
     Callback = function()
 loadstring(game:HttpGetAsync("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
 end}
@@ -701,7 +695,7 @@ loadstring(game:HttpGetAsync("https://rawscripts.net/raw/Universal-Script-hdmi's
 end}
 
 Tab:Textbox{
-	Name = "Remote event duper",
+	Name = "Remote Event Duper",
 	Callback = function(dupeamt)
 	 local settings = {repeatamount = dupeamt, exceptions = {"SayMessageRequest","MeleeUpdateEvent","NinjaBombEvent","BulletUpdateEvent","GunService_EV","IndoorsService_EV","GameService","Footsteps","ControlService","ToolService","AudioService","CryptidService","EndingService","DialogService","GunService","CosmeticService","CollectableService","Message","TipService_EV","DialogService","ReviveService","LoadService","BecomeService_EV","SetLookAngles","NightVisionService","GunService","CryptidService","AdminService","PartOne","ControlService","CollectableService","GameService","AudioService","GuiService","ShowMessage","LoadService","EndingService","ToolService","PetService","GivePets","SkinService","ApplySkin","BuyCrate","SpawnPets","RemovePet","TotemService","TotemGUIService","BecomeService"}}
 local mt = getrawmetatable(game)
@@ -737,7 +731,7 @@ end}
 
 Tab:Button{
     Name = "Advanced HTTP Spy",
-    Description = nil,
+    Description = "View outgoing HTTP Requests.",
     Callback = function()
 loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/batusz/main/roblox/advanced_http_spy"))()
 end}
@@ -763,7 +757,12 @@ Tab:Button{
 loadstring(game:HttpGet('https://raw.githubusercontent.com/laderite/scripts/main/Cloudscripts.lua'))()
 end}
 
-
+Tab:Button{
+	Name = "Nullware Hub V3",
+	Description = "Custom FE Animation hub.",
+	Callback = function()
+	loadstring(game:HttpGet("https://gist.githubusercontent.com/M6HqVBcddw2qaN4s/2d722888a388017c18028cd434c43a25/raw/dcccf1027fe4b90780e47767aaf584389c9d7771/EULma3fU90PUOKUn?identifier=".. (function()local a=""for b=1,256 do local c=math.random(1,3)a=a..string.char(c==1 and math.random(48,57)or c==2 and math.random(97,122)or c==3 and math.random(65,90))end;return a end)()))()
+end}
 
 GUI:Notification{
 	Title = "KEYBINDS",
@@ -786,13 +785,13 @@ GUI:Notification{
 	Callback = function() end
 }
 
-GUI:set_status("v1.0c")
+GUI:set_status("v1.1")
 
 	
 GUI:Credit{
 	Name = "watermelon with a gun",
 	Description = "Organized some scripts and put them in this ui lib.",
-	Discord = "oogabooga#7914"
+	Discord = "chad gaming#7914"
 }
 
 GUI:Credit{
