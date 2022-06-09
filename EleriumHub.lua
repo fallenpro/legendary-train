@@ -2651,7 +2651,7 @@ do -- Example UI
 				loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/cult%20of%20cryptid.lua"))()
 			end
 		end)
-		local espfolder = Tab:AddFolder("ESP Toggles (kiriot22's esp lib")
+		local espfolder = Tab:AddFolder("ESP Toggles (kiriot22's esp lib)")
 		espfolder:AddSwitch("Toggle Names", function(value)
 		ESP.Names = value
 		end)
