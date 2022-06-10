@@ -61,6 +61,9 @@ for i,v in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants
     	end
 end
 end)
+local B8 = Section1:CreateButton("Gun Mods (for ACS V2", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/acs%20gun%20mod%20(for%20v2).lua"))()
+end)
 
 local Toggle3 = Section3:CreateToggle("UI Toggle", nil, function(State)
 	Window:Toggle(State)
