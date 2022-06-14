@@ -13,6 +13,17 @@ local DevBranchQuantumSupremacy = false
 local repeattimes = placeholder
 local message = bruh
 
+-- // hydroxide things
+
+local owner = "Upbolt"
+local branch = "revision"
+
+local function webImport(file)
+    return loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/%s/Hydroxide/%s/%s.lua"):format(owner, branch, file)), file .. '.lua')()
+end
+
+-- // rest of script
+
 local ui_options = {
 	main_color = Color3.fromRGB(41, 74, 122),
 	min_size = Vector2.new(700, 700),
@@ -2596,6 +2607,11 @@ do -- Example UI
 		
 		Tab:AddButton("SimpleSpy", function()
 			loadstring(game:HttpGetAsync("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))()
+		end)
+		
+		Tab:AddButton("Hydroxide", function()
+			webImport("init")
+			webImport("ui/main")
 		end)
 		
 		Tab:AddButton("Mollermethod", function()
