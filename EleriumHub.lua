@@ -1,11 +1,3 @@
---[[
-	github slowwwwwwwwww
-	why it so slow
-	ITS SO FUCKING SLOW
-	GITHUB UPDATE THE FUCKING RAW
-	HOLY SHIT
-	man im tryna push a fucking fix man
-]]--
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antichatban.lua"))()
 local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kiriot22/ESP-Lib/main/ESP.lua"))()
 
@@ -2462,6 +2454,13 @@ do -- Example UI
 		
 		Tab:AddButton("Beta Dark Dex", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/beta%20dark%20dex.lua"))()
+		end)
+		
+		Tab:AddButton("Dark Dex v1", function()
+			loadstring(game:GetObjects('rbxassetid://2180084478')[1].Source)()
+		end)
+		Tab:AddButton("Dark Dex v2", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/dex%20v2.lua"))()
 		end)
 		
 		Tab:AddButton("Hitbox Extender", function()
