@@ -6,6 +6,7 @@ end
 if antichatban == true or false then
 if antichatban then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antichatban.lua"))()
+SendAkaliNotification("INFO", "Anti-Chat Ban has loaded.", 8)
 end
 end
 
@@ -2725,4 +2726,3 @@ local function SendAkaliNotification(titlestring, infostring, timetowait)
 end
 
 SendAkaliNotification("KEYBIND", "Default keybind is *", 8)
-SendAkaliNotification("INFO", "Anti-Chat Ban auto-loads with this.", 12)
