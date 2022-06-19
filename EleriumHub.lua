@@ -1,13 +1,6 @@
-if antichatban == nil then
-antichatban = true
-end
-
-
-if antichatban == true or false then
 if antichatban then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antichatban.lua"))()
 SendAkaliNotification("INFO", "Anti-Chat Ban has loaded.", 8)
-end
 end
 
 local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kiriot22/ESP-Lib/main/ESP.lua"))()
