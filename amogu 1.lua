@@ -1,6 +1,6 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/ui-libs-ui-lib-backups/main/function%20things/Orion%20UI%20but%20notif%20only.lua"))()
 
-OrionNotif("KEYBINDS", "Keybinds are: F to fly, Q to die, C to sit.", nil, 6)
+OrionNotif("KEYBINDS", "Keybinds are: F to float, Q to die, C to sit.", 6)
 
 local netboost = 1000 --velocity 
 --netboost usage: 
