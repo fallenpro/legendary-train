@@ -1,7 +1,14 @@
 local message = bruh
 local DevBranch = false
-if antikickexec == true then
-	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antikick.lua"))()
+if antichatban then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antichatban.lua"))()
+SendAkaliNotification("INFO", "Anti-Chat Ban has loaded.", 8)
+end
+if antikickexec and not alternateantikickexec then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antikick.lua"))()
+end
+if alternateantikickexec and not antikickexec then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/alternate%20anti-kick.lua"))()
 end
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antichatban.lua"))()
