@@ -2,6 +2,12 @@ if antichatban then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antichatban.lua"))()
 SendAkaliNotification("INFO", "Anti-Chat Ban has loaded.", 8)
 end
+if antikickexec and not alternateantikickexec then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antikick.lua"))()
+end
+if alternateantikickexec and not antikickexec then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/alternate%20anti-kick.lua"))()
+end
 
 local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kiriot22/ESP-Lib/main/ESP.lua"))()
 
