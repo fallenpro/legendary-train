@@ -77,12 +77,14 @@ for i,v in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants
 end
     for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetDescendants()) do
     	if v:IsA("NumberValue") and v.Name == "StoredAmmo" then
-        	v.Value = math.huge
+        	v.MaxValue = math.huge
+		v.Value = math.huge
     	end
 end
 for i,v in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do
     	if v:IsA("NumberValue") and v.Name == "StoredAmmo" then
-        	v.Value = math.huge
+        	v.MaxValue = math.huge
+		v.Value = math.huge
     	end
 end
 end)
