@@ -1,4 +1,4 @@
-ocal old; old = hookmetamethod(game, "__namecall", function(self, ...)
+local old; old = hookmetamethod(game, "__namecall", function(self, ...)
  if getnamecallmethod() == "FireServer" and self.Name == "Equipar" then
   local args = {...}
   local weapon_properties = args[2]
