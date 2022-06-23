@@ -4,6 +4,8 @@ local Config = {
 	Keybind = Enum.KeyCode.RightBracket
 }
 
+local ModifyAmmo, ModifyBulletPen, ModifyBullets, ModifyBulletSpeed, ModifyExplosionRadius, ModifyFirerate, NoRecoil, NoSpread, NoDrop, ForceAuto, UseExplosiveAmmo, EnableWeaponMods
+
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/batusz/uilibrarys/main/bracketV3"))()
 local Window = Library:CreateWindow(Config, game:GetService("CoreGui"))
 
@@ -14,32 +16,55 @@ local Section1 = Tab1:CreateSection("QUANTUM SUPREMACY")
 local Section3 = Tab2:CreateSection("Menu")
 local Section4 = Tab2:CreateSection("Background")
 
-local B1 = Section1:CreateButton("Infinite Ammo + Firerate", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/INFAMMO.lua"))()
+Section1:CreateToggle("Enable Weapon Mods", false, function(value)
+	EnableWeaponMods = value
 end)
 
-local B2 = Section1:CreateButton("Infinite Ammo + Damage", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/INFAMMO%20%2B%20DAMAGE.lua"))()
+Section1:CreateToggle("Modify Ammo Capacity", false, function(value)
+	ModifyAmmo = value
 end)
 
-local B3 = Section1:CreateButton("Explosive Bullets", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/ACS%20Giant%20Explosions.lua"))()
+Section1:CreateToggle("Modify Bullet Penetration", false, function(value)
+	ModifyBulletPen = value
 end)
 
-
-local B4 = Section1:CreateButton("Really Explosive Bullets", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/ACS%20Tsar%20Bomba%20Bullets.lua"))()
+Section1:CreateToggle("Modify Bullet Amount", false, function(value)
+	ModifyBullets = value
 end)
 
-local B5 = Section1:CreateButton("Infinite Ammo", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/infammo%20v2.lua"))()
+Section1:CreateToggle("Modify Bullet Speed", false, function(value)
+	ModifyBulletSpeed = value
 end)
 
-local B6 = Section1:CreateButton("Shotgun Mod", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/acs%20shotgun%20mod.lua"))()
+Section1:CreateToggle("Modify Firerate", false, function(value)
+	ModifyFirerate = value
 end)
 
-local B7 = Section1:CreateButton("Set Ammo to Inf", function()
+Section1:CreateToggle("Modify Recoil", false, function(value)
+	NoRecoil = value
+end)
+
+Section1:CreateToggle("Modify Spread", false, function(value)
+	NoSpread = value
+end)
+
+Section1:CreateToggle("Modify Drop", false, function(value)
+	NoDrop = value
+end)
+
+Section1:CreateToggle("Force Automatic Firemode", false, function(value)
+	ForceAuto = value
+end)
+
+Section1:CreateToggle("Force Explosive Ammo", false, function(value)
+	UseExplosiveAmmo = value
+end)
+
+Section1:CreateToggle("Modify Explosion Radius", false, function(value)
+	ModifyExplosionRadius = value
+end)
+
+Section1:CreateButton("Set Ammo to Inf", function()
 for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetDescendants()) do
     	if v:IsA("NumberValue") and v.Name == "Ammo" then
         	v.Value = math.huge
@@ -61,7 +86,7 @@ for i,v in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants
     	end
 end
 end)
-local B8 = Section1:CreateButton("Gun Mods (for ACS V2)", function()
+Section1:CreateButton("Gun Mods (for ACS V2)", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/acs%20gun%20mod%20(for%20v2).lua"))()
 end)
 
@@ -118,5 +143,62 @@ local Notify = AkaliNotif.Notify;
 Notify({
     Description = " Re-equip weapon after gun mod execution for it to apply. ";
     Title = " INFO";
-    Duration = 20;
+    Duration = 8;
     });
+
+-- // actual gun mods
+
+local old; old = hookmetamethod(game, "__namecall", function(self, ...)
+	if getnamecallmethod() == "FireServer" and self.Name == "Equipar" and EnableWeaponMods then
+		local args = {...}
+		local weapon_properties = args[2]
+		if ModifyAmmo then
+		weapon_properties["Ammo"] = math.huge
+		end
+		if ModifyBullets then
+		weapon_properties["Bullets"] = 18
+		end
+		if ModifyFirerate then
+		weapon_properties["FireRate"] = 300
+		end
+		if NoRecoil then
+		weapon_properties["MinRecoilPower"] = 0.0001
+		weapon_properties["MaxRecoilPower"] = 0.0001
+		weapon_properties["VRecoil"] = {
+				[1] = 0,
+				[2] = 0
+			}
+		weapon_properties["HRecoil"] = {
+				[1] = 0,
+				[2] = 0
+			}
+		end
+		if NoSpread then
+		weapon_properties["MaxSpread"] = 0.0001
+		weapon_properties["MinSpread"] = 0.0001
+		end
+		weapon_properties["SwayBase"] = 0
+		if ForceAuto then
+		weapon_properties["Mode"] = "Auto"
+		end
+		if ModifyBulletPen then
+		weapon_properties["BulletPenetration"] = 5000
+		end
+		if ModifyBulletSpeed then
+		weapon_properties["BSpeed"] = 99999
+		end
+		if NoDrop then
+		weapon_properties["BDrop"] = 0
+		end
+		if UseExplosiveAmmo then
+		weapon_properties["BulletType"] = "HEDP"
+		weapon_properties["ExplosiveHit"] = true
+		end
+		if ModifyExplosionRadius then
+		weapon_properties["ExpRadius"] = 99999999
+		end
+	
+		return self.FireServer(self, unpack(args))
+	end
+	return old(self, ...)
+end)
