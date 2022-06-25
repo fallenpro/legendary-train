@@ -161,7 +161,7 @@ local old; old = hookmetamethod(game, "__namecall", function(self, ...)
 		weapon_properties["Bullets"] = 18
 		end
 		if ModifyFirerate then
-		weapon_properties["FireRate"] = 300
+		weapon_properties["FireRate"] = 99999
 		end
 		if NoRecoil then
 		weapon_properties["MinRecoilPower"] = 0.0001
