@@ -158,14 +158,14 @@ local old; old = hookmetamethod(game, "__namecall", function(self, ...)
 		weapon_properties["Ammo"] = math.huge
 		end
 		if ModifyBullets then
-		weapon_properties["Bullets"] = 18
+		weapon_properties["Bullets"] = 10
 		end
 		if ModifyFirerate then
 		weapon_properties["FireRate"] = 99999
 		end
 		if NoRecoil then
-		weapon_properties["MinRecoilPower"] = 0.0001
-		weapon_properties["MaxRecoilPower"] = 0.0001
+		weapon_properties["MinRecoilPower"] = 0
+		weapon_properties["MaxRecoilPower"] = 0
 		weapon_properties["VRecoil"] = {
 				[1] = 0,
 				[2] = 0
@@ -176,18 +176,18 @@ local old; old = hookmetamethod(game, "__namecall", function(self, ...)
 			}
 		end
 		if NoSpread then
-		weapon_properties["MaxSpread"] = 0.0001
-		weapon_properties["MinSpread"] = 0.0001
+		weapon_properties["MaxSpread"] = 0
+		weapon_properties["MinSpread"] = 0
 		end
 		weapon_properties["SwayBase"] = 0
 		if ForceAuto then
 		weapon_properties["Mode"] = "Auto"
 		end
 		if ModifyBulletPen then
-		weapon_properties["BulletPenetration"] = 5000
+		weapon_properties["BulletPenetration"] = 999999
 		end
 		if ModifyBulletSpeed then
-		weapon_properties["BSpeed"] = 99999
+		weapon_properties["BSpeed"] = 9999999
 		end
 		if NoDrop then
 		weapon_properties["BDrop"] = 0
