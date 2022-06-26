@@ -1,3 +1,4 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/ui-libs-ui-lib-backups/main/function%20things/AkaliNotifLib.lua"))()
 local message = bruh
 local DevBranch = false
 if antichatban then
@@ -9,6 +10,12 @@ if antikickexec and not alternateantikickexec then
 end
 if alternateantikickexec and not antikickexec then
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/alternate%20anti-kick.lua"))()
+end
+
+if alternateantikickexec and antikickexec then
+SendAkaliNotification("WARNING", "It is recommended to only load one antikick, however we'll try loading both.", 8)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/alternate%20anti-kick.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antikick.lua"))()
 end
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antichatban.lua"))()
