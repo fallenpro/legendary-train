@@ -1,3 +1,13 @@
+local AkaliNotif = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/batusz/uilibrarys/main/AkaliNotifLib"))();
+local Notify = AkaliNotif.Notify;
+local function SendAkaliNotification(titlestring, infostring, timetowait)
+    Notify({
+    Description = ""..infostring;
+    Title = ""..titlestring;
+    Duration = timetowait;
+    });
+end
+
 if antichatban then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antichatban.lua"))()
 SendAkaliNotification("INFO", "Anti-Chat Ban has loaded.", 8)
@@ -7,6 +17,12 @@ if antikickexec and not alternateantikickexec then
 end
 if alternateantikickexec and not antikickexec then
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/alternate%20anti-kick.lua"))()
+end
+
+if alternateantikickexec and antikickexec then
+SendAkaliNotification("WARNING", "It is recommended to only load one antikick, however we'll try loading both.", 8)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/alternate%20anti-kick.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antikick.lua"))()
 end
 
 local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kiriot22/ESP-Lib/main/ESP.lua"))()
@@ -2713,15 +2729,5 @@ do -- Example UI
 	Tab:Show()
 	library:FormatWindows()
 end end end end end end end end end end end end end end end end end end end end end
-
-local AkaliNotif = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/batusz/uilibrarys/main/AkaliNotifLib"))();
-local Notify = AkaliNotif.Notify;
-local function SendAkaliNotification(titlestring, infostring, timetowait)
-    Notify({
-    Description = ""..infostring;
-    Title = ""..titlestring;
-    Duration = timetowait;
-    });
-end
 
 SendAkaliNotification("KEYBIND", "Default keybind is *", 8)
