@@ -2474,14 +2474,6 @@ do -- Example UI
 			loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80",true))()
 		end)
 		
-		Tab:AddButton("Dark Dex", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/dark%20dex.lua"))()
-		end)
-		
-		Tab:AddButton("Beta Dark Dex", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/beta%20dark%20dex.lua"))()
-		end)
-		
 		Tab:AddButton("Dark Dex v1", function()
 			loadstring(game:GetObjects('rbxassetid://2180084478')[1].Source)()
 		end)
