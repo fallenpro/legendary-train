@@ -602,26 +602,6 @@ Tab:Button{
 end}
 
 Tab:Button{
-    Name = "Dex",
-    Callback = function()
-        Tab:Prompt{
-            Title = "Selection",
-            Text = "Which Dex version do you want?",
-            Buttons = {
-                Beta = function()
-                    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/beta%20dark%20dex.lua"))()
-                end,
-                V4 = function()
-                    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/dark%20dex.lua"))()
-                end,
-		V3 = function()
-		    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/dark%20dex%20v3.lua"))()
-		end
-            }
-        }
-end}
-
-Tab:Button{
     Name = "Hitbox Extender",
     Description = "Tool hitbox extender.",
     Callback = function()
