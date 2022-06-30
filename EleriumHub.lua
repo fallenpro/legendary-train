@@ -2481,6 +2481,14 @@ do -- Example UI
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/dex%20v2.lua"))()
 		end)
 		
+		Tab:AddButton("Dark Dex", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/dark%20dex.lua"))()
+		end)
+
+		Tab:AddButton("Beta Dark Dex", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/beta%20dark%20dex.lua"))()
+		end)
+		
 		Tab:AddButton("Hitbox Extender", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Coldlolololir/bfdzhuiasbghjdlbgjhlas/main/heu.lua"))()
 		end)
