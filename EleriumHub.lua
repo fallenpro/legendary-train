@@ -2519,7 +2519,7 @@ do -- Example UI
 		end)
 		
 		Tab:AddButton("Infinite Yield", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Infinite-Store/Infinite-Store/main/main.lua"))()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 		end)
 		
 		Tab:AddButton("Infinite Yield CLI (don't execute with normal iy)", function()
