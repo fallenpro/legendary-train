@@ -9,7 +9,7 @@ vwindow:Update("Getting script hub compatible with your executor..", 0.75)
 wait(1)
 vwindow:Complete()
 end
-if syn then
+if syn.protect_gui then
 	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/EleriumHub.lua"))()
 else
 	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/catsh%20remake%20again.lua"))()
