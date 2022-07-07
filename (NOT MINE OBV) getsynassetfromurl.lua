@@ -7,7 +7,7 @@ getgenv().getsynasset   = function(path_or_url)
             makefolder("synassets")
         end
         local file = string.split(path_or_url, "/")
-        local file1 = file[7]
+        local file1 = file[#file]
         local file2 = string.split(file1, ".")
         local filename = file2[1]
         if isfile("synassets\\" .. filename .. ".png") then
