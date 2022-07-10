@@ -31,15 +31,6 @@ local DevBranchQuantumSupremacy = false
 local repeattimes = placeholder
 local message = bruh
 
--- // hydroxide things
-
-local owner = "Upbolt"
-local branch = "revision"
-
-local function webImport(file)
-    return loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/%s/Hydroxide/%s/%s.lua"):format(owner, branch, file)), file .. '.lua')()
-end
-
 -- // funny coregui detection bypass from v3rm, thread https://v3rmillion.net/showthread.php?tid=1154309
 
 local CoreGui = game.CoreGui
@@ -2738,9 +2729,8 @@ do -- Example UI
 			loadstring(game:HttpGetAsync("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))()
 		end)
 		
-		Tab:AddButton("Hydroxide", function()
-			webImport("init")
-			webImport("ui/main")
+		Tab:AddButton("HydroxideOne", function()
+			loadstring(game:HttpGet('https://one.hydroxide.cc/loader'))();
 		end)
 		
 		Tab:AddButton("Mollermethod", function()
