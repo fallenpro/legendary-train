@@ -2758,6 +2758,19 @@ do -- Example UI
 			getgenv().Theme = "Blue"
 			loadstring(game:HttpGetAsync("https://gist.githubusercontent.com/M6HqVBcddw2qaN4s/2d722888a388017c18028cd434c43a25/raw/dcccf1027fe4b90780e47767aaf584389c9d7771/EULma3fU90PUOKUn?identifier=".. (function()local a=""for b=1,256 do local c=math.random(1,3)a=a..string.char(c==1 and math.random(48,57)or c==2 and math.random(97,122)or c==3 and math.random(65,90))end;return a end)()))()
 		end)
+		local espfolder = Tab:AddFolder("ESP Toggles (kiriot22's esp lib)")
+		espfolder:AddSwitch("Toggle Names", function(value)
+		ESP.Names = value
+		end)
+		espfolder:AddSwitch("Toggle Tracers", function(value)
+		ESP.Tracers = value
+		end)
+		espfolder:AddSwitch("Toggle Boxes", function(value)
+		ESP.Boxes = value
+		end)
+		espfolder:AddSwitch("Toggle ESP", function(value)
+		ESP:Toggle(value)
+		end)
 		
 		local Tab = Window:AddTab("FloppaMods")
 
@@ -2786,19 +2799,6 @@ do -- Example UI
 			if DevBranchQuantumSupremacy == false then
 				loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/cult%20of%20cryptid.lua"))()
 			end
-		end)
-		local espfolder = Tab:AddFolder("ESP Toggles (kiriot22's esp lib)")
-		espfolder:AddSwitch("Toggle Names", function(value)
-		ESP.Names = value
-		end)
-		espfolder:AddSwitch("Toggle Tracers", function(value)
-		ESP.Tracers = value
-		end)
-		espfolder:AddSwitch("Toggle Boxes", function(value)
-		ESP.Boxes = value
-		end)
-		espfolder:AddSwitch("Toggle ESP", function(value)
-		ESP:Toggle(value)
 		end)
 		
 		local Tab = Window:AddTab("Credits")
