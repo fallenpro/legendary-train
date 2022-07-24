@@ -2668,14 +2668,16 @@ do -- Example UI
 		ESP:Toggle(value)
 		end)
 		
-		local Tab = Window:AddTab("FloppaMods")
+		local Tab = Window:AddTab("my scripts")
 
-		local Switch = Tab:AddSwitch("Enable Development Branch", function(devbranch)
+		local FloppaFolder = Tab:AddFolder("FloppaMods")
+
+		local Switch = FloppaFolder:AddSwitch("Enable Development Branch", function(devbranch)
 			DevBranchQuantumSupremacy = devbranch
 		end)
 		
 		
-		Tab:AddButton("Script for The Backrooms (K. Pixels)", function()
+		FloppaFolder:AddButton("Script for The Backrooms (K. Pixels)", function()
 			if DevBranchQuantumSupremacy == true then
 				loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/development/Open%20Source%20Backrooms%20Entity%20ESP.lua"))()
 			end
@@ -2684,11 +2686,11 @@ do -- Example UI
 			end
 		end)
 		
-		Tab:AddButton("shitty phantom forces esp", function()
+		FloppaFolder:AddButton("shitty phantom forces esp", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/phantom%20force%20esp.lua"))()
 		end)
 		
-		Tab:AddButton("Cult of the Cryptids Script", function()
+		FloppaFolder:AddButton("Cult of the Cryptids Script", function()
 			if DevBranchQuantumSupremacy == true then
 				loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/development/cult%20of%20cryptid.lua"))()
 			end
@@ -2697,6 +2699,12 @@ do -- Example UI
 			end
 		end)
 		
+		local XyliteFolder = Tab:AddFolder("Xylite")
+
+		XyliteFolder:AddButton("Xylite Utilities", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/xylite/Xylite%20Utilities.lua"))()
+		end)
+
 		local Tab = Window:AddTab("Credits")
 		
 		Tab:AddLabel("Q: Who made this UI?")
