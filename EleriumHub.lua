@@ -2707,20 +2707,15 @@ do -- Example UI
 
 		local Tab = Window:AddTab("Credits")
 		
-		Tab:AddLabel("Q: Who made this UI?")
-		Tab:AddLabel("A: Singularity on V3rm and on Discord Singularity#5490.")
-		Tab:AddLabel("This is singlehandedly one of the best UI's I've used.")
-		Tab:AddLabel("Q: What's this UI named?")
-		Tab:AddLabel("A: Elerium.")
+		Tab:AddLabel("UI Maker: Singularity on V3rm and on Discord Singularity#5490.")
+		Tab:AddLabel("UI Name: Elerium.")
 		Tab:AddLabel("Source is below.")
 		Tab:AddButton("Copy Source", function()
-			syn.write_clipboard('https://github.com/bloodball/UI-Librarys/blob/main/Elerium')
+			local wclip = setclipboard or syn.write_clipboard or nil
+			if wclip then
+				wclip('https://github.com/bloodball/UI-Librarys/blob/main/Elerium')
+			end
 		end)
-		Tab:AddLabel("Q: How'd you get the UI to scroll?")
-		Tab:AddLabel("A: Modified some of the source code.")
-		
-		Tab:AddLabel("Q: What the hell do I press to hide/show the gui?")
-		Tab:AddLabel("A: You press the * on the keypad aka KeypadMultiply.")
 		Tab:AddLabel("made by demonstrating quantum supremacy gang")
 		
 	end
