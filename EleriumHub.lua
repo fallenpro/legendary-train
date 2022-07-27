@@ -2699,11 +2699,9 @@ do -- Example UI
 			end
 		end)
 		
-		local XyliteFolder = Tab:AddFolder("Xylite")
+		local XyliteFolder = Tab:AddFolder("Xylite (UNUSED AS OF NOW)")
 
-		XyliteFolder:AddButton("Xylite Utilities", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/xylite/Xylite%20Utilities.lua"))()
-		end)
+		
 
 		local Tab = Window:AddTab("Credits")
 		
