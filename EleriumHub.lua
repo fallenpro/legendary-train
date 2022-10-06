@@ -1,16 +1,22 @@
-local AkaliNotif = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/batusz/uilibrarys/main/AkaliNotifLib"))();
-local Notify = AkaliNotif.Notify;
-local function SendAkaliNotification(titlestring, infostring, timetowait)
-    Notify({
-    Description = ""..infostring;
-    Title = ""..titlestring;
-    Duration = timetowait;
-    });
+local Services = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Utilities/Services.lua'))()
+local plr = game:GetService'Players'.LocalPlayer; local plrs = plr.Parent
+local plrw = plr.Character
+local plrh = plrw:FindFirstChild('Humanoid')
+local plrhrp = plrw:FindFirstChild('HumanoidRootPart')
+local Send = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Utilities/Notifications.lua'))():Init()
+plr.CharacterAdded:Connect(function(nchar)
+    plrhrp = nchar:WaitForChild('HumanoidRootPart')
+    plrw = nchar
+    plrh = plrw.Humanoid
+end)
+
+local SendAkaliNotification = function(title, msg, dur)
+    return Send:Akali(title, msg, dur)
 end
 
 if antichatban then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antichatban.lua"))()
-SendAkaliNotification("INFO", "Anti-Chat Ban has loaded.", 8)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antichatban.lua"))()
+    SendAkaliNotification("INFO", "Anti-Chat Ban has loaded.", 8)
 end
 if antikickexec and not alternateantikickexec then
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antikick.lua"))()
@@ -20,9 +26,9 @@ if alternateantikickexec and not antikickexec then
 end
 
 if alternateantikickexec and antikickexec then
-SendAkaliNotification("WARNING", "It is recommended to only load one antikick, however we'll try loading both.", 8)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/alternate%20anti-kick.lua"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antikick.lua"))()
+    SendAkaliNotification("WARNING", "It is recommended to only load one antikick, however we'll try loading both.", 8)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/alternate%20anti-kick.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antikick.lua"))()
 end
 
 local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kiriot22/ESP-Lib/main/ESP.lua"))()
@@ -2071,9 +2077,7 @@ do -- Example UI
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/acs%20gun%20mod%20no%20syn%20x%20compatability.lua"))()
 		end)
 	local Folder = Tab:AddFolder("Big Paintball")
- 
-	do -- Elements
- 
+
 		Folder:AddButton("Unlock All", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/big%20paintball%20unlock%20all.lua"))()
 		end)
@@ -2086,16 +2090,12 @@ do -- Example UI
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/The3Bakers4565/Spicy-Bagel/main/Other/Big_Paintball/Kill_All.lua"))()
 		end)
 	local Folder = Tab:AddFolder("Isle")
- 
-	do -- Elements
- 
+
 		Folder:AddButton("ESP", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/superior%20isle%20esp.lua"))()
 		end)
 	local Folder = Tab:AddFolder("State of Anarchy")
- 
-	do -- Elements
- 
+
 		Folder:AddButton("SOA GUI", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/soa.lua"))()
 		end)
@@ -2123,17 +2123,13 @@ do -- Example UI
 		end)
 					
 	local Folder = Tab:AddFolder("Recoil Zombies")
- 
-	do -- Elements
- 
+
 		Folder:AddButton("Gun Giver", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Recoil_zombie_script.lua"))()
 		end)
 		
 	local Folder = Tab:AddFolder("Clicking Simulator")
- 
-	do -- Elements
- 
+
 		Folder:AddButton("CS", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/LaDamage/releases/main/Clicker-Simulator.lua"))()
 		end)
@@ -2149,9 +2145,7 @@ do -- Example UI
 	end)
 		
 		local Folder = Tab:AddFolder("Phantom Forces")
- 
-	do -- Elements
- 
+
 		Folder:AddButton("Aves PF GUI", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Averiias/purple-haze-pf/main/loader.lua"))()
 		end)
@@ -2160,16 +2154,12 @@ do -- Example UI
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/herrtts%20pf%20gui.lua"))()
 		end)
 	local Folder = Tab:AddFolder("Funky Friday")
- 
-	do -- Elements
- 
+
 		Folder:AddButton("Wally's Autoplayer", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
 		end)
 	local Folder = Tab:AddFolder("KAT")
- 
-	do -- Elements
- 
+
 		Folder:AddButton("2 Free Items", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/KAT%20Free%202%20Items"))()
 		end)
@@ -2187,17 +2177,13 @@ do -- Example UI
 		end)
 
 	local Folder = Tab:AddFolder("Da Hood")
- 
-	do -- Elements
- 
+
 		Folder:AddButton("Server Crasher", function()
 			loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SuperCustomServerCrasher'))()
 		end)
 		
 		local Folder = Tab:AddFolder("Memes")
- 
-	do -- Elements
- 
+
 		Folder:AddButton("Ukraine", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Ukraine.lua"))()
 		end)
@@ -2209,29 +2195,21 @@ do -- Example UI
 			loadstring(game:HttpGetAsync(('https://gist.githubusercontent.com/Gogogamer61/9dfef86c0f09498af244509609f2b940/raw/a6177f2bbdfde2d4362e6600779b90a01aee1fb2/BecomeUkraineFlag'),true))()
 		end)
 	local Folder = Tab:AddFolder("Cafe Destroyers")
- 
-	do -- Elements
- 
+
 		Folder:AddButton("op_killer", function()
 			loadstring(game:HttpGetAsync("https://pastebin.com/raw/v8PX741z"))()
 		end)
 	local Folder = Tab:AddFolder("Frontlines")
- 
-	do -- Elements
- 
+
 		Folder:AddButton("wally", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/wally-rblx/roblox-scripts/main/frontlines.lua"))()
 		end)
 	local Folder = Tab:AddFolder("Destruction Sim")
- 
-	do -- Elements
- 
+
 		Folder:AddButton("DS GUI", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/FadeRemix/RND-Games/main/DestructionSim.lua"))()
 		end)
 	local Folder = Tab:AddFolder("Innovation Inc Spaceship")
- 
-	do -- Elements
 																		
 		Folder:AddButton("Infinite Money", function()
 			local A_1 = -99999
@@ -2250,9 +2228,7 @@ do -- Example UI
 		end)
     
     	local Folder = Tab:AddFolder("Music Visualizers")
- 
-	do -- Elements
- 
+
 		Folder:AddButton("Space Hub", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/music%202%20.lua"))()
 		end)
@@ -2261,8 +2237,6 @@ do -- Example UI
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/xaxaxaxaxaxaxaxaxa/Ciazware/main/Hat-Visualizer", true))()
 		end)
 	local Folder = Tab:AddFolder("Anomic")
- 
-	do -- Elements
  
 		Folder:AddButton("Anomic Revamp", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Shariiii/Anomic-Revamp-aka-Anomic-v2-/main/OP%20OP%20Gun%20Script%20V2"))()
@@ -2273,14 +2247,12 @@ do -- Example UI
 		end)
 	local Folder = Tab:AddFolder("Pistol 1v1")
  
-	do -- Elements
  
 		Folder:AddButton("GUI", function()
 			loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/zReal-King/1v1-Pistol-/main/Gui'))()
 		end)
 	local Folder = Tab:AddFolder("Vehicle Simulator")
  
-	do -- Elements
  
 		Folder:AddButton("VS GUI", function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/WetCheezit/Releases/main/VehicleSimulator/Source.lua"))()
@@ -2288,7 +2260,6 @@ do -- Example UI
 		
 	local Folder = Tab:AddFolder("Combat Warriors")
 	
-	do
 	
 		Folder:AddButton("Project Hook", function()
 			loadstring(game:HttpGetAsync("https://projecthook.xyz/scripts/free.lua"))()
@@ -2362,8 +2333,6 @@ do -- Example UI
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/kosuke14/REBOYHub/main/games/FE2GodMode.lua",true))()
 		end)
 	local Tab = Window:AddTab("Hubs")
- 
-	do -- Elements
  
 		Tab:AddButton("VG Hub", function()
 			loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
@@ -2678,10 +2647,10 @@ do -- Example UI
 		
 		
 		FloppaFolder:AddButton("Script for The Backrooms (K. Pixels)", function()
-			if DevBranchQuantumSupremacy == true then
+			if DevBranchQuantumSupremacy then
 				loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/development/Open%20Source%20Backrooms%20Entity%20ESP.lua"))()
 			end
-			if DevBranchQuantumSupremacy == false then
+			if not DevBranchQuantumSupremacy then
 				loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Open%20Source%20Backrooms%20Entity%20ESP.lua"))()
 			end
 		end)
@@ -2691,15 +2660,40 @@ do -- Example UI
 		end)
 		
 		FloppaFolder:AddButton("Cult of the Cryptids Script", function()
-			if DevBranchQuantumSupremacy == true then
+			if DevBranchQuantumSupremacy then
 				loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/development/cult%20of%20cryptid.lua"))()
 			end
-			if DevBranchQuantumSupremacy == false then
+			if not DevBranchQuantumSupremacy then
 				loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/cult%20of%20cryptid.lua"))()
 			end
 		end)
 		
 		local XyliteFolder = Tab:AddFolder("Xylite (UNUSED AS OF NOW)")
+        
+        local CustomFolder = Tab:AddFolder("Custom Scripts")
+
+        CustomFolder:AddLabel("")
+
+        if not isfolder("qs scripts") then makefolder("qs scripts") end
+
+        for _,v in pairs(listfiles("qs scripts")) do
+            local succ, err = pcall(function()
+                local Script = loadfile(v)()
+                local name = Script.Name
+                local customtype = Script.Type
+                local callback = Script.Callback
+                if customtype:lower() == "button" then
+                    CustomFolder:AddButton(name, callback)
+                elseif customtype:lower() == "switch" then
+                    CustomFolder:AddSwitch(name, callback)
+                elseif customtype:lower() == "textbox" then
+                    CustomFolder:AddTextbox(name, callback)
+                end
+            end)
+            if err then 
+                Send:CTNotif("ERROR", "Error loading "..v..":\n "..tostring(err), 8)
+            end
+        end
 
 		
 
@@ -2720,6 +2714,6 @@ do -- Example UI
 
 	Tab:Show()
 	library:FormatWindows()
-end end end end end end end end end end end end end end end end end end end end end
+end
 
 SendAkaliNotification("KEYBIND", "Default keybind is *", 8)
