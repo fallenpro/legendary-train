@@ -2679,9 +2679,15 @@ do -- Example UI
 
         if not isfolder("qs scripts") then makefolder("qs scripts") end
 
+		local prereqs = {
+			Services,
+			Send,
+			plrhrp, plrh, plrs, plrw, plr
+		}
+
         for _,v in pairs(listfiles("qs scripts")) do
             local succ, err = pcall(function()
-                local Script = loadfile(v)()
+                local Script = loadfile(v)(prereqs)
                 local name = Script.Name
                 local customtype = Script.Type
                 local callback = Script.Callback
