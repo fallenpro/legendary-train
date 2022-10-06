@@ -2671,10 +2671,9 @@ do -- Example UI
 		local XyliteFolder = Tab:AddFolder("Xylite (UNUSED AS OF NOW)")
         
         local CustomTab = Window:AddTab("Custom Scripts")
-
-        CustomTab:AddLabel("Examples are at:")
+	local HelpFolder = CustomTab:AddFolder("Help")
 		
-	CustomTab:AddButton("This link.", function()
+	HelpFolder:AddButton("Examples are at this link.", function()
 		setclipboard("https://github.com/fheahdythdr/legendary-train/blob/main/EleriumHub%20Plugin%20Examples/example.lua")		
 	end)
 
