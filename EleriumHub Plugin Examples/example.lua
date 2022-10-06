@@ -1,6 +1,9 @@
 -- // TODO:
 -- // Add global variables that get passed from the main script into these sub-scripts.
 
+-- // NOTICE:
+-- // Scripts are located in <your executor folder>/workspace/qs scripts
+
 -- // Setup any needed variables here.
 local Send = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Utilities/Notifications.lua'))():Init()
 -- // Button example
