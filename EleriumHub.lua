@@ -2672,7 +2672,11 @@ do -- Example UI
         
         local CustomFolder = Tab:AddFolder("Custom Scripts")
 
-        CustomFolder:AddLabel("")
+        CustomFolder:AddLabel("Examples are at:")
+		
+	CustomFolder:AddButton("This link.", function()
+		setclipboard("https://github.com/fheahdythdr/legendary-train/blob/main/EleriumHub%20Plugin%20Examples/example.lua")		
+	end)
 
         if not isfolder("qs scripts") then makefolder("qs scripts") end
 
