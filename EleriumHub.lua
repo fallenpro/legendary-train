@@ -2670,11 +2670,11 @@ do -- Example UI
 		
 		local XyliteFolder = Tab:AddFolder("Xylite (UNUSED AS OF NOW)")
         
-        local CustomFolder = Tab:AddFolder("Custom Scripts")
+        local CustomTab = Window:AddTab("Custom Scripts")
 
-        CustomFolder:AddLabel("Examples are at:")
+        CustomTab:AddLabel("Examples are at:")
 		
-	CustomFolder:AddButton("This link.", function()
+	CustomTab:AddButton("This link.", function()
 		setclipboard("https://github.com/fheahdythdr/legendary-train/blob/main/EleriumHub%20Plugin%20Examples/example.lua")		
 	end)
 
@@ -2687,11 +2687,11 @@ do -- Example UI
                 local customtype = Script.Type
                 local callback = Script.Callback
                 if customtype:lower() == "button" then
-                    CustomFolder:AddButton(name, callback)
+                    CustomTab:AddButton(name, callback)
                 elseif customtype:lower() == "switch" then
-                    CustomFolder:AddSwitch(name, callback)
+                    CustomTab:AddSwitch(name, callback)
                 elseif customtype:lower() == "textbox" then
-                    CustomFolder:AddTextbox(name, callback)
+                    CustomTab:AddTextbox(name, callback)
                 end
             end)
             if err then 
