@@ -34,3 +34,13 @@ return {
     utils.Send:CTNotif("box gaming", box, 5)
   end
 }
+
+-- // Using a library function example
+
+return {
+  Name = "Library Test",
+  Type = "Textbox",
+  Callback = function()
+    prereqs.custom.Example()
+  end
+}
