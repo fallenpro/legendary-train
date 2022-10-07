@@ -2687,7 +2687,7 @@ do -- Example UI
         local CustomTab = Window:AddTab("Custom Scripts")
 	local HelpFolder = CustomTab:AddFolder("Help")
 		
-	HelpFolder:AddButton("Examples are at this link.", function()
+	HelpFolder:AddButton("Examples are at this link. (copies website to clipboard)", function()
 		setclipboard("https://github.com/fheahdythdr/legendary-train/blob/main/EleriumHub%20Plugin%20Examples/example.lua")		
 	end)
 
