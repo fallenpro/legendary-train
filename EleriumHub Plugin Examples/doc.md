@@ -36,6 +36,7 @@ end
 -- You can declare functions outside of the return statement, but you cannot return a function directly.
 
 return {
+  LibraryName = "Example Library", -- This is optional, but EleriumHub will use the filename if this isn't provided.
   Example = function() -- You must declare the function you are adding in the table you return.
     sendAll("testing", "this is an example library", 5)
   end
