@@ -17,7 +17,7 @@ return {
   Name = "Example", -- Name can be anything, as long as it's a string.
   Type = "Button", -- There are three types: Button, Switch (Toggle) and Textbox.
   Callback = function() -- If you're using a switch or a textbox, add something between the () to declare it as a parameter.
-    util.func.Send("Example", "Example gaming", 4)
+    util.func.Send:CTNotif("Example", "Example gaming", 4)
   end
 }
 ```
