@@ -1,5 +1,5 @@
 -- // NOTICE:
--- // Scripts are located in <your executor folder>/workspace/qs scripts
+-- // Scripts are located in <your executor folder>/workspace/QS/Scripts
 
 -- // Access passed items via local prereqs = ... (prereqs can be anything, name it whatever you want)
 
