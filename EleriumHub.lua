@@ -2718,7 +2718,6 @@ do -- Example UI
 				else
 					Send:Orion("ERROR", "Error loading library "..v.." : Expected table, got "..typeof(Library))
 				end
-				table.insert(prereqs, Library)
 			end)
 			if err then
 				Send:Orion("ERROR", "Error loading library "..v.." : "..tostring(err), 8)
