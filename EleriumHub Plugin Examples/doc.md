@@ -42,3 +42,19 @@ return {
   end
 }
 ```
+
+## Accessing a library's functions
+
+In order to access a library's functions, you need to do the following.
+```lua
+local util = ...
+local CustomLibrary = util.custom["Example Library"]
+
+return {
+  Name = "Example Library Test",
+  Type = "Button"
+  Callback = function()
+    CustomLibrary.Example()
+  end
+}
+```
