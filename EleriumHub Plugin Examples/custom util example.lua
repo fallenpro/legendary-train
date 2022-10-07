@@ -8,6 +8,7 @@ local function sendAll(title, desc, time)
 end
 
 return {
+  LibraryName = "LibraryExample", -- This is optional, but if you don't add this in EleriumHub will use the filename.
   Example = function()
     sendAll("testing", "this is an example library", 5)
   end
