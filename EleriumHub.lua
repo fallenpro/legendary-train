@@ -10,6 +10,20 @@ plr.CharacterAdded:Connect(function(nchar)
     plrh = plrw.Humanoid
 end)
 
+
+local prereqs = {
+	funcs = {
+		Services = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Utilities/Services.lua'))(),
+		Send = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Utilities/Notifications.lua'))():Init(), 
+		plrhrp = game:GetService'Players'.LocalPlayer.Character:FindFirstChild('HumanoidRootPart'), 
+		plrh = game:GetService'Players'.LocalPlayer.Character:FindFirstChild('Humanoid'), 
+		plrs = game:GetService'Players', 
+		plrw = game:GetService'Players'.LocalPlayer.Character, 
+		plr = game:GetService'Players'.LocalPlayer
+	}, 
+	custom = {}
+}
+
 local SendAkaliNotification = function(title, msg, dur)
     return Send:Akali(title, msg, dur)
 end
@@ -2677,15 +2691,41 @@ do -- Example UI
 		setclipboard("https://github.com/fheahdythdr/legendary-train/blob/main/EleriumHub%20Plugin%20Examples/example.lua")		
 	end)
 
-        if not isfolder("qs scripts") then makefolder("qs scripts") end
+		local function checkFolder(folder)
+			if not isfolder(folder) then makefolder(folder) end
+		end
+		local function checksubfolder(subfolder)
+			local backup = subfolder
+			local split = string.split(subfolder, "'\\")
+			for i = 1, #split do
+				if i == 1 then
+					checkFolder(split[i])
+				else
+					checkFolder(split[1] + split[i])
+				end
+			end
+		end
+		checksubfolder("QS\\Libraries")
+		checksubfolder("QS\\Scripts")
 
-		local prereqs = {
-			Services,
-			Send,
-			plrhrp, plrh, plrs, plrw, plr
-		}
+		for i,v in pairs(listfiles("QS\\Libraries")) do
+			local succ, err = pcall(function()
+				local Library = loadfile(v)(prereqs)
+				if typeof(Library) == "table" then
+					for k,x in next, Library do
+						prereqs.custom[k] = x
+					end
+				else
+					Send:Orion("ERROR", "Error loading library "..v.." : Expected table, got "..typeof(Library))
+				end
+				table.insert(prereqs, Library)
+			end)
+			if err then
+				Send:Orion("ERROR", "Error loading library "..v.." : "..tostring(err), 8)
+			end
+		end
 
-        for _,v in pairs(listfiles("qs scripts")) do
+        for _,v in pairs(listfiles("QS\\Scripts")) do
             local succ, err = pcall(function()
                 local Script = loadfile(v)(prereqs)
                 local name = Script.Name
@@ -2700,7 +2740,7 @@ do -- Example UI
                 end
             end)
             if err then 
-                Send:CTNotif("ERROR", "Error loading "..v..":\n "..tostring(err), 8)
+                Send:CTNotif("ERROR", "Error loading script "..v.." : "..tostring(err), 8)
             end
         end
 
