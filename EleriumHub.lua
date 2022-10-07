@@ -14,12 +14,7 @@ end)
 local prereqs = {
 	funcs = {
 		Services = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Utilities/Services.lua'))(),
-		Send = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Utilities/Notifications.lua'))():Init(), 
-		plrhrp = game:GetService'Players'.LocalPlayer.Character:FindFirstChild('HumanoidRootPart'), 
-		plrh = game:GetService'Players'.LocalPlayer.Character:FindFirstChild('Humanoid'), 
-		plrs = game:GetService'Players', 
-		plrw = game:GetService'Players'.LocalPlayer.Character, 
-		plr = game:GetService'Players'.LocalPlayer
+		Send = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Utilities/Notifications.lua'))():Init()
 	}, 
 	custom = {}
 }
