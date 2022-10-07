@@ -2710,7 +2710,9 @@ do -- Example UI
 				local LibraryName = Library.LibraryName or string.split(string.split(v, "\\")[3], ".")[1]
 				if typeof(Library) == "table" then
 					for k,x in next, Library do
-						prereqs.custom[LibraryName][k] = x
+						if k ~= Library.LibraryName and x ~= Library.LibraryName then
+							prereqs.custom[LibraryName][k] = x
+						end
 					end
 				else
 					Send:Orion("ERROR", "Error loading library "..v.." : Expected table, got "..typeof(Library))
