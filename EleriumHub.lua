@@ -2711,9 +2711,10 @@ do -- Example UI
 		for i,v in pairs(listfiles("QS\\Libraries")) do
 			local succ, err = pcall(function()
 				local Library = loadfile(v)(prereqs)
+				local LibraryName = Library.LibraryName or string.split(string.split(v, "\\")[3], ".")[1]
 				if typeof(Library) == "table" then
 					for k,x in next, Library do
-						prereqs.custom[k] = x
+						prereqs.custom[LibraryName][k] = x
 					end
 				else
 					Send:Orion("ERROR", "Error loading library "..v.." : Expected table, got "..typeof(Library))
