@@ -87,3 +87,28 @@ return {
     util.funcs.Send:CTNotif("INFO", "It works!", 4)
   end
 }
+```
+
+## Miscellaneous info
+
+You can return more than one thing per file, by just making a table inside the return {} statement and having that be what you're returning. Example ahead:
+
+```lua
+local util = ...
+
+return {
+
+    {
+        FolderName = "Testing",
+        Type = "folder"
+    },
+    {
+        Name = "Folder Test",
+        Type = "Button",
+        ParentFolder = "Testing",
+        Callback = function()
+            util.funcs.Send:CTNotif("INFO", "It works!", 4)
+        end
+    }
+}
+```
