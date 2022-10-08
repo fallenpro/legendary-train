@@ -2770,6 +2770,7 @@ do -- Example UI
             end)
             if err then 
                 Send:CTNotif("ERROR", "Error loading script "..v.." : "..tostring(err), 8)
+				Send:Orion("INFO", "These errors sometimes are fake, if the button/buttons referenced in the error appear and work, ignore it!", 8)
             end
         end
 
