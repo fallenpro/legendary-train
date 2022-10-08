@@ -58,3 +58,32 @@ return {
   end
 }
 ```
+
+## Adding a folder
+
+To add a folder, simply do:
+
+```lua
+
+return {
+  FolderName = "Example",
+  Type = "Folder"
+}
+
+```
+
+## Accessing a folder
+
+To access a folder and make something there, you need to do the following:
+
+```lua
+local util = ...
+
+return {
+  Name = "FolderTest",
+  Type = "Button",
+  ParentFolder = "Example",
+  Callback = function()
+    util.funcs.Send:CTNotif("INFO", "It works!", 4)
+  end
+}
