@@ -14,9 +14,15 @@ end)
 local prereqs = {
 	funcs = {
 		Services = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Utilities/Services.lua'))(),
-		Send = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Utilities/Notifications.lua'))():Init()
+		Send = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Utilities/Notifications.lua'))():Init(), 
+		plrhrp = game:GetService'Players'.LocalPlayer.Character:FindFirstChild('HumanoidRootPart'), 
+		plrh = game:GetService'Players'.LocalPlayer.Character:FindFirstChild('Humanoid'), 
+		plrs = game:GetService'Players', 
+		plrw = game:GetService'Players'.LocalPlayer.Character, 
+		plr = game:GetService'Players'.LocalPlayer
 	}, 
-	custom = {}
+	custom = {},
+	folders = {}
 }
 
 local SendAkaliNotification = function(title, msg, dur)
@@ -877,7 +883,11 @@ local checks = {
 
 UIS.InputBegan:Connect(function(input, gameProcessed)
 	if input.KeyCode == ((typeof(ui_options.toggle_key) == "EnumItem") and ui_options.toggle_key or Enum.KeyCode.RightShift) then
-		imgui.Enabled = not imgui.Enabled
+		if script.Parent then
+			if not checks.binding then
+				script.Parent.Enabled = not script.Parent.Enabled
+			end
+		end
 	end
 end)
 
@@ -2705,9 +2715,7 @@ do -- Example UI
 				local LibraryName = Library.LibraryName or string.split(string.split(v, "\\")[3], ".")[1]
 				if typeof(Library) == "table" then
 					for k,x in next, Library do
-						if k ~= Library.LibraryName and x ~= Library.LibraryName then
-							prereqs.custom[LibraryName][k] = x
-						end
+						prereqs.custom[LibraryName][k] = x
 					end
 				else
 					Send:Orion("ERROR", "Error loading library "..v.." : Expected table, got "..typeof(Library))
@@ -2718,19 +2726,47 @@ do -- Example UI
 			end
 		end
 
+		local function Custom(Script)
+			local name, callback
+			if Script.Name then name = Script.Name end
+			local foldername, ParentFolder
+			if Script.FolderName then
+				foldername = Script.FolderName
+			end
+			if Script.ParentFolder then
+				ParentFolder = prereqs.folders[Script.ParentFolder]
+			else
+				ParentFolder = CustomTab
+			end
+			local customtype = Script.Type
+			if Script.Callback then callback = Script.Callback end
+			if customtype:lower() == "button" then
+				ParentFolder:AddButton(name, callback)
+			elseif customtype:lower() == "switch" then
+				ParentFolder:AddSwitch(name, callback)
+			elseif customtype:lower() == "textbox" then
+				ParentFolder:AddTextbox(name, callback)
+			elseif customtype:lower() == "folder" then
+				local NewFolder
+				if foldername then
+					NewFolder = ParentFolder:AddFolder(foldername)
+				else
+					NewFolder = ParentFolder:AddFolder(name)
+				end
+				if foldername then prereqs.folders[foldername] = NewFolder
+				else prereqs.folders[name] = NewFolder end
+			end
+		end
+
         for _,v in pairs(listfiles("QS\\Scripts")) do
             local succ, err = pcall(function()
                 local Script = loadfile(v)(prereqs)
-                local name = Script.Name
-                local customtype = Script.Type
-                local callback = Script.Callback
-                if customtype:lower() == "button" then
-                    CustomTab:AddButton(name, callback)
-                elseif customtype:lower() == "switch" then
-                    CustomTab:AddSwitch(name, callback)
-                elseif customtype:lower() == "textbox" then
-                    CustomTab:AddTextbox(name, callback)
-                end
+				for _,v in next, Script do
+					if typeof(v) == "table" then 
+						Custom(v)
+					end
+				end
+				Custom(Script)
             end)
             if err then 
                 Send:CTNotif("ERROR", "Error loading script "..v.." : "..tostring(err), 8)
