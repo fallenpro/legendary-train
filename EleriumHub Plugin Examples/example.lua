@@ -4,7 +4,7 @@
 -- // Access passed items via local prereqs = ... (prereqs can be anything, name it whatever you want)
 
 local prereqs = ...
-local utils = prereqs.utils -- // Prereqs is seperated into two tables, prereqs.utils (built in) and prereqs.custom (utils added in by libraries)
+local utils = prereqs.funcs -- // Prereqs is seperated into three tables, prereqs.funcs (built in), prereqs.custom (utils added in by libraries) and prereqs.folders (folders added in by scripts)
 
 -- // Button example
 return {
@@ -42,5 +42,23 @@ return {
   Type = "Textbox",
   Callback = function()
     prereqs.custom.Example()
+  end
+}
+
+-- // Making a folder
+
+return {
+  FolderName = "Example",
+  Type = "Folder"
+}
+
+-- // Parenting a button to a folder
+
+return {
+  Name = "FolderTest",
+  Type = "Button",
+  ParentFolder = "Example",
+  Callback = function()
+    utils.Send:CTNotif("INFO", "It works!", 4)
   end
 }
