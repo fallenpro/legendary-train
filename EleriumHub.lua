@@ -141,7 +141,7 @@ local Windows = Instance.new("Frame")
 
 imgui.Name = "imgui"
 imgui.Parent = game:GetService("CoreGui")
-syn.protect_gui(game:GetService("CoreGui").imgui)
+pcall(function() syn.protect_gui(game:GetService("CoreGui").imgui) end)
 
 Prefabs.Name = "Prefabs"
 Prefabs.Parent = imgui
