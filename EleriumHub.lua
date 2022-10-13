@@ -141,7 +141,6 @@ local Windows = Instance.new("Frame")
 
 imgui.Name = "imgui"
 imgui.Parent = game:GetService("CoreGui")
-pcall(function() syn.protect_gui(game:GetService("CoreGui").imgui) end)
 
 Prefabs.Name = "Prefabs"
 Prefabs.Parent = imgui
@@ -2796,3 +2795,4 @@ do -- Example UI
 end
 
 SendAkaliNotification("KEYBIND", "Default keybind is *", 8)
+pcall(function() syn.protect_gui(game:GetService("CoreGui").imgui) end)
