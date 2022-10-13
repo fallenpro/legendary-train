@@ -15,11 +15,6 @@ local prereqs = {
 	funcs = {
 		Services = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Utilities/Services.lua'))(),
 		Send = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Utilities/Notifications.lua'))():Init(), 
-		plrhrp = game:GetService'Players'.LocalPlayer.Character:FindFirstChild('HumanoidRootPart'), 
-		plrh = game:GetService'Players'.LocalPlayer.Character:FindFirstChild('Humanoid'), 
-		plrs = game:GetService'Players', 
-		plrw = game:GetService'Players'.LocalPlayer.Character, 
-		plr = game:GetService'Players'.LocalPlayer
 	}, 
 	custom = {},
 	folders = {}
@@ -2448,10 +2443,10 @@ do -- Example UI
 			loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80",true))()
 		end)
 		
-		Tab:AddButton("Dark Dex v1", function()
+		Tab:AddButton("Dex v1", function()
 			loadstring(game:GetObjects('rbxassetid://2180084478')[1].Source)()
 		end)
-		Tab:AddButton("Dark Dex v2", function()
+		Tab:AddButton("Dex v2", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/dex%20v2.lua"))()
 		end)
 		
