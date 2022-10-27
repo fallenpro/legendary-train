@@ -14,7 +14,8 @@ end)
 local prereqs = {
 	funcs = {
 		Services = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Utilities/Services.lua'))(),
-		Send = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Utilities/Notifications.lua'))():Init(), 
+		Send = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Utilities/Notifications.lua'))():Init(),
+		ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/SerinUtilities/Kiriot-ESP-Library/main/main.lua"))()
 	}, 
 	custom = {},
 	folders = {}
@@ -41,7 +42,7 @@ if alternateantikickexec and antikickexec then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antikick.lua"))()
 end
 
-local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kiriot22/ESP-Lib/main/ESP.lua"))()
+local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/SerinUtilities/Kiriot-ESP-Library/main/main.lua"))()
 
 local DevBranchQuantumSupremacy = false
 local repeattimes = placeholder
