@@ -2605,7 +2605,7 @@ do -- Example UI
 		end)
 		
 		Tab:AddButton("HydroxideOne", function()
-			loadstring(game:HttpGet('https://one.hydroxide.cc/loader'))();
+			loadstring(game:HttpGetAsync(string.format('https://one.hydroxide.cc/%s.lua','latest')))()
 		end)
 		
 		Tab:AddButton("Mollermethod", function()
