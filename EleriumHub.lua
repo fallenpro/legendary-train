@@ -2705,13 +2705,22 @@ do -- Example UI
 		checksubfolder("QS\\Scripts")
 
 		for i,v in pairs(listfiles("QS\\Libraries")) do
+			local function tryLibrary(Library)
+				if typeof(Library) == "table" then
+					for k,x in next, Library do
+						if typeof(x) == "table" then
+							tryLibrary(x)
+						else
+							prereqs.custom[LibraryName][k] = x
+						end
+					end
+				end
+			end
 			local succ, err = pcall(function()
 				local Library = loadfile(v)(prereqs)
 				local LibraryName = Library.LibraryName or string.split(string.split(v, "\\")[3], ".")[1]
 				if typeof(Library) == "table" then
-					for k,x in next, Library do
-						prereqs.custom[LibraryName][k] = x
-					end
+					tryLibrary(Library)
 				else
 					Send:Orion("ERROR", "Error loading library "..v.." : Expected table, got "..typeof(Library))
 				end
