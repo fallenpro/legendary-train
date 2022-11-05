@@ -3,9 +3,11 @@ okay so, you might be wondering what this is. this was originally meant to be a 
 
 script is:
 
+```lua
 loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/EleriumHub.lua"))()
+```
 
-credits are in the main hubs.
+credits are in the main hub.
 
 if you're the creator or owner of one of the scripts or hubs and want credits, dm me on discord (discord is grilled cheese7914) and i'll add it
 
