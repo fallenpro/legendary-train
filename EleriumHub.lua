@@ -2604,8 +2604,16 @@ do -- Example UI
 			loadstring(game:HttpGetAsync("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))()
 		end)
 		
-		Tab:AddButton("HydroxideOne", function()
-			loadstring(game:HttpGetAsync(string.format('https://one.hydroxide.cc/%s.lua','latest')))()
+		Tab:AddButton("Hydroxide", function()
+			local owner = "Upbolt"
+			local branch = "revision"
+
+			local function webImport(file)
+			    return loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/%s/Hydroxide/%s/%s.lua"):format(owner, branch, file)), file .. '.lua')()
+			end
+
+			webImport("init")
+			webImport("ui/main")
 		end)
 		
 		Tab:AddButton("Mollermethod", function()
