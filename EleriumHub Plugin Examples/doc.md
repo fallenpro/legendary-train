@@ -6,6 +6,22 @@ EleriumHub passes some functions (custom or built-in) into a plugin. Access them
 ```lua
 local variable = ... -- variable can be called anything
 ```
+The passed functions are:
+```lua
+  funcs = {
+		Services = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Utilities/Services.lua'))(),
+		Send = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Utilities/Notifications.lua'))():Init(),
+		ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/SerinUtilities/Kiriot-ESP-Library/main/main.lua"))()
+	}, 
+	custom = {},
+	folders = {}
+```
+Access them by doing something like this:
+```lua
+local variable = ...
+
+variable.func.Send:CTNotif("Example", "Example gaming", 4)
+```
 
 ## Adding a script
 
