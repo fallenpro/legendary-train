@@ -2711,8 +2711,13 @@ do -- Example UI
 		end
 		checksubfolder("QS\\Libraries")
 		checksubfolder("QS\\Scripts")
+		checksubfolder("QS\\Autoexec")
 
-		for i,v in pairs(listfiles("QS\\Libraries")) do
+		for _, v in next, listfiles("QS\\Autoexec") do
+			loadfile(v)(prereqs)
+		end
+
+		for i,v in next, listfiles("QS\\Libraries") do
 			local function tryLibrary(Library)
 				if typeof(Library) == "table" then
 					for k,x in next, Library do
@@ -2782,9 +2787,9 @@ do -- Example UI
             end)
             if err then 
                 Send:Orion("ERROR", "Error loading script "..v.." : "..tostring(err), 8)
-		Send:Orion("INFO", "These errors sometimes are fake, if the button/buttons referenced in the error appear and work, ignore it!", 8)
             end
         end
+		Send:Orion("INFO", "The errors in the custom scripts sometimes are fake, if the button/buttons referenced in the error appear and work, ignore it!", 8)
 
 		
 
