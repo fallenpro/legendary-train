@@ -2814,5 +2814,5 @@ SendAkaliNotification("KEYBIND", "Default keybind is *", 8)
 pcall(function() syn.protect_gui(game:GetService("CoreGui").imgui) end)
 
 for _, v in next, listfiles("QS\\Autoexec") do
-	loadfile(v)()
+	task.spawn(loadfile(v)())
 end
