@@ -1,3 +1,5 @@
+repeat task.wait() until game:IsLoaded()
+
 local Services = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Utilities/Services.lua'))()
 local plr = game:GetService'Players'.LocalPlayer; local plrs = plr.Parent
 local plrw = plr.Character or plr.CharacterAdded:Wait()
