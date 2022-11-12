@@ -1,5 +1,3 @@
-repeat task.wait() until game:IsLoaded()
-
 local Services = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Utilities/Services.lua'))()
 local plr = game:GetService'Players'.LocalPlayer; local plrs = plr.Parent
 local plrw = plr.Character or plr.CharacterAdded:Wait()
@@ -2715,10 +2713,6 @@ do -- Example UI
 		checksubfolder("QS\\Scripts")
 		checksubfolder("QS\\Autoexec")
 
-		for _, v in next, listfiles("QS\\Autoexec") do
-			loadfile(v)(prereqs)
-		end
-
 		for i,v in next, listfiles("QS\\Libraries") do
 			local function tryLibrary(Library)
 				if typeof(Library) == "table" then
@@ -2742,6 +2736,7 @@ do -- Example UI
 			end)
 			if err then
 				Send:Orion("ERROR", "Error loading library "..v.." : "..tostring(err), 8)
+				print(err)
 			end
 		end
 
@@ -2789,6 +2784,7 @@ do -- Example UI
             end)
             if err then 
                 Send:Orion("ERROR", "Error loading script "..v.." : "..tostring(err), 8)
+				print(err)
             end
         end
 		Send:Orion("INFO", "The errors in the custom scripts sometimes are fake, if the button/buttons referenced in the error appear and work, ignore it!", 8)
@@ -2816,3 +2812,7 @@ end
 
 SendAkaliNotification("KEYBIND", "Default keybind is *", 8)
 pcall(function() syn.protect_gui(game:GetService("CoreGui").imgui) end)
+
+for _, v in next, listfiles("QS\\Autoexec") do
+	loadfile(v)()
+end
