@@ -9,7 +9,7 @@ loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/lege
 
 credits are in the main hub.
 
-if you're the creator or owner of one of the scripts or hubs and want credits, dm me on discord (discord is grilled cheese7914) and i'll add it
+if you're the creator or owner of one of the scripts or hubs and want credits, dm me on discord (discord is sea monkey#7914) and i'll add it
 
 feel free to make pull requests or ask for a certain script to be added
 
