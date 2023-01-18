@@ -1,13 +1,22 @@
-local Services = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Utilities/Services.lua'))()
-local plr = game:GetService'Players'.LocalPlayer; local plrs = plr.Parent
-local plrw = plr.Character or plr.CharacterAdded:Wait()
-local plrh = plrw:FindFirstChild('Humanoid') or plrw:WaitForChild("Humanoid")
-local plrhrp = plrw:FindFirstChild('HumanoidRootPart') or plrw:WaitForChild('HumanoidRootPart')
-local Send = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Utilities/Notifications.lua'))():Init()
-plr.CharacterAdded:Connect(function(nchar)
-    plrhrp = nchar:WaitForChild('HumanoidRootPart')
-    plrw = nchar
-    plrh = plrw.Humanoid
+local Services
+local plr
+local plrw
+local plrh
+local plrhrp
+local Send
+
+task.spawn(function()
+	Services = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Utilities/Services.lua'))()
+	plr = game:GetService'Players'.LocalPlayer; plrs = plr.Parent
+	plrw = plr.Character or plr.CharacterAdded:Wait()
+	plrh = plrw:FindFirstChild('Humanoid') or plrw:WaitForChild("Humanoid")
+	plrhrp = plrw:FindFirstChild('HumanoidRootPart') or plrw:WaitForChild('HumanoidRootPart')
+	Send = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Utilities/Notifications.lua'))():Init()
+	plr.CharacterAdded:Connect(function(nchar)
+	    plrhrp = nchar:WaitForChild('HumanoidRootPart')
+	    plrw = nchar
+	    plrh = plrw.Humanoid
+	end)
 end)
 
 
