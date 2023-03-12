@@ -45,8 +45,8 @@ end
 local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/SerinUtilities/Kiriot-ESP-Library/main/main.lua"))()
 
 local DevBranchQuantumSupremacy = false
-local repeattimes = placeholder
-local message = bruh
+local repeattimes = 1
+local message = 'a'
 
 -- // rest of script
 
