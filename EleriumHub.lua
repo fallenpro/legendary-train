@@ -2485,7 +2485,7 @@ do -- Example UI
 		end)
 		
 		Tab:AddButton("Universal Silent Aim", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Averiias/Universal-SilentAim/main/main.lua"))()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/PeasIn/Universal-SilentAim/main/main.lua"))()
 		end)
 		
 		Tab:AddButton("Infinite Yield", function()
