@@ -2686,7 +2686,11 @@ do -- Example UI
 			end
 		end)
 		
-		local XyliteFolder = Tab:AddFolder("Xylite (UNUSED AS OF NOW)")
+		local XyliteFolder = Tab:AddFolder("Xylite")
+		
+		XyliteFolder:AddButton("Chaos at the Bistro", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Xylite/Chaos%20at%20the%20Bistro.lua"))()	
+		end)
         
         local CustomTab = Window:AddTab("Custom Scripts")
 	local HelpFolder = CustomTab:AddFolder("Help")
