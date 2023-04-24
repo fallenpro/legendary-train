@@ -19,7 +19,7 @@ folders = {}
 Access them by doing something like this:
 ```lua
 local variable = ...
-variable.func.Send:CTNotif("Example", "Example gaming", 4)
+variable.func.Send:Akali("Example", "Example gaming", 4)
 ```
 
 ## Adding a script
@@ -31,7 +31,7 @@ return {
   Name = "Example", -- Name can be anything, as long as it's a string.
   Type = "Button", -- There are three types: Button, Switch (Toggle) and Textbox.
   Callback = function() -- If you're using a switch or a textbox, add something between the () to declare it as a parameter.
-    util.func.Send:CTNotif("Example", "Example gaming", 4)
+    util.func.Send:Akali("Example", "Example gaming", 4)
   end
 }
 ```
@@ -42,7 +42,6 @@ In order to make a library so you don't have to declare the same function in eve
 ```lua
 local util = ... -- Functions are still passed into the libraries, so you can use functions from other libraries.
 local function sendAll(title, desc, time)
-  func.Send:CTNotif(title, desc, time)
   func.Send:Orion(title, desc, time)
   func.Send:Akali(title, desc, time)
 end
@@ -92,7 +91,7 @@ return {
   Type = "Button",
   ParentFolder = "Example",
   Callback = function()
-    util.funcs.Send:CTNotif("INFO", "It works!", 4)
+    util.funcs.Send:Akali("INFO", "It works!", 4)
   end
 }
 ```
@@ -113,7 +112,7 @@ return {
         Type = "Button",
         ParentFolder = "Testing",
         Callback = function()
-            util.funcs.Send:CTNotif("INFO", "It works!", 4)
+            util.funcs.Send:Akali("INFO", "It works!", 4)
         end
     }
 }
