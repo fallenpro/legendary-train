@@ -1,9 +1,9 @@
-local Services = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Utilities/Services.lua'))()
+local Services = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Utilities/Services.lua'))()
 local plr = game:GetService'Players'.LocalPlayer; plrs = plr.Parent
 local plrw = plr.Character or plr.CharacterAdded:Wait()
 local plrh = plrw:FindFirstChild('Humanoid') or plrw:WaitForChild("Humanoid")
 local plrhrp = plrw:FindFirstChild('HumanoidRootPart') or plrw:WaitForChild('HumanoidRootPart')
-local Send = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Utilities/Notifications.lua'))():Init()
+local Send = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Utilities/Notifications.lua'))():Init()
 plr.CharacterAdded:Connect(function(nchar)
     plrhrp = nchar:WaitForChild('HumanoidRootPart')
     plrw = nchar
@@ -13,8 +13,8 @@ end)
 
 local prereqs = {
 	funcs = {
-		Services = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Utilities/Services.lua'))(),
-		Send = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Utilities/Notifications.lua'))():Init(),
+		Services = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Utilities/Services.lua'))(),
+		Send = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Utilities/Notifications.lua'))():Init(),
 		ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/SerinUtilities/Kiriot-ESP-Library/main/main.lua"))()
 	}, 
 	custom = {},
@@ -2080,12 +2080,6 @@ do -- Example UI
 		can_resize = true,
 	})
 	local Tab = Window:AddTab("Scripts")
-	local Folder = Tab:AddFolder("ACSG System Gun Mods") 
-	do -- Elements
- 
-		Folder:AddButton("HUB", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/acs%20gun%20mod%20no%20syn%20x%20compatability.lua"))()
-		end)
 	local Folder = Tab:AddFolder("Big Paintball")
 
 		Folder:AddButton("Unlock All", function()
@@ -2654,43 +2648,6 @@ do -- Example UI
 		espfolder:AddSwitch("Toggle ESP", function(value)
 		ESP:Toggle(value)
 		end)
-		
-		local Tab = Window:AddTab("my scripts")
-
-		local FloppaFolder = Tab:AddFolder("FloppaMods")
-
-		local Switch = FloppaFolder:AddSwitch("Enable Development Branch", function(devbranch)
-			DevBranchQuantumSupremacy = devbranch
-		end)
-		
-		
-		FloppaFolder:AddButton("Script for The Backrooms (K. Pixels)", function()
-			if DevBranchQuantumSupremacy then
-				loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/development/Open%20Source%20Backrooms%20Entity%20ESP.lua"))()
-			end
-			if not DevBranchQuantumSupremacy then
-				loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Open%20Source%20Backrooms%20Entity%20ESP.lua"))()
-			end
-		end)
-		
-		FloppaFolder:AddButton("shitty phantom forces esp", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/phantom%20force%20esp.lua"))()
-		end)
-		
-		FloppaFolder:AddButton("Cult of the Cryptids Script", function()
-			if DevBranchQuantumSupremacy then
-				loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/development/cult%20of%20cryptid.lua"))()
-			end
-			if not DevBranchQuantumSupremacy then
-				loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/cult%20of%20cryptid.lua"))()
-			end
-		end)
-		
-		local XyliteFolder = Tab:AddFolder("Xylite")
-		
-		XyliteFolder:AddButton("Chaos at the Bistro", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Xylite/Chaos%20at%20the%20Bistro.lua"))()	
-		end)
         
         local CustomTab = Window:AddTab("Custom Scripts")
 	local HelpFolder = CustomTab:AddFolder("Help")
@@ -2806,7 +2763,6 @@ do -- Example UI
 				wclip('https://github.com/bloodball/UI-Librarys/blob/main/Elerium')
 			end
 		end)
-		Tab:AddLabel("made by demonstrating quantum supremacy gang")
 		
 	end
 
