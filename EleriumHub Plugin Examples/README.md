@@ -9,8 +9,6 @@ local variable = ... -- variable can be called anything
 The passed functions are:
 ```lua
 funcs = {
-	Services = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Utilities/Services.lua'))(),
-	Send = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/FloppaMods/main/Utilities/Notifications.lua'))():Init(),
 	ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/SerinUtilities/Kiriot-ESP-Library/main/main.lua"))()
 }, 
 custom = {},
@@ -20,7 +18,7 @@ Access them by doing something like this:
 ```lua
 local variable = ...
 
-variable.func.Send:CTNotif("Example", "Example gaming", 4)
+variable.func.ESP:Toggle(true)
 ```
 
 ## Adding a script
@@ -33,7 +31,7 @@ return {
   Name = "Example", -- Name can be anything, as long as it's a string.
   Type = "Button", -- There are three types: Button, Switch (Toggle) and Textbox.
   Callback = function() -- If you're using a switch or a textbox, add something between the () to declare it as a parameter.
-    util.func.Send:CTNotif("Example", "Example gaming", 4)
+    util.func.ESP:Toggle(true)
   end
 }
 ```
@@ -44,17 +42,15 @@ In order to make a library so you don't have to declare the same function in eve
 ```lua
 local util = ... -- Functions are still passed into the libraries, so you can use functions from other libraries.
 
-local function sendAll(title, desc, time)
-  func.Send:CTNotif(title, desc, time)
-  func.Send:Orion(title, desc, time)
-  func.Send:Akali(title, desc, time)
+local function EnableESP(bool)
+   util.func.ESP:Toggle(bool)
 end
 -- You can declare functions outside of the return statement, but you cannot return a function directly.
 
 return {
   LibraryName = "Example Library", -- This is optional, but EleriumHub will use the filename if this isn't provided.
   Example = function() -- You must declare the function you are adding in the table you return.
-    sendAll("testing", "this is an example library", 5)
+    EnableESP(true)
   end
 }
 ```
@@ -100,7 +96,7 @@ return {
   Type = "Button",
   ParentFolder = "Example",
   Callback = function()
-    util.funcs.Send:CTNotif("INFO", "It works!", 4)
+    util.funcs.ESP:Toggle(true)
   end
 }
 ```
@@ -123,7 +119,7 @@ return {
         Type = "Button",
         ParentFolder = "Testing",
         Callback = function()
-            util.funcs.Send:CTNotif("INFO", "It works!", 4)
+            util.funcs.ESP:Toggle(true)
         end
     }
 }
