@@ -1,3 +1,0 @@
-So, the previous link that leads to a raw.githubusercontent.com link, should replace [link] in "loadstring(game:HttpGet("[link]"))()
-
-That should do it. If needed, just ask me to send you the proper loadstrnig.
