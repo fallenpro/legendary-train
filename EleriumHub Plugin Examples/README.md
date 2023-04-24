@@ -38,7 +38,7 @@ return {
 
 ## Making a library
 
-In order to make a library so you don't have to declare the same function in every file, make a new lua file in your executors folder/workspace/QS/Libraries, and add in something like this.
+In order to make a library so you don't have to declare the same function in every file, make a new lua file in your executors workspace folder, in the dir /QS/Libraries, and add in something like this.
 ```lua
 local util = ... -- Functions are still passed into the libraries, so you can use functions from other libraries.
 local function sendAll(title, desc, time)
