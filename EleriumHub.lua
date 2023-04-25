@@ -1,4 +1,4 @@
-local Services = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Utilities/Services.lua'))()
+local Services = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Utilities/Utilities.lua'))()
 local plr = game:GetService'Players'.LocalPlayer; plrs = plr.Parent
 local plrw = plr.Character or plr.CharacterAdded:Wait()
 local plrh = plrw:FindFirstChild('Humanoid') or plrw:WaitForChild("Humanoid")
@@ -13,7 +13,7 @@ end)
 
 local prereqs = {
 	funcs = {
-		Services = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Utilities/Services.lua'))(),
+		Services = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Utilities/Utilities.lua'))(),
 		Send = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Utilities/Notifications.lua'))():Init(),
 		ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/SerinUtilities/Kiriot-ESP-Library/main/main.lua"))()
 	}, 
@@ -2763,8 +2763,6 @@ do -- Example UI
 				wclip('https://github.com/bloodball/UI-Librarys/blob/main/Elerium')
 			end
 		end)
-		
-	end
 
 	Tab:Show()
 	library:FormatWindows()
