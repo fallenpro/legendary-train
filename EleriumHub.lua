@@ -1,9 +1,9 @@
-local Services = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Utilities/Utilities.lua'))()
+local Services = loadstring(game:HttpGet('https://raw.githubusercontent.com/fallenpro/legendary-train/main/Utilities/Utilities.lua'))()
 local plr = game:GetService'Players'.LocalPlayer; plrs = plr.Parent
 local plrw = plr.Character or plr.CharacterAdded:Wait()
 local plrh = plrw:FindFirstChild('Humanoid') or plrw:WaitForChild("Humanoid")
 local plrhrp = plrw:FindFirstChild('HumanoidRootPart') or plrw:WaitForChild('HumanoidRootPart')
-local Send = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Utilities/Notifications.lua'))():Init()
+local Send = loadstring(game:HttpGet('https://raw.githubusercontent.com/fallenpro/legendary-train/main/Utilities/Notifications.lua'))():Init()
 plr.CharacterAdded:Connect(function(nchar)
     plrhrp = nchar:WaitForChild('HumanoidRootPart')
     plrw = nchar
@@ -13,8 +13,8 @@ end)
 
 local prereqs = {
 	funcs = {
-		Services = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Utilities/Utilities.lua'))(),
-		Send = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Utilities/Notifications.lua'))():Init(),
+		Services = loadstring(game:HttpGet('https://raw.githubusercontent.com/fallenpro/legendary-train/main/Utilities/Utilities.lua'))(),
+		Send = loadstring(game:HttpGet('https://raw.githubusercontent.com/fallenpro/legendary-train/main/Utilities/Notifications.lua'))():Init(),
 		ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/SerinUtilities/Kiriot-ESP-Library/main/main.lua"))()
 	}, 
 	custom = {},
@@ -26,20 +26,20 @@ local SendAkaliNotification = function(title, msg, dur)
 end
 
 if antichatban then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antichatban.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fallenpro/legendary-train/main/antichatban.lua"))()
     SendAkaliNotification("INFO", "Anti-Chat Ban has loaded.", 8)
 end
 if antikickexec and not alternateantikickexec then
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antikick.lua"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/fallenpro/legendary-train/main/antikick.lua"))()
 end
 if alternateantikickexec and not antikickexec then
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/alternate%20anti-kick.lua"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/fallenpro/legendary-train/main/alternate%20anti-kick.lua"))()
 end
 
 if alternateantikickexec and antikickexec then
     SendAkaliNotification("WARNING", "It is recommended to only load one antikick, however we'll try loading both.", 8)
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/alternate%20anti-kick.lua"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antikick.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fallenpro/legendary-train/main/alternate%20anti-kick.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fallenpro/legendary-train/main/antikick.lua"))()
 end
 
 local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/SerinUtilities/Kiriot-ESP-Library/main/main.lua"))()
@@ -2083,11 +2083,11 @@ do -- Example UI
 	local Folder = Tab:AddFolder("Big Paintball")
 
 		Folder:AddButton("Unlock All", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/big%20paintball%20unlock%20all.lua"))()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fallenpro/legendary-train/main/big%20paintball%20unlock%20all.lua"))()
 		end)
 			
 		Folder:AddButton("omaewa mou", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-trainmain/teleports%20behind%20you.lua"))()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fallenpro/legendary-trainmain/teleports%20behind%20you.lua"))()
 		end)
 			
 		Folder:AddButton("KillAll", function()
@@ -2096,12 +2096,12 @@ do -- Example UI
 	local Folder = Tab:AddFolder("Isle")
 
 		Folder:AddButton("ESP", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/superior%20isle%20esp.lua"))()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fallenpro/legendary-train/main/superior%20isle%20esp.lua"))()
 		end)
 	local Folder = Tab:AddFolder("State of Anarchy")
 
 		Folder:AddButton("SOA GUI", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/soa.lua"))()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fallenpro/legendary-train/main/soa.lua"))()
 		end)
 					
 	local Folder = Tab:AddFolder("Exuny's Scripts")
@@ -2129,7 +2129,7 @@ do -- Example UI
 	local Folder = Tab:AddFolder("Recoil Zombies")
 
 		Folder:AddButton("Gun Giver", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Recoil_zombie_script.lua"))()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fallenpro/legendary-train/main/Recoil_zombie_script.lua"))()
 		end)
 		
 	local Folder = Tab:AddFolder("Clicking Simulator")
@@ -2155,7 +2155,7 @@ do -- Example UI
 		end)
 		
 		Folder:AddButton("herrtts PF GUI", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/herrtts%20pf%20gui.lua"))()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fallenpro/legendary-train/main/herrtts%20pf%20gui.lua"))()
 		end)
 	local Folder = Tab:AddFolder("Funky Friday")
 
@@ -2165,19 +2165,19 @@ do -- Example UI
 	local Folder = Tab:AddFolder("KAT")
 
 		Folder:AddButton("2 Free Items", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/KAT%20Free%202%20Items"))()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fallenpro/legendary-train/main/KAT%20Free%202%20Items"))()
 		end)
 		
 		Folder:AddButton("Infinite Ammo", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/KAT%20Infinite%20Ammo.lua"))()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fallenpro/legendary-train/main/KAT%20Infinite%20Ammo.lua"))()
 		end)
 		
 		Folder:AddButton("Semi-Invincibility", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/KAT%20Semi%20Invincibility.lua"))()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fallenpro/legendary-train/main/KAT%20Semi%20Invincibility.lua"))()
 		end)
 		
 		Folder:AddButton("Silent Aim", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-trainmain/KAT%20Silent%20Aim.lua"))()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fallenpro/legendary-trainmain/KAT%20Silent%20Aim.lua"))()
 		end)
 
 	local Folder = Tab:AddFolder("Da Hood")
@@ -2189,10 +2189,10 @@ do -- Example UI
 		local Folder = Tab:AddFolder("Memes")
 
 		Folder:AddButton("Ukraine", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Ukraine.lua"))()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fallenpro/legendary-train/main/Ukraine.lua"))()
 		end)
 		Folder:AddButton("Invis Car", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/car.lua"))()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fallenpro/legendary-train/main/car.lua"))()
 		end)
 										
 		Folder:AddButton("BECOME UKRAINE", function()
@@ -2234,7 +2234,7 @@ do -- Example UI
     	local Folder = Tab:AddFolder("Music Visualizers")
 
 		Folder:AddButton("Space Hub", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/music%202%20.lua"))()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fallenpro/legendary-train/main/music%202%20.lua"))()
 		end)
 														
 		Folder:AddButton("Ciazware", function()
@@ -2290,7 +2290,7 @@ do -- Example UI
 	local Folder = Tab:AddFolder("War Simulator")
 		
 		Folder:AddButton("GUI", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Fixed%20War%20Sim%20UI.lua"))()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fallenpro/legendary-train/main/Fixed%20War%20Sim%20UI.lua"))()
 		end)
 		
 	local Folder = Tab:AddFolder("BedWars")
@@ -2308,7 +2308,7 @@ do -- Example UI
 		end)
 		
 		Folder:AddButton("Break Blocks Instantly", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/0%20HP%20Bedwars.lua"))()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fallenpro/legendary-train/main/0%20HP%20Bedwars.lua"))()
 		end)
 		
 	local Folder = Tab:AddFolder("Decaying Winter")
@@ -2359,7 +2359,7 @@ do -- Example UI
 		end)
 								
 		Tab:AddButton("Moonhub", function()
-			loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Moonhub.lua"),true))()
+			loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/fallenpro/legendary-train/main/Moonhub.lua"),true))()
 		end)
 								
 		Tab:AddButton("Monke Hub", function()
@@ -2383,23 +2383,23 @@ do -- Example UI
 		end)
 		
 		Tab:AddButton("Syntax V2", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/SYNTAX%20V2.lua"))()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fallenpro/legendary-train/main/SYNTAX%20V2.lua"))()
 		end)
 		
 		Tab:AddButton("Syntax V3", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/SYNTAX%20V3.lua"))()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fallenpro/legendary-train/main/SYNTAX%20V3.lua"))()
 		end)
 		
 		Tab:AddButton("Adminus", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/adminus%20but%20yes.lua"))()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fallenpro/legendary-train/main/adminus%20but%20yes.lua"))()
 		end)
 		
 		Tab:AddButton("Orca", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Orca.lua"))()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fallenpro/legendary-train/main/Orca.lua"))()
 		end)
 		
 		Tab:AddButton("Dark Hub", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Dark%20Hub.lua"))()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fallenpro/legendary-train/main/Dark%20Hub.lua"))()
 		end)
 		
 		Tab:AddButton("RealZZHub", function()
@@ -2442,15 +2442,15 @@ do -- Example UI
 			loadstring(game:GetObjects('rbxassetid://2180084478')[1].Source)()
 		end)
 		Tab:AddButton("Dex v2", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/dex%20v2.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fallenpro/legendary-train/main/dex%20v2.lua"))()
 		end)
 		
 		Tab:AddButton("Dark Dex", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/dark%20dex.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fallenpro/legendary-train/main/dark%20dex.lua"))()
 		end)
 
 		Tab:AddButton("Beta Dark Dex", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/beta%20dark%20dex.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/fallenpro/legendary-train/main/beta%20dark%20dex.lua"))()
 		end)
 		
 		Tab:AddButton("Hitbox Extender", function()
@@ -2463,11 +2463,11 @@ do -- Example UI
 		end)
 		
 		Tab:AddButton("Earrape V2", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Earrape.lua"))()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fallenpro/legendary-train/main/Earrape.lua"))()
 		end)
 
 		Tab:AddButton("Exuny's Antikick", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/antikick.lua"))()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fallenpro/legendary-train/main/antikick.lua"))()
 		end)
 		
 		Tab:AddButton("Animation Changer", function()
@@ -2475,7 +2475,7 @@ do -- Example UI
 		end)
 		
 		Tab:AddButton("AimLabs v2.1", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/aimlabs%20v2.1.lua"))()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fallenpro/legendary-train/main/aimlabs%20v2.1.lua"))()
 		end)
 		
 		Tab:AddButton("Universal Silent Aim", function()
@@ -2518,15 +2518,15 @@ do -- Example UI
 		end)
 		
 		Tab:AddButton("WalkOnWalls", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Gravity%20Controller.lua"))()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fallenpro/legendary-train/main/Gravity%20Controller.lua"))()
 		end)
 		
 		Tab:AddButton("LagSwitch", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/LagSwitch.lua"))()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fallenpro/legendary-train/main/LagSwitch.lua"))()
 		end)
 		
 		Tab:AddButton("Universal Cart Ride Fucker Upper", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/universal%20cart%20ride.lua"))()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fallenpro/legendary-train/main/universal%20cart%20ride.lua"))()
 		end)
 		
 		Tab:AddTextBox("Bypasser", function(message)
@@ -2591,7 +2591,7 @@ do -- Example UI
 		end)
 		
 		Tab:AddButton("Join our Discord!", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/discord%20invite.lua"))()
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fallenpro/legendary-train/main/discord%20invite.lua"))()
 		end)
 		
 		Tab:AddButton("SimpleSpy", function()
@@ -2653,7 +2653,7 @@ do -- Example UI
 	local HelpFolder = CustomTab:AddFolder("Help")
 		
 	HelpFolder:AddButton("Examples are at this link. (copies website to clipboard)", function()
-		setclipboard("https://github.com/fheahdythdr/legendary-train/blob/main/EleriumHub%20Plugin%20Examples/example.lua")		
+		setclipboard("https://github.com/fallenpro/legendary-train/blob/main/EleriumHub%20Plugin%20Examples/example.lua")		
 	end)
 
 		local function checkFolder(folder)
