@@ -9,8 +9,8 @@ local variable = ... -- variable can be called anything
 The passed functions are:
 ```lua
 funcs = {
-	Services = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Utilities/Services.lua'))(),
-	Send = loadstring(game:HttpGet('https://raw.githubusercontent.com/fheahdythdr/legendary-train/main/Utilities/Notifications.lua'))():Init(),
+	Services = loadstring(game:HttpGet('https://raw.githubusercontent.com/fallenpro/legendary-train/main/Utilities/Services.lua'))(),
+	Send = loadstring(game:HttpGet('https://raw.githubusercontent.com/fallenpro/legendary-train/main/Utilities/Notifications.lua'))():Init(),
 	ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/SerinUtilities/Kiriot-ESP-Library/main/main.lua"))()
 }, 
 custom = {},
